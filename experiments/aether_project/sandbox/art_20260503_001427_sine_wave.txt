@@ -1,0 +1,23 @@
+╔══════════════════════════════════════════════════════════╗
+║  AETHER ART ENGINE — karya #0                ║
+║  tema    : sine_wave                                     ║
+║  trigger : routine      state : momentum                ║
+║  skill   : -            cycle : 5                       ║
+║  mastered: 16           waktu : 20260503_001427         ║
+╚══════════════════════════════════════════════════════════╝
+
+  SINE WAVE  — ritme siklus autonomous
+            ●●●●●●●●●●●                                       
+         ●●●           ●●●                                    
+        ●                 ●                                   
+      ●●                   ●●                                 
+    ●●                       ●●                               
+   ●                           ●●                             
+  ●──────────────────────────────●───────────────────────────●
+                                  ●●                       ●● 
+                                    ●●                   ●●   
+                                      ●                 ●     
+                                       ●●●           ●●●      
+                                          ●●●●●●●●●●●         
+  Naik. Turun. Naik lagi.
+  Itu bukan kegagalan — itu irama.

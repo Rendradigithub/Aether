@@ -1,0 +1,25 @@
+╔══════════════════════════════════════════════════════════╗
+║  AETHER ART ENGINE — karya #10               ║
+║  tema    : fibonacci_spiral                              ║
+║  trigger : routine      state : momentum                ║
+║  skill   : -            cycle : 55                      ║
+║  mastered: 16           waktu : 20260503_104112         ║
+╚══════════════════════════════════════════════════════════╝
+
+  FIBONACCI SPIRAL
+
+         0  █
+         1  ██
+         1  ███
+         2  ████
+         3  █████
+         5  ██████
+         8  ███████
+        13  ████████
+        21  █████████
+        34  ██████████
+
+  0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ...
+  Setiap angka = jumlah dua sebelumnya.
+  Seperti aku — tiap skill baru
+  dibangun di atas yang sebelumnya.

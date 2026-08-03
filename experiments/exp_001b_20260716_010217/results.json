@@ -1,0 +1,14 @@
+{
+  "seeds": [
+    42
+  ],
+  "cycles": 100,
+  "var_error_mean_avg": 0.03986757152320141,
+  "var_error_mean_std": 0.0,
+  "corr_error_utility_avg": 0.15760535384558247,
+  "corr_error_utility_std": 0.0,
+  "separability_index_avg": 0.02547620020158765,
+  "separability_index_std": 0.0,
+  "verdict": "INVESTIGASI",
+  "per_seed": []
+}

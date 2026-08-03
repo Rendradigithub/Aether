@@ -1,0 +1,54 @@
+{
+  "strategy_weights": [
+    0.5,
+    0.3,
+    0.2
+  ],
+  "task_type_success": {
+    "math": [
+      2,
+      2,
+      1
+    ],
+    "string": [
+      0,
+      0,
+      1
+    ],
+    "data": [
+      0,
+      0,
+      0
+    ],
+    "algorithm": [
+      0,
+      0,
+      0
+    ]
+  },
+  "generation": 70,
+  "attempts": {
+    "math": [
+      2,
+      2,
+      1
+    ],
+    "string": [
+      7,
+      4,
+      5
+    ],
+    "data": [
+      3,
+      2,
+      1
+    ],
+    "algorithm": [
+      3,
+      3,
+      3
+    ]
+  },
+  "last_evolution": "2026-05-03T11:13:35.262555",
+  "epsilon": 0.24
+}

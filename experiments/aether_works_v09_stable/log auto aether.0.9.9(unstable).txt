@@ -1,0 +1,450 @@
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin>cd Documents
+
+C:\Users\Admin\Documents>cd FILE RENDRA
+
+C:\Users\Admin\Documents\FILE RENDRA>cd AI
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>python aether.0.9.9.py --auto 200
+
+[Cycle 1] Action: generate | Score: 0.582 | Novelty: 1.000
+Resources: E=91 A=93 F=3 B=0
+World model: conf=0.50 err=0.582
+Utilities: combine:0.75, explore:0.67, generate:0.60, refine:0.60
+Regret: 0.000 | Noise: +0.008
+Runner-up: combine
+Delta: E=-9, A=-7, F=+3, B=+0
+░░▒▒█ o @OO░░▓█▒▒█o    ██▓▓█ ::  O█ ▒█▓░░    .██▒▒░░
+▓▒█▓░▓  0  ██ ░▒▓▓      ▒▒ ▒▓     ▓▓▒░▓█ O     ░ █▒▓
+  ██▓o     ▓░ ▓▒█▒     ░▒▓▓▒░    :▒█▒ ░░▓      ▓██░
+░▓█░ O    O ▒▒▒▓█        ▓▓ Oo     █▓▒▒▒ ...
+
+[Cycle 2] Action: combine | Score: 0.526 | Novelty: 0.006
+Resources: E=74 A=79 F=8 B=0
+World model: conf=0.50 err=0.526
+Utilities: combine:0.81, explore:0.72, refine:0.67, generate:0.62
+Regret: 0.000 | Noise: +0.137
+Runner-up: refine
+Delta: E=-17, A=-14, F=+5, B=+0
+ ░▓░█▓▓███░▒▓█▓▓▒█▓▓█ oO        o   ░ .:  @o     ▓░█
+ ░█▓▓░▒▓▓██ ░░░▓▒  █▒           0      @         ▓░▒
+ O░██  ▓▓▓ ▓░█▒ ░  ▓▓     █   O     .   ▓▒0    :  ▓
+ :      ▓ ▓▒█   ░▓██   :  ▒.    0  @    @...
+
+[Cycle 3] Action: explore | Score: 0.556 | Novelty: 0.001
+Resources: E=45 A=60 F=15 B=0
+World model: conf=0.50 err=0.554
+Utilities: combine:0.69, explore:0.66, refine:0.61, generate:0.56
+Regret: 0.000 | Noise: +0.267
+Runner-up: combine
+Delta: E=-29, A=-19, F=+7, B=+0
+░▓█▓ ▒  ▓█▓▒  ▒ ▓▒▓ ░ █▒░▓  ▒█ ░ ▓▒▓▓▒ ░▒ █▓  ▒  █▓0
+▒  ░ ▒  ▓░░▓  ▓█▒    .▒▓█▒ █▓▒   ▒▓    █▓░░▓0 ▒ ░▒.▒
+ ░░▓▓▒: █▓█      ░ . ░      ▓▒░  ▒░░▓▓ ░▒ ▓█  ▒▓▓░░▒
+ ▓ ▒ o o █  ░   ░░▓   @ O▓▓░█: O ▓░o   ░█...
+
+[Cycle 4] Action: explore | Score: 0.566 | Novelty: 0.000
+Resources: E=16 A=41 F=22 B=0
+World model: conf=0.50 err=0.564
+Utilities: combine:0.81, explore:0.78, refine:0.68, generate:0.63
+Regret: 0.000 | Noise: +0.073
+Runner-up: generate
+Delta: E=-29, A=-19, F=+7, B=+0
+ █  ▒░░▓ O  █ ██ ░     ▒▒░0▒▒  . ▓░▓███ ▒    ░░▒███
+0▒▒▒ █░    ▒░██▒░ █  0 @█▒ █▒  @  █ ▒  @▒    ░█░ ▒
+:░░ ░▓█@    ▒  ▓░░░   O░▓. ▓  :@O░ ░▓ ▒▒     █  ▒ ░
+ █▒░@▓      █▓█▒▓█     ░▒▓▓ ░0  .░█ ▒█▓█ ...
+
+[Cycle 5] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=29 A=59 F=7 B=0
+World model: conf=0.50 err=0.564
+Utilities: rest:0.55, combine:0.37, refine:0.28, recall:0.28
+Regret: 0.000 | Noise: +0.178
+Runner-up: combine
+Delta: E=+13, A=+18, F=-15, B=+0
+
+[Cycle 6] Action: combine | Score: 0.558 | Novelty: 0.001
+Resources: E=12 A=45 F=12 B=0
+World model: conf=0.50 err=0.557
+Utilities: combine:0.84, refine:0.71, generate:0.66, recall:0.28
+Regret: 0.000 | Noise: -0.052
+Runner-up: generate
+Delta: E=-17, A=-14, F=+5, B=+0
+ ▓  ▓▓░█▓▓  @  ▓█▓O▓  ▒  o0  ▒▒▒ ▓▓█▓  o  ▓▓█░▓▓ ░▓
+ ░█ ▓░░▒▒   Oo ▓▒▒▒▒▒▒        ▒▒▒▒▒▒   @  ░▒▒░░▓▓█░
+ ▒█▓░█ ▒▒       ▓█ █ ▓   . 0  ▓▒█▒█▓    o ░ ▒░█  █
+ █ ░█▓░█░ : @ : ░▓█0██      @ ██ █▓░:o : ...
+
+[Cycle 7] Action: refine | Score: 0.476 | Novelty: 0.003
+Resources: E=5 A=34 F=16 B=0
+World model: conf=0.50 err=0.476
+Utilities: combine:0.31, refine:0.28, recall:0.28, forget:0.28
+Regret: 0.000 | Noise: +0.284
+Runner-up: combine
+Delta: E=-7, A=-11, F=+4, B=+0
+ ░ ░ ▒▓▒  @ ▓▒█  █  .@ ▒  ▓      ▓█▓██▒▓▒   ▒▓ ░░ ░
+ ░ █░░░▒    ▒█▓ ░ ░    o   ██     ▒ ▒▓ ▒░ 0 ▒░
+ ▓▓░   :      0  █▒     ▓██    OO▒█      O 0    ░ ▓
+ :                                       ...
+
+[Cycle 8] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=12 A=43 F=8 B=0
+World model: conf=0.50 err=0.476
+Utilities: rest:0.59
+Regret: 0.000 | Noise: -0.159
+Delta: E=+7, A=+9, F=-8, B=+0
+
+[Cycle 9] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=25 A=61 F=0 B=0
+World model: conf=0.50 err=0.476
+Utilities: rest:0.51, combine:0.31, recall:0.27, forget:0.27
+Regret: 0.000 | Noise: +0.116
+Runner-up: generate
+Delta: E=+13, A=+18, F=-8, B=+0
+
+[Cycle 10] Action: combine | Score: 0.524 | Novelty: 0.001
+Resources: E=8 A=47 F=5 B=0
+World model: conf=0.50 err=0.524
+Utilities: combine:0.77, refine:0.64, generate:0.63, recall:0.27
+Regret: 0.000 | Noise: -0.051
+Runner-up: generate
+Delta: E=-17, A=-14, F=+5, B=+0
+░░ ▒▓ ▓▒░░    ▓░░▒▒  █ ▒  █░▒░██ ▒ ░░▓▒░ ▒░ ▒▓▒▓O▓.O
+█░  ░  █  ▓ ▒█░▓█ ▓  ▓ ▓▒ ░  ░▓█▒O██▓ █▒░▓ ░█░  ░░░
+0 ▓▓  ▓  ▓  @  ▒▒ ▓▒░ ░▓█░░    ░ ▓  ▒█.░░ :░░▓█  ▓▓
+ █ ░▓▒ ▒█░ @   . █▓ ██    :o    █▓█▒░   ░...
+
+[Cycle 11] Action: explore | Score: 0.546 | Novelty: 0.001
+Resources: E=1 A=28 F=12 B=0
+World model: conf=0.50 err=0.546
+Utilities: recall:0.27, forget:0.27, combine:0.26, explore:0.23
+Regret: 0.000 | Noise: +0.149
+Runner-up: recall
+Delta: E=-7, A=-19, F=+7, B=+0
+  ▓  ░▓ : @   ▒  ░░         o   .    ▒      ░ ░0
+░░0   ▓ ░▒▒ @▒░ ▒▒  :        ░     ▒       ░  o o▒ ░
+ ▒ ░  ▒ ..░    o▓▓    ▓ ░▓ ░o▓    ▓ ▓  o▒ ▓  ▒    ▒
+  ▒ ░ ▒ ▒   ▓  :▒    ░▒▒  ▓  ▒  @░ ▒:. ▓░...
+
+[Cycle 12] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=8 A=37 F=4 B=0
+World model: conf=0.50 err=0.546
+Utilities: rest:0.61
+Regret: 0.000 | Noise: +0.079
+Delta: E=+7, A=+9, F=-8, B=+0
+
+[Cycle 13] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=21 A=55 F=0 B=0
+World model: conf=0.50 err=0.546
+Utilities: rest:0.53, recall:0.27, forget:0.27, combine:0.26
+Regret: 0.000 | Noise: -0.116
+Runner-up: explore
+Delta: E=+13, A=+18, F=-4, B=+0
+[Override] chaotic_impulse -> recall
+[Recall] Similar to cycle 10 (sim=0.58)
+
+[Cycle 14] Action: recall | Score: 0.500 | Novelty: 0.500
+Resources: E=19 A=54 F=0 B=0
+World model: conf=0.50 err=0.546
+Delta: E=-2, A=-1, F=+0, B=+0
+
+[Cycle 15] Action: explore | Score: 0.416 | Novelty: 0.001
+Resources: E=1 A=35 F=7 B=0
+World model: conf=0.50 err=0.416
+Utilities: recall:0.27, forget:0.27, combine:0.26, generate:0.22
+Regret: 0.000 | Noise: +0.244
+Runner-up: combine
+Delta: E=-18, A=-19, F=+7, B=+0
+      ░ ░▒@.▓        ░░       ░▒   o @ ▓  ▒  ░    .
+    @ ░    ▓    O   :▒▒      ▒▒              ░
+       .░▓            ▒░   ▓░  ▓           ░    o
+   ░               ▒ ▓ :   o.  ░▒ .      ...
+
+[Cycle 16] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=8 A=44 F=0 B=0
+World model: conf=0.50 err=0.416
+Utilities: rest:0.57
+Regret: 0.000 | Noise: +0.131
+Delta: E=+7, A=+9, F=-7, B=+0
+
+[Cycle 17] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=21 A=62 F=0 B=0
+World model: conf=0.50 err=0.416
+Utilities: rest:0.49, recall:0.27, forget:0.27, combine:0.25
+Regret: 0.000 | Noise: -0.100
+Runner-up: recall
+Delta: E=+13, A=+18, F=+0, B=+0
+
+[Cycle 18] Action: refine | Score: 0.412 | Novelty: 0.000
+Resources: E=14 A=51 F=4 B=0
+World model: conf=0.50 err=0.412
+Utilities: refine:0.64, generate:0.64, recall:0.27, forget:0.27
+Regret: 0.000 | Noise: +0.026
+Runner-up: generate
+Delta: E=-7, A=-11, F=+4, B=+0
+            ▓▓ :    0 ▒0   O ▒        ▓     :▒
+  ░           ▓░▓▒          O    ▒▒ ░ ░▒         ░
+              ▒  ▒░       ░@▓ ░  ░▒  ▒░  ▓
+          ▓  ░.  ░   ▓  ▒   : ▓       ░ ░...
+
+[Cycle 19] Action: combine | Score: 0.582 | Novelty: 0.000
+Resources: E=1 A=37 F=9 B=0
+World model: conf=0.50 err=0.581
+Utilities: recall:0.26, forget:0.26, combine:0.25, generate:0.21
+Regret: 0.000 | Noise: +0.440
+Runner-up: forget
+Delta: E=-13, A=-14, F=+5, B=+0
+ ▒▓▒██  :  ░ ▓██▓█▓    ▓▒██▒▓    ▓ ▓█ ▓ ░     ██▒▓▒
+ █▓█░▓0O      ▓█▓▒     ░░▒▒░░    ▒▒▓█▓▓▓     @▓ █ █
+ ▓▒ ▓░   ▓  ▒░▓ ░░   :  ▒░ ▒      ░░▒▓░▒o     ░▓ ▒▓
+ ▓▒█▒ 0         ░▒      ▒▒▒▒  0 O ▒░  @ :...
+
+[Cycle 20] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=8 A=46 F=1 B=0
+World model: conf=0.50 err=0.581
+Utilities: rest:0.57
+Regret: 0.000 | Noise: -0.155
+Delta: E=+7, A=+9, F=-8, B=+0
+
+[Cycle 21] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=21 A=64 F=0 B=0
+World model: conf=0.50 err=0.581
+Utilities: rest:0.49, recall:0.26, forget:0.26, generate:0.21
+Regret: 0.000 | Noise: -0.186
+Runner-up: generate
+Delta: E=+13, A=+18, F=-1, B=+0
+
+[Cycle 22] Action: generate | Score: 0.440 | Novelty: 0.000
+Resources: E=12 A=57 F=3 B=0
+World model: conf=0.50 err=0.438
+Utilities: generate:0.63, refine:0.58, recall:0.26, forget:0.26
+Regret: 0.000 | Noise: +0.100
+Runner-up: refine
+Delta: E=-9, A=-7, F=+3, B=+0
+  ▓▓█  ▓▓▒██        ░   ░░    █        ▓██▒ ▓█ █▓▓█
+ ▓ ▓ █▓█ ▒▓.      :   ░▓▓▓▓▓           ▒█▓ ██ ██ ░
+  ░░░   █ ▓      @        █▒        O   ▒▓▒█.  ░
+        O:               .   . O   .    @...
+
+[Cycle 23] Action: forget | Score: 0.500 | Novelty: 0.500
+Resources: E=8 A=55 F=4 B=0
+World model: conf=0.50 err=0.438
+Utilities: recall:0.26, forget:0.26, combine:0.20, generate:0.16
+Regret: 0.000 | Noise: +0.031
+Runner-up: refine
+Delta: E=-4, A=-2, F=+1, B=+0
+
+[Cycle 24] Action: refine | Score: 0.478 | Novelty: 0.001
+Resources: E=1 A=44 F=8 B=0
+World model: conf=0.50 err=0.476
+Utilities: recall:0.26, forget:0.21, combine:0.20, generate:0.16
+Regret: 0.000 | Noise: +0.234
+Runner-up: recall
+Delta: E=-7, A=-11, F=+4, B=+0
+░▒█░█     ░▓██ ▓ █    ░█▒░ ▒█░   ░█:  ██:░█     ░█
+  █ ░    █      █.░.  ▒▒ █  ▒▒   ░░    ░  █   █░▓█░▓
+  O▓   . ▓▓█▓   ▓░     ░▒  ▒      ░ ▓   █▓       @░
+ 0█    O   ▒          O        @        ▒...
+
+[Cycle 25] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=14 A=62 F=0 B=0
+World model: conf=0.50 err=0.476
+Utilities: rest:0.54
+Regret: 0.000 | Noise: -0.266
+Delta: E=+13, A=+18, F=-8, B=+0
+[Override] chaotic_impulse -> recall
+[Recall] Similar to cycle 10 (sim=0.60)
+
+[Cycle 26] Action: recall | Score: 0.500 | Novelty: 0.500
+Resources: E=12 A=61 F=0 B=0
+World model: conf=0.50 err=0.476
+Delta: E=-2, A=-1, F=+0, B=+0
+
+[Cycle 27] Action: forget | Score: 0.500 | Novelty: 0.500
+Resources: E=8 A=59 F=1 B=0
+World model: conf=0.50 err=0.476
+Utilities: recall:0.26, forget:0.21, combine:0.20, generate:0.16
+Regret: 0.000 | Noise: +0.097
+Runner-up: combine
+Delta: E=-4, A=-2, F=+1, B=+0
+
+[Cycle 28] Action: generate | Score: 0.534 | Novelty: 0.001
+Resources: E=1 A=52 F=4 B=0
+World model: conf=0.50 err=0.532
+Utilities: recall:0.26, combine:0.20, generate:0.16, forget:0.16
+Regret: 0.000 | Noise: +0.289
+Runner-up: combine
+Delta: E=-7, A=-7, F=+3, B=+0
+▒░▒▓▒▓ █░▒█ ▒█                ▓██░█▓▒▒▒▒▓ ▒
+:▓▒▓ ░██▒█▒▒▒     @     .  . .█▒▓███░░▒░▓▒▒▒    .
+ █▒█░▓ ░▓▓░ █   @             ▒░ ▓░▓░▒█▒ ██o    .
+ ░░██▓▒░▒▓▓▓       :           █▓▓▒█░██░░...
+
+[Cycle 29] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=14 A=70 F=0 B=0
+World model: conf=0.50 err=0.532
+Utilities: rest:0.50
+Regret: 0.000 | Noise: -0.037
+Delta: E=+13, A=+18, F=-4, B=+0
+[Recall] Similar to cycle 10 (sim=0.60)
+
+[Cycle 30] Action: recall | Score: 0.500 | Novelty: 0.500
+Resources: E=12 A=69 F=0 B=0
+World model: conf=0.50 err=0.532
+Utilities: recall:0.26, combine:0.20, forget:0.16, explore:0.12
+Regret: 0.000 | Noise: +0.456
+Runner-up: refine
+Delta: E=-2, A=-1, F=+0, B=+0
+
+[Cycle 31] Action: explore | Score: 0.486 | Novelty: 0.001
+Resources: E=1 A=50 F=7 B=0
+World model: conf=0.50 err=0.484
+Utilities: recall:0.21, combine:0.20, forget:0.16, explore:0.12
+Regret: 0.000 | Noise: +0.075
+Runner-up: combine
+Delta: E=-11, A=-19, F=+7, B=+0
+ ▒░░▓▓█░0       ░▒▓██░         ██ ▒░.   ▓   ░█▓▓░░▒
+ █▒▓▒█▒░ ▓O   . ▒░ ░█▓    :   ▓█░▓░▒        ░▒█▒▓▒█
+▓▒██▒░       ▓  █ ▒█▒ .   :    ▒█▒▓█        O ░▒██▒
+  ░▓█   o        ██░            ░█       ...
+
+[Cycle 32] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=8 A=59 F=0 B=0
+World model: conf=0.50 err=0.484
+Utilities: rest:0.52
+Regret: 0.000 | Noise: +0.121
+Delta: E=+7, A=+9, F=-7, B=+0
+
+[Cycle 33] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=21 A=77 F=0 B=0
+World model: conf=0.50 err=0.484
+Utilities: rest:0.44, recall:0.21, combine:0.20, forget:0.16
+Regret: 0.000 | Noise: -0.080
+Runner-up: recall
+Delta: E=+13, A=+18, F=+0, B=+0
+
+[Cycle 34] Action: refine | Score: 0.464 | Novelty: 0.000
+Resources: E=14 A=66 F=4 B=0
+World model: conf=0.50 err=0.462
+Utilities: refine:0.49, generate:0.49, recall:0.21, forget:0.16
+Regret: 0.000 | Noise: -0.108
+Runner-up: generate
+Delta: E=-7, A=-11, F=+4, B=+0
+ ▒ █ █   ▓ █▒░█ █▓▒   ▓   ▒░█  O ▒.█░ @ █░    █▓██
+ ▒▓░▓    ▒ █ ░▒▓█ ▒   O ▒██▒   0 ▒░ ▓▒░   ▒    ▓ ▓ ░
+▓     O   ▓▒@   :█ 0    ████    o  ▓     ▓      █▒▒▓
+  @  O          o                        ...
+
+[Cycle 35] Action: forget | Score: 0.500 | Novelty: 0.500
+Resources: E=10 A=64 F=5 B=0
+World model: conf=0.50 err=0.462
+Utilities: recall:0.21, combine:0.20, forget:0.16, generate:0.11
+Regret: 0.000 | Noise: +0.097
+Runner-up: recall
+Delta: E=-4, A=-2, F=+1, B=+0
+
+[Cycle 36] Action: generate | Score: 0.507 | Novelty: 0.000
+Resources: E=1 A=57 F=8 B=0
+World model: conf=0.50 err=0.505
+Utilities: recall:0.21, combine:0.20, generate:0.11, forget:0.11
+Regret: 0.000 | Noise: +0.216
+Runner-up: combine
+Delta: E=-9, A=-7, F=+3, B=+0
+ █▓██▒░▓█ ░▓ :    :      @█░▒▒▒█░▒░▓ ▓  @   0     ▓
+ ░▒░▓▒░▒▒░ █ ▓   ░        ▓▓▓▓▓█░░█▓▒░   █░
+ ▒██▒ ██▓██▓     o    .   ░▓▓▒▓▓▓█▒▓   ▓  :▓    ░
+  ██░▒▓▒▓▓█░ ░ █      .     O0▓▓▓░▒░ o  ....
+
+[Cycle 37] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=14 A=75 F=0 B=0
+World model: conf=0.50 err=0.505
+Utilities: rest:0.50
+Regret: 0.000 | Noise: +0.121
+Delta: E=+13, A=+18, F=-8, B=+0
+
+[Cycle 38] Action: forget | Score: 0.500 | Novelty: 0.500
+Resources: E=10 A=73 F=1 B=0
+World model: conf=0.50 err=0.505
+Utilities: recall:0.21, combine:0.20, forget:0.11, explore:0.07
+Regret: 0.000 | Noise: +0.151
+Runner-up: recall
+Delta: E=-4, A=-2, F=+1, B=+0
+[Recall] Similar to cycle 10 (sim=0.63)
+
+[Cycle 39] Action: recall | Score: 0.500 | Novelty: 0.500
+Resources: E=8 A=72 F=1 B=0
+World model: conf=0.50 err=0.505
+Utilities: recall:0.21, combine:0.20, explore:0.07, generate:0.06
+Regret: 0.000 | Noise: +0.036
+Runner-up: forget
+Delta: E=-2, A=-1, F=+0, B=+0
+[Recall] Similar to cycle 10 (sim=0.63)
+
+[Cycle 40] Action: recall | Score: 0.500 | Novelty: 0.500
+Resources: E=6 A=71 F=1 B=0
+World model: conf=0.50 err=0.505
+Utilities: combine:0.20, recall:0.16, explore:0.07, generate:0.06
+Regret: 0.000 | Noise: +0.119
+Runner-up: generate
+Delta: E=-2, A=-1, F=+0, B=+0
+
+[Cycle 41] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=19 A=89 F=0 B=0
+World model: conf=0.50 err=0.505
+Utilities: rest:0.41, combine:0.20, recall:0.11, explore:0.07
+Regret: 0.000 | Noise: -0.071
+Runner-up: combine
+Delta: E=+13, A=+18, F=-1, B=+0
+
+[Cycle 42] Action: combine | Score: 0.493 | Novelty: 0.000
+Resources: E=2 A=75 F=5 B=0
+World model: conf=0.50 err=0.492
+Utilities: combine:0.20, recall:0.11, explore:0.07, generate:0.06
+Regret: 0.000 | Noise: +0.066
+Runner-up: recall
+Delta: E=-17, A=-14, F=+5, B=+0
+  ▒▓ ▒▒  ░░  ▒░  ▒▓ ▓ ▒█▓ ▓ █ █ ▒ ▒  ░ ▒ ░       ▒▓
+ ░▓▒▒░ █▓ █░▓██ ▓ ░█░ ▓░ ▒▒  ▓ ░█ █  ██▓░   ██  ▒▓░
+  o     ░█ ▓ ▓░@▒  ▒     ▒ ▒   ▓▒██: ░ █▓    :  ▒░
+          ▓:     █░              ░█      ...
+
+[Cycle 43] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=9 A=84 F=0 B=0
+World model: conf=0.50 err=0.492
+Utilities: rest:0.43
+Regret: 0.000 | Noise: +0.018
+Delta: E=+7, A=+9, F=-5, B=+0
+[Override] chaotic_impulse -> refine
+
+[Cycle 44] Action: refine | Score: 0.533 | Novelty: 0.000
+Resources: E=2 A=73 F=4 B=0
+World model: conf=0.50 err=0.517
+Delta: E=-7, A=-11, F=+4, B=+0
+▓ @    0     @▒  ░        █  :█  0   @  :       o O
+.   : .░   :    █           █o     O  O ▒░
+ O       ▒                   :  ▓░     0 o:
+   @   ▒     ▒  ░         O    .         ...
+
+[Cycle 45] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=15 A=91 F=0 B=0
+World model: conf=0.50 err=0.517
+Utilities: rest:0.43
+Regret: 0.000 | Noise: -0.059
+Delta: E=+13, A=+18, F=-4, B=+0
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.9.py", line 1053, in <module>
+    a.run_autonomous(cycles)
+    ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.9.py", line 1037, in run_autonomous
+    self.step()
+    ~~~~~~~~~^^
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.9.py", line 877, in step
+    self.world_model.update(current_param_vec, score)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.9.py", line 412, in update
+    pred = float(self.W2 @ h + self.b2)
+TypeError: only 0-dimensional arrays can be converted to Python scalars
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>

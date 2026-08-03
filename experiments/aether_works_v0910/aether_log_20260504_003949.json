@@ -1,0 +1,6749 @@
+[
+  {
+    "cycle": 1,
+    "action": "explore",
+    "score": 0.5401188821980963,
+    "novelty": 1.0,
+    "energy": 71.0,
+    "attention": 81.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5401188821980963,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:21.664849",
+    "utilities": {
+      "generate": 0.6030769230769231,
+      "explore": 0.670264423076923,
+      "refine": 0.6030769230769231,
+      "recall": 0.25,
+      "combine": 0.7453846153846153,
+      "rest": 0.0,
+      "forget": 0.25
+    },
+    "regret": 0.0,
+    "noise_effect": 0.06241954300538621,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -29,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 2,
+    "action": "refine",
+    "score": 0.5323181945625721,
+    "novelty": 0.010317564010620117,
+    "energy": 64.0,
+    "attention": 70.0,
+    "fatigue": 11.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5323181945625721,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:22.137701",
+    "utilities": {
+      "generate": 0.6370236873626709,
+      "explore": 0.6435545682907104,
+      "refine": 0.6370236873626709,
+      "recall": 0.2700594365596771,
+      "combine": 0.774702250957489,
+      "rest": 0.18333333333333335,
+      "forget": 0.2700594365596771
+    },
+    "regret": 0.0,
+    "noise_effect": 0.22530639171600342,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 3,
+    "action": "generate",
+    "score": 0.5052633363628298,
+    "novelty": 0.002938687801361084,
+    "energy": 55.0,
+    "attention": 63.0,
+    "fatigue": 14.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5052633363628298,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:22.620409",
+    "utilities": {
+      "generate": 0.6338298916816711,
+      "explore": 0.6717113256454468,
+      "refine": 0.5838355422019958,
+      "recall": 0.26818427443504333,
+      "combine": 0.7719796895980835,
+      "rest": 0.25666666666666665,
+      "forget": 0.26818427443504333
+    },
+    "regret": 0.0,
+    "noise_effect": 0.18095707893371582,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 4,
+    "action": "explore",
+    "score": 0.5067492352627918,
+    "novelty": 0.0001080632209777832,
+    "energy": 26.0,
+    "attention": 44.0,
+    "fatigue": 21.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5067492352627918,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:23.094234",
+    "utilities": {
+      "generate": 0.5750758051872253,
+      "explore": 0.726287841796875,
+      "refine": 0.5760141015052795,
+      "recall": 0.2630140781402588,
+      "combine": 0.8043185472488403,
+      "rest": 0.32,
+      "forget": 0.2630140781402588
+    },
+    "regret": 0.0,
+    "noise_effect": 0.14433252811431885,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -29,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 5,
+    "action": "combine",
+    "score": 0.5226256258413854,
+    "novelty": 0.005131065845489502,
+    "energy": 9.0,
+    "attention": 30.0,
+    "fatigue": 26.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5226256258413854,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:23.574999",
+    "utilities": {
+      "generate": 0.7326292991638184,
+      "explore": 0.11108499020338058,
+      "refine": 0.7386292815208435,
+      "recall": 0.2606292963027954,
+      "combine": 0.9674840569496155,
+      "rest": 0.5033333333333333,
+      "forget": 0.2606292963027954
+    },
+    "regret": 0.0,
+    "noise_effect": 0.2076358199119568,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -17,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 6,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 22.0,
+    "attention": 47.0,
+    "fatigue": 11.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5226256258413854,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:24.007526",
+    "utilities": {
+      "generate": 0.21076299250125885,
+      "explore": 0.2222326397895813,
+      "refine": 0.21076299250125885,
+      "recall": 0.2607629895210266,
+      "combine": 0.3505869209766388,
+      "rest": 0.6233333333333333,
+      "forget": 0.2607629895210266
+    },
+    "regret": 0.0,
+    "noise_effect": -0.021886138383626297,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": 13,
+      "attention": 17,
+      "fatigue": -15,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 7,
+    "action": "refine",
+    "score": 0.5346105753014894,
+    "novelty": 8.755922317504883e-05,
+    "energy": 15.0,
+    "attention": 36.0,
+    "fatigue": 15.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5346105753014894,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:24.430547",
+    "utilities": {
+      "generate": 0.7057629823684692,
+      "explore": 0.11111631989479065,
+      "refine": 0.7117629647254944,
+      "recall": 0.2607629895210266,
+      "combine": 0.1752934604883194,
+      "forget": 0.2607629895210266
+    },
+    "regret": 0.0,
+    "noise_effect": 0.113625168800354,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 8,
+    "action": "refine",
+    "score": 0.5592166851633033,
+    "novelty": 7.241964340209961e-05,
+    "energy": 8.0,
+    "attention": 25.0,
+    "fatigue": 19.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5592166851633033,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:24.902617",
+    "utilities": {
+      "generate": 0.2118287831544876,
+      "explore": 0.22273224592208862,
+      "refine": 0.16182878613471985,
+      "recall": 0.26182878017425537,
+      "combine": 0.3514067530632019,
+      "forget": 0.26182878017425537
+    },
+    "regret": 0.0,
+    "noise_effect": 0.4161638915538788,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 9,
+    "action": "generate",
+    "score": 0.5168997395346631,
+    "novelty": 0.0003922581672668457,
+    "energy": 1.0,
+    "attention": 18.0,
+    "fatigue": 22.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5168997395346631,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:25.378260",
+    "utilities": {
+      "generate": 0.21433322131633759,
+      "explore": 0.22390618920326233,
+      "refine": 0.11433321237564087,
+      "recall": 0.26433321833610535,
+      "combine": 0.3533332645893097,
+      "forget": 0.26433321833610535
+    },
+    "regret": 0.0,
+    "noise_effect": 0.17569144070148468,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -7,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 10,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 36.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5168997395346631,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:25.844382",
+    "utilities": {
+      "rest": 0.6766666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": -0.1293322849709646,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -15,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 11,
+    "action": "combine",
+    "score": 0.507111710631916,
+    "novelty": 0.0008133053779602051,
+    "energy": 1.0,
+    "attention": 22.0,
+    "fatigue": 12.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.507111710631916,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:26.262547",
+    "utilities": {
+      "generate": 0.16358840465545654,
+      "explore": 0.22355705499649048,
+      "refine": 0.11358839273452759,
+      "recall": 0.26358839869499207,
+      "combine": 0.35276031494140625,
+      "forget": 0.26358839869499207
+    },
+    "regret": 0.0,
+    "noise_effect": 0.11651855707168579,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -13,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 12,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 31.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.507111710631916,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:26.636741",
+    "utilities": {
+      "rest": 0.63
+    },
+    "regret": 0.0,
+    "noise_effect": -0.17240328650074044,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 13,
+    "action": "combine",
+    "score": 0.5114541309395919,
+    "novelty": 0.0001270771026611328,
+    "energy": 1.0,
+    "attention": 17.0,
+    "fatigue": 9.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5114541309395919,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:27.053730",
+    "utilities": {
+      "generate": 0.1624966263771057,
+      "explore": 0.22304528951644897,
+      "refine": 0.11249661445617676,
+      "recall": 0.26249662041664124,
+      "combine": 0.30192047357559204,
+      "forget": 0.26249662041664124
+    },
+    "regret": 0.0,
+    "noise_effect": -0.10693410038948059,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 14,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 35.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5114541309395919,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:27.552503",
+    "utilities": {
+      "rest": 0.6366666666666666
+    },
+    "regret": 0.0,
+    "noise_effect": -0.02746182810185749,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -9,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 15,
+    "action": "combine",
+    "score": 0.48153856830638864,
+    "novelty": 0.00034046173095703125,
+    "energy": 1.0,
+    "attention": 21.0,
+    "fatigue": 5.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.48153856830638864,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:27.961511",
+    "utilities": {
+      "generate": 0.16182956099510193,
+      "explore": 0.22273260354995728,
+      "refine": 0.11182954907417297,
+      "recall": 0.26182955503463745,
+      "combine": 0.25140735507011414,
+      "forget": 0.26182955503463745
+    },
+    "regret": 0.0,
+    "noise_effect": 0.28972992300987244,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": -13,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 16,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 30.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.48153856830638864,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:28.426858",
+    "utilities": {
+      "rest": 0.61
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1262707909504006,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 17,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 6.0,
+    "attention": 29.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.48153856830638864,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:28.839165",
+    "utilities": {
+      "generate": 0.1599046289920807,
+      "explore": 0.22183027863502502,
+      "refine": 0.10990461707115173,
+      "recall": 0.2599046230316162,
+      "combine": 0.19992664456367493,
+      "forget": 0.2599046230316162
+    },
+    "regret": 0.0,
+    "noise_effect": 0.017885416746139526,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 18,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 19.0,
+    "attention": 47.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.48153856830638864,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:29.224084",
+    "utilities": {
+      "generate": 0.1599046289920807,
+      "explore": 0.22183027863502502,
+      "refine": 0.10990461707115173,
+      "recall": 0.20990462601184845,
+      "combine": 0.19992664456367493,
+      "rest": 0.5499999999999999,
+      "forget": 0.2599046230316162
+    },
+    "regret": 0.0,
+    "noise_effect": -0.014491104560934942,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 19,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 17.0,
+    "attention": 46.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.48153856830638864,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:29.594322",
+    "utilities": {
+      "generate": 0.1599046289920807,
+      "explore": 0.22183027863502502,
+      "refine": 0.10990461707115173,
+      "recall": 0.20990462601184845,
+      "combine": 0.19992664456367493,
+      "forget": 0.2599046230316162
+    },
+    "regret": 0.0,
+    "noise_effect": 0.15390680730342865,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 20,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 13.0,
+    "attention": 44.0,
+    "fatigue": 1.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.48153856830638864,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:29.979540",
+    "utilities": {
+      "generate": 0.1599046289920807,
+      "explore": 0.22183027863502502,
+      "refine": 0.10990461707115173,
+      "recall": 0.1599046289920807,
+      "combine": 0.19992664456367493,
+      "forget": 0.2599046230316162
+    },
+    "regret": 0.0,
+    "noise_effect": 0.032795846462249756,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 21,
+    "action": "explore",
+    "score": 0.48386048314484253,
+    "novelty": 5.716085433959961e-05,
+    "energy": 1.0,
+    "attention": 25.0,
+    "fatigue": 8.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.48386048314484253,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:30.447131",
+    "utilities": {
+      "generate": 0.16183093190193176,
+      "explore": 0.2227332442998886,
+      "refine": 0.11183091998100281,
+      "recall": 0.16183093190193176,
+      "combine": 0.20140841603279114,
+      "forget": 0.21183092892169952
+    },
+    "regret": 0.0,
+    "noise_effect": 0.14410321414470673,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -12,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 22,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 43.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.48386048314484253,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:30.915222",
+    "utilities": {
+      "rest": 0.6066666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": 0.07929015406963469,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 23,
+    "action": "combine",
+    "score": 0.5090776729030189,
+    "novelty": 2.586841583251953e-05,
+    "energy": 1.0,
+    "attention": 29.0,
+    "fatigue": 5.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5090776729030189,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:31.361047",
+    "utilities": {
+      "generate": 0.16001558303833008,
+      "explore": 0.17188230156898499,
+      "refine": 0.11001557111740112,
+      "recall": 0.16001558303833008,
+      "combine": 0.2000119835138321,
+      "forget": 0.21001558005809784
+    },
+    "regret": 0.0,
+    "noise_effect": 0.15399180352687836,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -13,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 24,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 38.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5090776729030189,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:31.826794",
+    "utilities": {
+      "rest": 0.5833333333333334
+    },
+    "regret": 0.0,
+    "noise_effect": 0.05157199542351054,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 25,
+    "action": "combine",
+    "score": 0.435663230554197,
+    "novelty": 0.0015892982482910156,
+    "energy": 1.0,
+    "attention": 24.0,
+    "fatigue": 5.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.435663230554197,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:32.273839",
+    "utilities": {
+      "generate": 0.15956008434295654,
+      "explore": 0.17166876792907715,
+      "refine": 0.10956007242202759,
+      "recall": 0.15956008434295654,
+      "combine": 0.1496616154909134,
+      "forget": 0.2095600813627243
+    },
+    "regret": 0.0,
+    "noise_effect": 0.09444926679134369,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -7,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 26,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 42.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.435663230554197,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:32.739133",
+    "utilities": {
+      "rest": 0.6
+    },
+    "regret": 0.0,
+    "noise_effect": 0.07017431635191362,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 27,
+    "action": "combine",
+    "score": 0.5166991394607555,
+    "novelty": 8.594989776611328e-05,
+    "energy": 1.0,
+    "attention": 28.0,
+    "fatigue": 5.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5166991394607555,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:33.174984",
+    "utilities": {
+      "generate": 0.15631625056266785,
+      "explore": 0.17014822363853455,
+      "refine": 0.10631623864173889,
+      "recall": 0.15631625056266785,
+      "combine": 0.09716634452342987,
+      "forget": 0.2063162475824356
+    },
+    "regret": 0.0,
+    "noise_effect": 0.09493686258792877,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -13,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 28,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 37.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5166991394607555,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:33.639328",
+    "utilities": {
+      "rest": 0.5866666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": 0.05762465989935539,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 29,
+    "action": "generate",
+    "score": 0.47476838405080923,
+    "novelty": 0.0001341104507446289,
+    "energy": 1.0,
+    "attention": 30.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.47476838405080923,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5,
+      "novelty_seeking": 0.5,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:34.076136",
+    "state_delta": {
+      "energy": -7,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 30,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 48.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.47476838405080923,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5003119578848323,
+      "novelty_seeking": 0.5002110380475375,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:34.482198",
+    "utilities": {
+      "rest": 0.5733333333333334
+    },
+    "regret": 0.0,
+    "noise_effect": 0.032216272523011624,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 31,
+    "action": "explore",
+    "score": 0.5673953956848196,
+    "novelty": 0.0006141066551208496,
+    "energy": 1.0,
+    "attention": 29.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5673953956848196,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5006256558183971,
+      "novelty_seeking": 0.5004238361400589,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:34.928394",
+    "utilities": {
+      "generate": 0.1551816165447235,
+      "explore": 0.16967974603176117,
+      "refine": 0.10518160462379456,
+      "recall": 0.1551816165447235,
+      "combine": 0.04634154587984085,
+      "forget": 0.20518161356449127
+    },
+    "regret": 0.0,
+    "noise_effect": 0.05283120274543762,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -13,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 32,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 38.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5673953956848196,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5009359254458994,
+      "novelty_seeking": 0.5006336231808303,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:35.393851",
+    "utilities": {
+      "rest": 0.59
+    },
+    "regret": 0.0,
+    "noise_effect": -0.03201802160759437,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 33,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 4.0,
+    "attention": 36.0,
+    "fatigue": 1.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5673953956848196,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5012451183783285,
+      "novelty_seeking": 0.500842569580611,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:35.772852",
+    "utilities": {
+      "generate": 0.1570756733417511,
+      "explore": 0.12067608535289764,
+      "refine": 0.10707566142082214,
+      "recall": 0.1570756733417511,
+      "combine": 0.047895174473524094,
+      "forget": 0.20707567036151886
+    },
+    "regret": 0.0,
+    "noise_effect": 0.22404448688030243,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 34,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 17.0,
+    "attention": 54.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5673953956848196,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.50155310799117,
+      "novelty_seeking": 0.5010505581487712,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:36.181928",
+    "utilities": {
+      "rest": 0.5366666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": 0.04682833989809576,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 35,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 13.0,
+    "attention": 52.0,
+    "fatigue": 1.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5673953956848196,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5018585207372129,
+      "novelty_seeking": 0.5012563206897277,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:36.614775",
+    "utilities": {
+      "generate": 0.1552177369594574,
+      "explore": 0.1199178621172905,
+      "refine": 0.10521772503852844,
+      "recall": 0.1552177369594574,
+      "combine": 0.046560365706682205,
+      "forget": 0.1552177369594574
+    },
+    "regret": 0.0,
+    "noise_effect": 0.28831756114959717,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 36,
+    "action": "explore",
+    "score": 0.5307431942888141,
+    "novelty": 2.1278858184814453e-05,
+    "energy": 1.0,
+    "attention": 33.0,
+    "fatigue": 8.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5307431942888141,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5021659870679355,
+      "novelty_seeking": 0.5014641311611454,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:36.994283",
+    "utilities": {
+      "generate": 0.15649589896202087,
+      "explore": 0.1205732673406601,
+      "refine": 0.10649588704109192,
+      "recall": 0.15649589896202087,
+      "combine": 0.04759117215871811,
+      "forget": 0.10649588704109192
+    },
+    "regret": 0.0,
+    "noise_effect": 0.06393375992774963,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -12,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 37,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 42.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5307431942888141,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5024698388828037,
+      "novelty_seeking": 0.5016687571655962,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:37.460958",
+    "utilities": {
+      "rest": 0.5800000000000001
+    },
+    "regret": 0.0,
+    "noise_effect": 0.10750373540926828,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 38,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 21.0,
+    "attention": 60.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5307431942888141,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5027679508813281,
+      "novelty_seeking": 0.501868236583225,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:37.839243",
+    "utilities": {
+      "generate": 0.1571020483970642,
+      "explore": 0.07092031091451645,
+      "refine": 0.10710203647613525,
+      "recall": 0.1571020483970642,
+      "combine": 0.04815208539366722,
+      "rest": 0.5,
+      "forget": 0.10710203647613525
+    },
+    "regret": 0.0,
+    "noise_effect": -0.193239779009739,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 39,
+    "action": "refine",
+    "score": 0.5063613438724208,
+    "novelty": 0.00022965669631958008,
+    "energy": 14.0,
+    "attention": 49.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.5,
+    "prediction_error": 0.5063613438724208,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5030645533282313,
+      "novelty_seeking": 0.5020664739703655,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:38.288495",
+    "utilities": {
+      "generate": 0.5831020474433899,
+      "explore": 0.03548435494303703,
+      "refine": 0.5391020774841309,
+      "recall": 0.1571020483970642,
+      "combine": 0.02409888245165348,
+      "forget": 0.10710203647613525
+    },
+    "regret": 0.0,
+    "noise_effect": 0.03633832931518555,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 40,
+    "action": "combine",
+    "score": 0.5248637596347553,
+    "novelty": 0.001009225845336914,
+    "energy": 1.0,
+    "attention": 35.0,
+    "fatigue": 9.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.7399328217654825,
+    "prediction_error": 0.5248637596347553,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5033627174294091,
+      "novelty_seeking": 0.5022663039835026,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:38.767262",
+    "utilities": {
+      "generate": 0.15686002373695374,
+      "explore": 0.0709032267332077,
+      "refine": 0.05686001479625702,
+      "recall": 0.15686002373695374,
+      "combine": 0.048056766390800476,
+      "forget": 0.10686001181602478
+    },
+    "regret": 0.0,
+    "noise_effect": 0.08735479414463043,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": -13,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 41,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 44.0,
+    "fatigue": 1.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.7399328217654825,
+    "prediction_error": 0.5248637596347553,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5036596688541297,
+      "novelty_seeking": 0.5024651653997628,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:39.233428",
+    "utilities": {
+      "rest": 0.5766666666666668
+    },
+    "regret": 0.0,
+    "noise_effect": -0.08168352501324178,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 42,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 21.0,
+    "attention": 62.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.7399328217654825,
+    "prediction_error": 0.5248637596347553,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.503956026376001,
+      "novelty_seeking": 0.5026636290931905,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:39.646389",
+    "utilities": {
+      "generate": 0.2210252583026886,
+      "explore": 0.05306462198495865,
+      "refine": 0.12102524936199188,
+      "recall": 0.2210252583026886,
+      "combine": 0.0,
+      "rest": 0.49666666666666665,
+      "forget": 0.17102524638175964
+    },
+    "regret": 0.0,
+    "noise_effect": -0.12425101757865553,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 43,
+    "action": "refine",
+    "score": 0.4298403190614631,
+    "novelty": 0.00019359588623046875,
+    "energy": 14.0,
+    "attention": 51.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.8762877488103299,
+    "prediction_error": 0.17502751221675178,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5042447179857991,
+      "novelty_seeking": 0.5028551667542811,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:40.103388",
+    "utilities": {
+      "generate": 0.6410252451896667,
+      "explore": 0.026555325835943222,
+      "refine": 0.5470252633094788,
+      "recall": 0.2210252583026886,
+      "combine": 0.0,
+      "forget": 0.17102524638175964
+    },
+    "regret": 0.0,
+    "noise_effect": 0.06406474113464355,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 44,
+    "action": "generate",
+    "score": 0.49097395293613605,
+    "novelty": 0.0004737973213195801,
+    "energy": 5.0,
+    "attention": 44.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.10556948535343341,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5045320499549654,
+      "novelty_seeking": 0.5030455992562844,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:40.582987",
+    "utilities": {
+      "generate": 0.30078357458114624,
+      "explore": 0.06328804790973663,
+      "refine": 0.15078356862068176,
+      "recall": 0.30078357458114624,
+      "combine": 0.03366561606526375,
+      "forget": 0.2507835626602173
+    },
+    "regret": 0.0,
+    "noise_effect": 0.29099398851394653,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 45,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 12.0,
+    "attention": 53.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.10556948535343341,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5048204072509401,
+      "novelty_seeking": 0.5032371278078193,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:41.017662",
+    "utilities": {
+      "rest": 0.5266666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1244371479028229,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 46,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 10.0,
+    "attention": 52.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.10556948535343341,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5051081878323229,
+      "novelty_seeking": 0.503428273302251,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:41.389578",
+    "utilities": {
+      "generate": 0.3079277575016022,
+      "explore": 0.08546553552150726,
+      "refine": 0.20792776346206665,
+      "recall": 0.35792776942253113,
+      "combine": 0.07304011285305023,
+      "rest": 0.45,
+      "forget": 0.3079277575016022
+    },
+    "regret": 0.0,
+    "noise_effect": 0.23539534211158752,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 47,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 6.0,
+    "attention": 50.0,
+    "fatigue": 1.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.10556948535343341,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5053953928525429,
+      "novelty_seeking": 0.503619036505694,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:41.833480",
+    "utilities": {
+      "generate": 0.3079277575016022,
+      "explore": 0.0855136439204216,
+      "refine": 0.20792776346206665,
+      "recall": 0.3079277575016022,
+      "combine": 0.07308679819107056,
+      "rest": 0.45999999999999996,
+      "forget": 0.3079277575016022
+    },
+    "regret": 0.0,
+    "noise_effect": 0.17867621779441833,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 48,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 19.0,
+    "attention": 68.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.10556948535343341,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5056820234627224,
+      "novelty_seeking": 0.50380941818273,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:42.269842",
+    "utilities": {
+      "generate": 0.3080276548862457,
+      "explore": 0.08560863137245178,
+      "refine": 0.2080276608467102,
+      "recall": 0.3080276548862457,
+      "combine": 0.0732104554772377,
+      "rest": 0.48333333333333334,
+      "forget": 0.25802767276763916
+    },
+    "regret": 0.0,
+    "noise_effect": 0.08027842825945836,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 49,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 17.0,
+    "attention": 67.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.10556948535343341,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5059680808116815,
+      "novelty_seeking": 0.5039994190964119,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:42.706975",
+    "utilities": {
+      "generate": 0.3080276548862457,
+      "explore": 0.08565659075975418,
+      "refine": 0.2080276608467102,
+      "recall": 0.3080276548862457,
+      "combine": 0.07325699180364609,
+      "forget": 0.25802767276763916
+    },
+    "regret": 0.0,
+    "noise_effect": 0.10369831323623657,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 50,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 15.0,
+    "attention": 66.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.10556948535343341,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5062535660459428,
+      "novelty_seeking": 0.5041890400082665,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:43.152822",
+    "utilities": {
+      "generate": 0.3080276548862457,
+      "explore": 0.08570446074008942,
+      "refine": 0.2080276608467102,
+      "recall": 0.25802767276763916,
+      "combine": 0.07330344617366791,
+      "forget": 0.25802767276763916
+    },
+    "regret": 0.0,
+    "noise_effect": 0.09287846088409424,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 51,
+    "action": "refine",
+    "score": 0.45693010244156074,
+    "novelty": 3.713369369506836e-05,
+    "energy": 8.0,
+    "attention": 55.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.004645796153795234,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5065361463434079,
+      "novelty_seeking": 0.5043761272478411,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:43.556304",
+    "utilities": {
+      "generate": 0.3080276548862457,
+      "explore": 0.08575223386287689,
+      "refine": 0.2080276608467102,
+      "recall": 0.2080276608467102,
+      "combine": 0.07334980368614197,
+      "forget": 0.25802767276763916
+    },
+    "regret": 0.0,
+    "noise_effect": 0.19327408075332642,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 52,
+    "action": "combine",
+    "score": 0.4032955006490663,
+    "novelty": 0.0006476640701293945,
+    "energy": 1.0,
+    "attention": 41.0,
+    "fatigue": 9.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.074898289071469,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5068097804236678,
+      "novelty_seeking": 0.5045551039529884,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:44.045042",
+    "state_delta": {
+      "energy": -7,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 53,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 59.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.074898289071469,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5070820805041154,
+      "novelty_seeking": 0.5047329964908932,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:44.493835",
+    "utilities": {
+      "rest": 0.5566666666666668
+    },
+    "regret": 0.0,
+    "noise_effect": -0.21074235526489865,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -9,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 54,
+    "action": "refine",
+    "score": 0.49247688531811806,
+    "novelty": 0.00012451410293579102,
+    "energy": 7.0,
+    "attention": 48.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0018122839921292933,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5073531839811297,
+      "novelty_seeking": 0.5049099313945477,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:44.920298",
+    "utilities": {
+      "generate": 0.34177783131599426,
+      "explore": 0.10175488889217377,
+      "refine": 0.19177782535552979,
+      "recall": 0.24177783727645874,
+      "combine": 0.09951837360858917,
+      "forget": 0.2917778491973877
+    },
+    "regret": 0.0,
+    "noise_effect": 0.2141609787940979,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 55,
+    "action": "generate",
+    "score": 0.5498356972745972,
+    "novelty": 0.0001792311668395996,
+    "energy": 1.0,
+    "attention": 41.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05157281504193123,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5076336401983058,
+      "novelty_seeking": 0.5050956462257324,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:45.401048",
+    "utilities": {
+      "generate": 0.3485722839832306,
+      "explore": 0.10499564558267593,
+      "refine": 0.14857229590415955,
+      "recall": 0.24857228994369507,
+      "combine": 0.10480649024248123,
+      "forget": 0.298572301864624
+    },
+    "regret": 0.0,
+    "noise_effect": 0.2081645429134369,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": -6,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 56,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 50.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05157281504193123,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5079135355030475,
+      "novelty_seeking": 0.5052809896272549,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:45.866062",
+    "utilities": {
+      "rest": 0.55
+    },
+    "regret": 0.0,
+    "noise_effect": 0.09828196873898043,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 57,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 21.0,
+    "attention": 68.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05157281504193123,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5081914237584265,
+      "novelty_seeking": 0.5054646264108174,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:46.269185",
+    "utilities": {
+      "generate": 0.3001255989074707,
+      "explore": 0.10582397133111954,
+      "refine": 0.15012559294700623,
+      "recall": 0.25012558698654175,
+      "combine": 0.10610299557447433,
+      "rest": 0.47333333333333333,
+      "forget": 0.3001255989074707
+    },
+    "regret": 0.0,
+    "noise_effect": 0.14106778024637406,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 58,
+    "action": "generate",
+    "score": 0.41676850916948305,
+    "novelty": 8.493661880493164e-05,
+    "energy": 12.0,
+    "attention": 61.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0829683363238336,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5084615428414228,
+      "novelty_seeking": 0.5056412374015463,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:46.727032",
+    "utilities": {
+      "generate": 0.702125608921051,
+      "explore": 0.05293627828359604,
+      "refine": 0.5581256151199341,
+      "recall": 0.25012558698654175,
+      "combine": 0.05307580530643463,
+      "forget": 0.3001255989074707
+    },
+    "regret": 0.0,
+    "noise_effect": -0.06972777843475342,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 59,
+    "action": "generate",
+    "score": 0.41091656185448805,
+    "novelty": 3.314018249511719e-05,
+    "energy": 3.0,
+    "attention": 54.0,
+    "fatigue": 6.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08453721307455858,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5087255878616627,
+      "novelty_seeking": 0.505812387024518,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:47.204308",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 60,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 1.0,
+    "attention": 20.0,
+    "fatigue": 25.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08453721307455858,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5089891047918621,
+      "novelty_seeking": 0.5059831943482439,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:47.614148",
+    "utilities": {
+      "rest": 0.84
+    },
+    "regret": 0.0,
+    "noise_effect": -0.08724608004922152,
+    "state_delta": {
+      "energy": 31,
+      "attention": 9,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 61,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 37.0,
+    "fatigue": 10.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08453721307455858,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5092462537539084,
+      "novelty_seeking": 0.5061482684256675,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:48.023492",
+    "utilities": {
+      "rest": 0.68
+    },
+    "regret": 0.0,
+    "noise_effect": -0.034080150962297995,
+    "state_delta": {
+      "energy": 13,
+      "attention": 17,
+      "fatigue": -15,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 62,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 10.0,
+    "attention": 35.0,
+    "fatigue": 11.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08453721307455858,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5095028884180307,
+      "novelty_seeking": 0.5063130123549362,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:48.437156",
+    "utilities": {
+      "generate": 0.23902031779289246,
+      "explore": 0.10082944482564926,
+      "refine": 0.13902032375335693,
+      "recall": 0.23902031779289246,
+      "combine": 0.09775937348604202,
+      "forget": 0.289020299911499
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1332535445690155,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 63,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 34.0,
+    "fatigue": 11.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08453721307455858,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5097590098128247,
+      "novelty_seeking": 0.5064774267963464,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:48.876217",
+    "utilities": {
+      "generate": 0.23938709497451782,
+      "explore": 0.10104541480541229,
+      "refine": 0.1393871009349823,
+      "recall": 0.23938709497451782,
+      "combine": 0.09808561950922012,
+      "forget": 0.23938709497451782
+    },
+    "regret": 0.0,
+    "noise_effect": 0.12865543365478516,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 64,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 6.0,
+    "attention": 33.0,
+    "fatigue": 11.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08453721307455858,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5100146189648291,
+      "novelty_seeking": 0.5066415124088738,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:49.324157",
+    "utilities": {
+      "generate": 0.23938709497451782,
+      "explore": 0.101088747382164,
+      "refine": 0.1393871009349823,
+      "recall": 0.18938708305358887,
+      "combine": 0.09812865406274796,
+      "forget": 0.23938709497451782
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1166897714138031,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 65,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 19.0,
+    "attention": 51.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08453721307455858,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5102697168985295,
+      "novelty_seeking": 0.5068052698501762,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:49.700395",
+    "utilities": {
+      "generate": 0.23938709497451782,
+      "explore": 0.10113199055194855,
+      "refine": 0.1393871009349823,
+      "recall": 0.1393871009349823,
+      "combine": 0.09817159920930862,
+      "rest": 0.5733333333333334,
+      "forget": 0.23938709497451782
+    },
+    "regret": 0.0,
+    "noise_effect": 0.04797695763368082,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -11,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 66,
+    "action": "generate",
+    "score": 0.45535571252767515,
+    "novelty": 0.0017960071563720703,
+    "energy": 10.0,
+    "attention": 44.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.032865217571812155,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5105177710546099,
+      "novelty_seeking": 0.506962668778055,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:50.181476",
+    "utilities": {
+      "generate": 0.23938709497451782,
+      "explore": 0.10117514431476593,
+      "refine": 0.1393871009349823,
+      "recall": 0.1393871009349823,
+      "combine": 0.09821444749832153,
+      "forget": 0.23938709497451782
+    },
+    "regret": 0.0,
+    "noise_effect": 0.040817320346832275,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 67,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 6.0,
+    "attention": 42.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.032865217571812155,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5107653291023782,
+      "novelty_seeking": 0.507119752908078,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:50.653286",
+    "utilities": {
+      "generate": 0.19244691729545593,
+      "explore": 0.10265710204839706,
+      "refine": 0.14244693517684937,
+      "recall": 0.14244693517684937,
+      "combine": 0.10061941295862198,
+      "forget": 0.2424469292163849
+    },
+    "regret": 0.0,
+    "noise_effect": 0.13587340712547302,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 68,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 4.0,
+    "attention": 41.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.032865217571812155,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5110123920340508,
+      "novelty_seeking": 0.507276522869841,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:51.091239",
+    "utilities": {
+      "generate": 0.19263812899589539,
+      "explore": 0.1027887761592865,
+      "refine": 0.14263814687728882,
+      "recall": 0.14263814687728882,
+      "combine": 0.10080861300230026,
+      "forget": 0.19263812899589539
+    },
+    "regret": 0.0,
+    "noise_effect": 0.05956369638442993,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 69,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 17.0,
+    "attention": 59.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.032865217571812155,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5112584095233912,
+      "novelty_seeking": 0.5074324703841707,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:51.535083",
+    "utilities": {
+      "rest": 0.5299999999999999
+    },
+    "regret": 0.0,
+    "noise_effect": 0.11008155182016688,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 70,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 15.0,
+    "attention": 58.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.032865217571812155,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5115017801185846,
+      "novelty_seeking": 0.507586116902701,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:51.951069",
+    "utilities": {
+      "generate": 0.19263812899589539,
+      "explore": 0.10287180542945862,
+      "refine": 0.14263814687728882,
+      "recall": 0.09263813495635986,
+      "combine": 0.10089125484228134,
+      "forget": 0.19263812899589539
+    },
+    "regret": 0.0,
+    "noise_effect": 0.21399706602096558,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 71,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 13.0,
+    "attention": 57.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.032865217571812155,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5117446639725876,
+      "novelty_seeking": 0.5077394561281942,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:52.345001",
+    "utilities": {
+      "generate": 0.19263812899589539,
+      "explore": 0.10291264951229095,
+      "refine": 0.14263814687728882,
+      "recall": 0.042638152837753296,
+      "combine": 0.10093189775943756,
+      "forget": 0.19263812899589539
+    },
+    "regret": 0.0,
+    "noise_effect": 0.23397544026374817,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 72,
+    "action": "generate",
+    "score": 0.5061373007873203,
+    "novelty": 0.0006766319274902344,
+    "energy": 4.0,
+    "attention": 50.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.014304120598187642,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5119875939582841,
+      "novelty_seeking": 0.5078929796592994,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:52.709482",
+    "utilities": {
+      "generate": 0.19263812899589539,
+      "explore": 0.10295341163873672,
+      "refine": 0.14263814687728882,
+      "recall": 0.0,
+      "combine": 0.10097247362136841,
+      "forget": 0.19263812899589539
+    },
+    "regret": 0.0,
+    "noise_effect": 0.09342139959335327,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 73,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 17.0,
+    "attention": 68.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.014304120598187642,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5122361185896905,
+      "novelty_seeking": 0.5080518089178174,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:53.176457",
+    "utilities": {
+      "rest": 0.49666666666666665
+    },
+    "regret": 0.0,
+    "noise_effect": -0.06728726362817655,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 74,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 13.0,
+    "attention": 66.0,
+    "fatigue": 1.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.014304120598187642,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5124849284292464,
+      "novelty_seeking": 0.5082110426015836,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:53.581889",
+    "utilities": {
+      "generate": 0.1390056610107422,
+      "explore": 0.10132526606321335,
+      "refine": 0.1390056610107422,
+      "recall": 0.0,
+      "combine": 0.09824708849191666,
+      "forget": 0.18900564312934875
+    },
+    "regret": 0.0,
+    "noise_effect": 0.19811972975730896,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 75,
+    "action": "combine",
+    "score": 0.5083787024994526,
+    "novelty": 3.4570693969726562e-06,
+    "energy": 1.0,
+    "attention": 52.0,
+    "fatigue": 6.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.02061154256064035,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5127339668033398,
+      "novelty_seeking": 0.5083706281141821,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:54.033425",
+    "utilities": {
+      "generate": 0.1389787197113037,
+      "explore": 0.10135461390018463,
+      "refine": 0.1389787197113037,
+      "recall": 0.0,
+      "combine": 0.09826799482107162,
+      "forget": 0.1389787197113037
+    },
+    "regret": 0.0,
+    "noise_effect": 0.16780847311019897,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": -12,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 76,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 61.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.02061154256064035,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.512982507100685,
+      "novelty_seeking": 0.5085298944557555,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:54.466969",
+    "utilities": {
+      "rest": 0.51
+    },
+    "regret": 0.0,
+    "noise_effect": -0.29246301113768464,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -6,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 77,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 21.0,
+    "attention": 79.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.02061154256064035,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5132305503174356,
+      "novelty_seeking": 0.5086888422646457,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:54.881218",
+    "utilities": {
+      "generate": 0.145475834608078,
+      "explore": 0.10450012236833572,
+      "refine": 0.145475834608078,
+      "recall": 0.0,
+      "combine": 0.05311564728617668,
+      "rest": 0.4366666666666667,
+      "forget": 0.145475834608078
+    },
+    "regret": 0.0,
+    "noise_effect": 0.08717280110213982,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 78,
+    "action": "refine",
+    "score": 0.39949893917063073,
+    "novelty": 0.0001863241195678711,
+    "energy": 14.0,
+    "attention": 68.0,
+    "fatigue": 4.0,
+    "failure_burden": 12.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.11490619216939613,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.513469387355814,
+      "novelty_seeking": 0.5088394320930518,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:55.344710",
+    "utilities": {
+      "generate": 0.5144758224487305,
+      "explore": 0.052271194756031036,
+      "refine": 0.5204758644104004,
+      "recall": 0.0,
+      "combine": 0.02657642401754856,
+      "forget": 0.145475834608078
+    },
+    "regret": 0.0,
+    "noise_effect": -0.02593618631362915,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 12
+    }
+  },
+  {
+    "cycle": 79,
+    "action": "refine",
+    "score": 0.4323998964143648,
+    "novelty": 2.7954578399658203e-05,
+    "energy": 7.0,
+    "attention": 56.0,
+    "fatigue": 8.0,
+    "failure_burden": 12.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08346924421063517,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5137018880444717,
+      "novelty_seeking": 0.5089843127335143,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:55.828008",
+    "state_delta": {
+      "energy": -7,
+      "attention": -12,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 80,
+    "action": "generate",
+    "score": 0.48187360816126107,
+    "novelty": 0.008558571338653564,
+    "energy": 1.0,
+    "attention": 49.0,
+    "fatigue": 11.0,
+    "failure_burden": 12.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.029500626991937173,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5139323527777927,
+      "novelty_seeking": 0.5091274535013487,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:56.227163",
+    "utilities": {
+      "generate": 0.15941372513771057,
+      "explore": 0.08936368674039841,
+      "refine": 0.10941371321678162,
+      "recall": 0.009413719177246094,
+      "combine": 0.025696473196148872,
+      "forget": 0.15941372513771057
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1076003909111023,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": -6,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 81,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 67.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.029500626991937173,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5141660893061021,
+      "novelty_seeking": 0.5092737535794521,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:56.692591",
+    "utilities": {
+      "rest": 0.5366666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": 0.09231583446446978,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -11,
+      "failure_burden": -12
+    }
+  },
+  {
+    "cycle": 82,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 12.0,
+    "attention": 66.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.029500626991937173,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5144077394179652,
+      "novelty_seeking": 0.5094274974173474,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:57.130968",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 83,
+    "action": "refine",
+    "score": 0.4658714817918842,
+    "novelty": 0.00028526782989501953,
+    "energy": 5.0,
+    "attention": 55.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.03896758089885066,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5146459484246934,
+      "novelty_seeking": 0.5095782034861103,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:57.490661",
+    "utilities": {
+      "generate": 0.1033233106136322,
+      "explore": 0.10843965411186218,
+      "refine": 0.1033233106136322,
+      "recall": 0.0033233165740966797,
+      "combine": 0.05939766392111778,
+      "forget": 0.15332332253456116
+    },
+    "regret": 0.0,
+    "noise_effect": 0.11019030213356018,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 84,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 12.0,
+    "attention": 64.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.03896758089885066,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5148843330166804,
+      "novelty_seeking": 0.5097292099919102,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:57.863583",
+    "utilities": {
+      "rest": 0.48
+    },
+    "regret": 0.0,
+    "noise_effect": 0.021838039779975782,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 85,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 25.0,
+    "attention": 82.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.03896758089885066,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5151179217457196,
+      "novelty_seeking": 0.5098759276289165,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:58.301410",
+    "utilities": {
+      "generate": 0.09852990508079529,
+      "explore": 0.10626063495874405,
+      "refine": 0.04852992296218872,
+      "recall": 0.0,
+      "combine": 0.05576044321060181,
+      "rest": 0.41333333333333333,
+      "forget": 0.14852991700172424
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1483393504132654,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 86,
+    "action": "combine",
+    "score": 0.47347404084869366,
+    "novelty": 0.001399397850036621,
+    "energy": 8.0,
+    "attention": 68.0,
+    "fatigue": 5.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.025067284482040597,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.515348744380841,
+      "novelty_seeking": 0.5100202297539167,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:58.770090",
+    "utilities": {
+      "generate": 0.44652989506721497,
+      "explore": 0.053150005638599396,
+      "refine": 0.40252992510795593,
+      "recall": 0.0,
+      "combine": 0.4487951397895813,
+      "forget": 0.14852991700172424
+    },
+    "regret": 0.0,
+    "noise_effect": 0.004350930452346802,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -17,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 87,
+    "action": "explore",
+    "score": 0.4466907287840467,
+    "novelty": 1.5079975128173828e-05,
+    "energy": 1.0,
+    "attention": 49.0,
+    "fatigue": 12.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0357079004044909,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5155744852338534,
+      "novelty_seeking": 0.5101599785329696,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:59.219399",
+    "utilities": {
+      "generate": 0.10097077488899231,
+      "explore": 0.10748999565839767,
+      "refine": 0.05097079277038574,
+      "recall": 0.0009707808494567871,
+      "combine": 0.007411416620016098,
+      "forget": 0.15097078680992126
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1094420924782753,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 88,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 58.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0357079004044909,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5158069880010319,
+      "novelty_seeking": 0.5103061063337309,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:38:59.686673",
+    "utilities": {
+      "rest": 0.54
+    },
+    "regret": 0.0,
+    "noise_effect": -0.06969771602720981,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 89,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 6.0,
+    "attention": 57.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0357079004044909,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5160467463273152,
+      "novelty_seeking": 0.5104590685539422,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:00.120584",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 90,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 19.0,
+    "attention": 75.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0357079004044909,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.516286025136946,
+      "novelty_seeking": 0.5106117248497132,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:00.436696",
+    "utilities": {
+      "generate": 0.08036914467811584,
+      "explore": 0.04756820574402809,
+      "refine": 0.030369162559509277,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.47,
+      "forget": 0.1303691565990448
+    },
+    "regret": 0.0,
+    "noise_effect": -0.0788978378483266,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 91,
+    "action": "combine",
+    "score": 0.539271103046186,
+    "novelty": 0.0002065896987915039,
+    "energy": 2.0,
+    "attention": 61.0,
+    "fatigue": 5.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05926172604346991,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5165282288845549,
+      "novelty_seeking": 0.5107672175211363,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:00.885907",
+    "utilities": {
+      "generate": 0.08036914467811584,
+      "explore": 0.047603461891412735,
+      "refine": 0.030369162559509277,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.1303691565990448
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1435514887459495,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -17,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 92,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 9.0,
+    "attention": 70.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05926172604346991,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5167699482246685,
+      "novelty_seeking": 0.5109223992072165,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:01.275669",
+    "utilities": {
+      "rest": 0.4733333333333334
+    },
+    "regret": 0.0,
+    "noise_effect": 0.004585140115261566,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 93,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 7.0,
+    "attention": 69.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05926172604346991,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5170111841261019,
+      "novelty_seeking": 0.5110772705299246,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:01.671538",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 94,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 20.0,
+    "attention": 87.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05926172604346991,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5172519375557324,
+      "novelty_seeking": 0.5112318321099872,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:02.011552",
+    "utilities": {
+      "generate": 0.07690095901489258,
+      "explore": 0.046074140816926956,
+      "refine": 0.02690097689628601,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.41333333333333333,
+      "forget": 0.12690097093582153
+    },
+    "regret": 0.0,
+    "noise_effect": 0.05880811891459614,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 95,
+    "action": "generate",
+    "score": 0.46360804346694895,
+    "novelty": 0.0005600452423095703,
+    "energy": 11.0,
+    "attention": 80.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.01251287552223257,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5174890555089374,
+      "novelty_seeking": 0.5113831732103672,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:02.460083",
+    "utilities": {
+      "generate": 0.07690095901489258,
+      "explore": 0.046109676361083984,
+      "refine": 0.02690097689628601,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.12690097093582153
+    },
+    "regret": 0.0,
+    "noise_effect": 0.14383648335933685,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 96,
+    "action": "refine",
+    "score": 0.47342594963269097,
+    "novelty": 0.00047212839126586914,
+    "energy": 4.0,
+    "attention": 69.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.006230567872954784,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5177272653134518,
+      "novelty_seeking": 0.5115356572475147,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:02.940478",
+    "utilities": {
+      "generate": 0.030134379863739014,
+      "explore": 0.04767076298594475,
+      "refine": 0.030134379863739014,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.13013437390327454
+    },
+    "regret": 0.0,
+    "noise_effect": 0.242516428232193,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 97,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 11.0,
+    "attention": 78.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.006230567872954784,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5179649986983572,
+      "novelty_seeking": 0.511687836316588,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:03.409613",
+    "utilities": {
+      "rest": 0.4466666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": 0.041380208652722184,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 98,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 24.0,
+    "attention": 96.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.006230567872954784,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5182022566164928,
+      "novelty_seeking": 0.5118397110275231,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:03.822645",
+    "utilities": {
+      "generate": 0.03743520379066467,
+      "explore": 0.051188014447689056,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.37000000000000005,
+      "forget": 0.1374351978302002
+    },
+    "regret": 0.0,
+    "noise_effect": -0.01886882293275116,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 99,
+    "action": "refine",
+    "score": 0.4632168914204358,
+    "novelty": 0.0006676316261291504,
+    "energy": 17.0,
+    "attention": 85.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.026602128612446874,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5184358521493818,
+      "novelty_seeking": 0.51198833934035,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:04.288646",
+    "utilities": {
+      "generate": 0.34643518924713135,
+      "explore": 0.025611717253923416,
+      "refine": 0.31500000000000006,
+      "recall": 0.0,
+      "combine": 0.354,
+      "forget": 0.1374351978302002
+    },
+    "regret": 0.0,
+    "noise_effect": 0.024187976061931016,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 100,
+    "action": "generate",
+    "score": 0.4638193224533647,
+    "novelty": 8.302927017211914e-05,
+    "energy": 8.0,
+    "attention": 78.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.027119609250202792,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5186658448324845,
+      "novelty_seeking": 0.5121337759423475,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:04.769785",
+    "utilities": {
+      "generate": 0.03954043984413147,
+      "explore": 0.05225222557783127,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.139540433883667
+    },
+    "regret": 0.0,
+    "noise_effect": 0.13082048296928406,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 101,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 4.0,
+    "attention": 76.0,
+    "fatigue": 8.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.027119609250202792,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5188953775302209,
+      "novelty_seeking": 0.5122789216711411,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:05.242774",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0508481003344059,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.13649502396583557
+    },
+    "regret": 0.0,
+    "noise_effect": -0.04795543849468231,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 102,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 17.0,
+    "attention": 94.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.027119609250202792,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5191239192631603,
+      "novelty_seeking": 0.512423286124414,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:05.673726",
+    "utilities": {
+      "rest": 0.4266666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": 0.026946665710016637,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 103,
+    "action": "explore",
+    "score": 0.44367700896519335,
+    "novelty": 2.1696090698242188e-05,
+    "energy": 1.0,
+    "attention": 75.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0429871670220503,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5193471225867441,
+      "novelty_seeking": 0.5125628560094976,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:06.100100",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.05093712359666824,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.08654037117958069
+    },
+    "regret": 0.0,
+    "noise_effect": 0.09532081335783005,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -16,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 104,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 84.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0429871670220503,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5195698795036807,
+      "novelty_seeking": 0.512702146754811,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:06.567124",
+    "utilities": {
+      "rest": 0.4366666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": 0.16135800812012785,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 105,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 6.0,
+    "attention": 83.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0429871670220503,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5197914647525669,
+      "novelty_seeking": 0.5128404886224338,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:07.005783",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 106,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 19.0,
+    "attention": 100.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0429871670220503,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5200126068309553,
+      "novelty_seeking": 0.5129785538063214,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:07.350030",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.003294817404821515,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.36999999999999994,
+      "forget": 0.09216180443763733
+    },
+    "regret": 0.0,
+    "noise_effect": -0.14794225398498403,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": 13,
+      "attention": 17,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 107,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 17.0,
+    "attention": 99.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0429871670220503,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5202333066251869,
+      "novelty_seeking": 0.5131163428598412,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:07.755109",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0033229393884539604,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.09216180443763733
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1463136754598788,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 108,
+    "action": "explore",
+    "score": 0.509550377740521,
+    "novelty": 8.106231689453125e-06,
+    "energy": 1.0,
+    "attention": 80.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.016239926232952673,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5204631028111727,
+      "novelty_seeking": 0.5132626604503395,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:08.201154",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0033510131761431694,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.09216180443763733
+    },
+    "regret": 0.0,
+    "noise_effect": 0.24713020026683807,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -16,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 109,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 89.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.016239926232952673,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5206982980804307,
+      "novelty_seeking": 0.5134140934139437,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:08.667288",
+    "utilities": {
+      "rest": 0.42
+    },
+    "regret": 0.0,
+    "noise_effect": -0.009030960683477918,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 110,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 21.0,
+    "attention": 100.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.016239926232952673,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5209345939131095,
+      "novelty_seeking": 0.5135666736229678,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:09.070490",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.3433333333333333,
+      "forget": 0.07717204093933105
+    },
+    "regret": 0.0,
+    "noise_effect": -0.013450858155516998,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": 13,
+      "attention": 11,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 111,
+    "action": "refine",
+    "score": 0.45946840675358347,
+    "novelty": 5.984306335449219e-05,
+    "energy": 14.0,
+    "attention": 89.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.017948645038561306,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5211669044160415,
+      "novelty_seeking": 0.5137157061441142,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:09.528468",
+    "utilities": {
+      "generate": 0.30600000000000005,
+      "explore": 0.0,
+      "refine": 0.312,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.07717204093933105
+    },
+    "regret": 0.0,
+    "noise_effect": 0.11527770439057244,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 112,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 12.0,
+    "attention": 88.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.017948645038561306,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5213987502979678,
+      "novelty_seeking": 0.5138644406002183,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:10.022283",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 113,
+    "action": "explore",
+    "score": 0.44667716284074077,
+    "novelty": 0.00017893314361572266,
+    "energy": 1.0,
+    "attention": 69.0,
+    "fatigue": 11.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.03683005313597432,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5216284689804878,
+      "novelty_seeking": 0.514011342041894,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:10.420887",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.07830122113227844
+    },
+    "regret": 0.0,
+    "noise_effect": 0.13956412537507148,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -11,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 114,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 87.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.03683005313597432,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5218577282256427,
+      "novelty_seeking": 0.5141579496806864,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:10.886829",
+    "utilities": {
+      "rest": 0.47000000000000003
+    },
+    "regret": 0.0,
+    "noise_effect": 0.13214361527266488,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -11,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 115,
+    "action": "explore",
+    "score": 0.41279658493420424,
+    "novelty": 6.139278411865234e-05,
+    "energy": 1.0,
+    "attention": 68.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.07350415173152147,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5220789713230016,
+      "novelty_seeking": 0.5142972878309959,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:11.314659",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.08327129483222961
+    },
+    "regret": 0.0,
+    "noise_effect": 0.10924551502356256,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -13,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 116,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 77.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.07350415173152147,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5223020708506256,
+      "novelty_seeking": 0.514438469381737,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:11.783072",
+    "utilities": {
+      "rest": 0.46
+    },
+    "regret": 0.0,
+    "noise_effect": 0.23538870677313378,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 117,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 6.0,
+    "attention": 76.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.07350415173152147,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.522529344316033,
+      "novelty_seeking": 0.5145836333110738,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:12.199265",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.08170056343078613
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1216178188372719,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 118,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 19.0,
+    "attention": 94.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.07350415173152147,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5227561632345097,
+      "novelty_seeking": 0.514728506912552,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:12.554939",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.3933333333333333,
+      "forget": 0.08170056343078613
+    },
+    "regret": 0.0,
+    "noise_effect": 0.013484714272080922,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 119,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 15.0,
+    "attention": 92.0,
+    "fatigue": 1.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.07350415173152147,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5229825285151494,
+      "novelty_seeking": 0.5148730907668272,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:12.992899",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.08170056343078613
+    },
+    "regret": 0.0,
+    "noise_effect": 0.14691917598247528,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 120,
+    "action": "refine",
+    "score": 0.4124676904171547,
+    "novelty": 5.036592483520508e-05,
+    "energy": 8.0,
+    "attention": 81.0,
+    "fatigue": 5.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.07126375823320541,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5232008549317305,
+      "novelty_seeking": 0.5150103828686272,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:13.441448",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.031934499740600586
+    },
+    "regret": 0.0,
+    "noise_effect": 0.07931093484040742,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 121,
+    "action": "refine",
+    "score": 0.4183327384417362,
+    "novelty": 7.545948028564453e-05,
+    "energy": 1.0,
+    "attention": 70.0,
+    "fatigue": 9.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.06482486649104885,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5234082633705461,
+      "novelty_seeking": 0.5151377253170553,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:13.927331",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.03413200378417969
+    },
+    "regret": 0.0,
+    "noise_effect": -0.026362361415735704,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 122,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 88.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.06482486649104885,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5236152569924841,
+      "novelty_seeking": 0.5152648130805865,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:14.355770",
+    "utilities": {
+      "rest": 0.46
+    },
+    "regret": 0.0,
+    "noise_effect": 0.05589795055231711,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -9,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 123,
+    "action": "combine",
+    "score": 0.3806527217585637,
+    "novelty": 0.00022137165069580078,
+    "energy": 1.0,
+    "attention": 74.0,
+    "fatigue": 5.0,
+    "failure_burden": 12.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.10597753918580277,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5238114931963973,
+      "novelty_seeking": 0.5153820988863314,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:14.782845",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.03447622060775757
+    },
+    "regret": 0.0,
+    "noise_effect": 0.14081829019877753,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": -13,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 12
+    }
+  },
+  {
+    "cycle": 124,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 83.0,
+    "fatigue": 0.0,
+    "failure_burden": 12.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.10597753918580277,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5240073369279027,
+      "novelty_seeking": 0.5154991501204647,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:15.249733",
+    "utilities": {
+      "rest": 0.43333333333333335
+    },
+    "regret": 0.0,
+    "noise_effect": 0.06756498654029497,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 125,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 4.0,
+    "attention": 81.0,
+    "fatigue": 1.0,
+    "failure_burden": 12.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.10597753918580277,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5242059429415112,
+      "novelty_seeking": 0.5156188786086524,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:15.662951",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.029163002967834473
+    },
+    "regret": 0.0,
+    "noise_effect": 0.14698399603366852,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 126,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 17.0,
+    "attention": 99.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.10597753918580277,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5244064548274577,
+      "novelty_seeking": 0.5157404935638932,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:16.034324",
+    "utilities": {
+      "rest": 0.38666666666666666
+    },
+    "regret": 0.0,
+    "noise_effect": -0.2942695133982605,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -1,
+      "failure_burden": -12
+    }
+  },
+  {
+    "cycle": 127,
+    "action": "generate",
+    "score": 0.46823036678718843,
+    "novelty": 0.00017845630645751953,
+    "energy": 8.0,
+    "attention": 92.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.01304587713790617,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5246038123214206,
+      "novelty_seeking": 0.5158593237185664,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:16.482284",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 128,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 6.0,
+    "attention": 91.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.01304587713790617,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5248007751003956,
+      "novelty_seeking": 0.5159779162129302,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:16.938494",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.15103658635534914,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 129,
+    "action": "generate",
+    "score": 0.3854054959319303,
+    "novelty": 0.00028014183044433594,
+    "energy": 1.0,
+    "attention": 84.0,
+    "fatigue": 6.0,
+    "failure_burden": 12.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0947491375901034,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5249906002995369,
+      "novelty_seeking": 0.5160900466106663,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:17.422591",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.2590494063802594,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -5,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 12
+    }
+  },
+  {
+    "cycle": 130,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 100.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0947491375901034,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5251831815070006,
+      "novelty_seeking": 0.5162048472018106,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:17.888405",
+    "utilities": {
+      "rest": 0.4033333333333333
+    },
+    "regret": 0.0,
+    "noise_effect": 0.13049660504921912,
+    "state_delta": {
+      "energy": 13,
+      "attention": 16,
+      "fatigue": -6,
+      "failure_burden": -12
+    }
+  },
+  {
+    "cycle": 131,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 12.0,
+    "attention": 99.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0947491375901034,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5253753775520494,
+      "novelty_seeking": 0.5163194181917726,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:18.303042",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.16217765979338397,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 132,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 10.0,
+    "attention": 98.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0947491375901034,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5255671892050081,
+      "novelty_seeking": 0.5164337600397547,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:18.688194",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.18791511718279028,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 133,
+    "action": "explore",
+    "score": 0.5179748863025144,
+    "novelty": 0.00042748451232910156,
+    "energy": 1.0,
+    "attention": 79.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05426892936663186,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5257650563840301,
+      "novelty_seeking": 0.5165538170342279,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:19.148808",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.09751266660934241,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -9,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 134,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 97.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05426892936663186,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5259625278286941,
+      "novelty_seeking": 0.5166736339147121,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:19.647010",
+    "utilities": {
+      "rest": 0.42333333333333334
+    },
+    "regret": 0.0,
+    "noise_effect": -0.04542329142703028,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 135,
+    "action": "combine",
+    "score": 0.5546949787768354,
+    "novelty": 0.00011289119720458984,
+    "energy": 1.0,
+    "attention": 83.0,
+    "fatigue": 5.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08432453710164922,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5261643445619628,
+      "novelty_seeking": 0.5167975867597375,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:20.071555",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.04856991699853288,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -13,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 136,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 92.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08432453710164922,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.526365757661765,
+      "novelty_seeking": 0.5169212916990729,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:20.538294",
+    "utilities": {
+      "rest": 0.4033333333333333
+    },
+    "regret": 0.0,
+    "noise_effect": -0.018649921233702904,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 137,
+    "action": "generate",
+    "score": 0.5733942693485653,
+    "novelty": 0.001259922981262207,
+    "energy": 1.0,
+    "attention": 85.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.1053614324345028,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5265731287720443,
+      "novelty_seeking": 0.5170506207700774,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:20.952369",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.13690569140502307,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -7,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 138,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 100.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.1053614324345028,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.526779257440699,
+      "novelty_seeking": 0.5171789271527206,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:21.417959",
+    "utilities": {
+      "rest": 0.38999999999999996
+    },
+    "regret": 0.0,
+    "noise_effect": -0.03594887787460893,
+    "state_delta": {
+      "energy": 13,
+      "attention": 15,
+      "fatigue": -3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 139,
+    "action": "generate",
+    "score": 0.538738631648173,
+    "novelty": 0.00029164552688598633,
+    "energy": 5.0,
+    "attention": 93.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.06108035985862226,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5269883312000925,
+      "novelty_seeking": 0.5173100760131305,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:21.844209",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.021845562987467555,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 140,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 12.0,
+    "attention": 100.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.06108035985862226,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5271969868119671,
+      "novelty_seeking": 0.5174409625758195,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:22.311409",
+    "utilities": {
+      "rest": 0.35000000000000003
+    },
+    "regret": 0.0,
+    "noise_effect": 0.07343915585609362,
+    "state_delta": {
+      "energy": 7,
+      "attention": 7,
+      "fatigue": -3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 141,
+    "action": "explore",
+    "score": 0.4553353982031539,
+    "novelty": 7.510185241699219e-06,
+    "energy": 1.0,
+    "attention": 81.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.024103294128160202,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5274048669185437,
+      "novelty_seeking": 0.5175712567246992,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:22.725320",
+    "state_delta": {
+      "energy": -11,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 142,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 99.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.024103294128160202,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5276123312649071,
+      "novelty_seeking": 0.517701290285281,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:23.141084",
+    "utilities": {
+      "rest": 0.4166666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": -0.0863954851402704,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 143,
+    "action": "refine",
+    "score": 0.49440502778151213,
+    "novelty": 0.00022125244140625,
+    "energy": 7.0,
+    "attention": 88.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.016783889685656417,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5278235170975394,
+      "novelty_seeking": 0.5178348820079369,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:23.532044",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.04076548462805776,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 144,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 3.0,
+    "attention": 86.0,
+    "fatigue": 5.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.016783889685656417,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5280342805585063,
+      "novelty_seeking": 0.5179682065471476,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:24.003633",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1554324296194426,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 145,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 10.0,
+    "attention": 95.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.016783889685656417,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.528252180121857,
+      "novelty_seeking": 0.5181082407104851,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:24.436928",
+    "utilities": {
+      "rest": 0.38666666666666666
+    },
+    "regret": 0.0,
+    "noise_effect": -0.23355237034454768,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 146,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 23.0,
+    "attention": 100.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.016783889685656417,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5284696438860811,
+      "novelty_seeking": 0.5182479948054959,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:24.851635",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.3166666666666667,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.13500162993550413,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": 13,
+      "attention": 5,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 147,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 19.0,
+    "attention": 98.0,
+    "fatigue": 1.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.016783889685656417,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5286866727227767,
+      "novelty_seeking": 0.5183874693923167,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:25.302154",
+    "utilities": {
+      "generate": 0.3,
+      "explore": 0.0,
+      "refine": 0.30600000000000005,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.30293788828067364,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 148,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 17.0,
+    "attention": 97.0,
+    "fatigue": 1.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.016783889685656417,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.528903267501799,
+      "novelty_seeking": 0.5185266650299639,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:25.716341",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.2033108898761612,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 149,
+    "action": "generate",
+    "score": 0.516271110142978,
+    "novelty": 0.00025391578674316406,
+    "energy": 8.0,
+    "attention": 90.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.042352254952700896,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5291208392541422,
+      "novelty_seeking": 0.5186668839651473,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:26.098985",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 150,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 21.0,
+    "attention": 100.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.042352254952700896,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.529345561996478,
+      "novelty_seeking": 0.5188138250472268,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:26.521375",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.35333333333333333,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": -0.054866587360889896,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": 13,
+      "attention": 10,
+      "fatigue": -4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 151,
+    "action": "generate",
+    "score": 0.5546568557771843,
+    "novelty": 4.655122756958008e-05,
+    "energy": 12.0,
+    "attention": 93.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08095797152845075,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5295816500501648,
+      "novelty_seeking": 0.518971378176529,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:26.961035",
+    "utilities": {
+      "generate": 0.30600000000000005,
+      "explore": 0.0,
+      "refine": 0.312,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.10511291543068235,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 152,
+    "action": "explore",
+    "score": 0.5213811481512796,
+    "novelty": 0.00033348798751831055,
+    "energy": 1.0,
+    "attention": 74.0,
+    "fatigue": 10.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.04281059747111904,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.529819118960584,
+      "novelty_seeking": 0.5191303266914248,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:27.471409",
+    "state_delta": {
+      "energy": -11,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 153,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 83.0,
+    "fatigue": 2.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.04281059747111904,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5300664563639632,
+      "novelty_seeking": 0.5192985050915501,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:27.877002",
+    "utilities": {
+      "rest": 0.45
+    },
+    "regret": 0.0,
+    "noise_effect": 0.0836871030144049,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 154,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 21.0,
+    "attention": 100.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.04281059747111904,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5303132990925358,
+      "novelty_seeking": 0.519466347134875,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:28.293208",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.37000000000000005,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": -0.11829791249264038,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": 13,
+      "attention": 17,
+      "fatigue": -2,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 155,
+    "action": "refine",
+    "score": 0.5652440240380382,
+    "novelty": 0.0002720355987548828,
+    "energy": 14.0,
+    "attention": 89.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08943447971316332,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5305653026177345,
+      "novelty_seeking": 0.5196390730160364,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:28.754267",
+    "utilities": {
+      "generate": 0.30600000000000005,
+      "explore": 0.0,
+      "refine": 0.312,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.12518722319760228,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 156,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 12.0,
+    "attention": 88.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08943447971316332,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5308168021358828,
+      "novelty_seeking": 0.5198114534454354,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:29.227277",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.11186970914661772,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 157,
+    "action": "refine",
+    "score": 0.5517210083829502,
+    "novelty": 0.00033402442932128906,
+    "energy": 5.0,
+    "attention": 77.0,
+    "fatigue": 8.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.06807258900276225,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5310750345105997,
+      "novelty_seeking": 0.5199901683653034,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:29.685224",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.3117867104380086,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 158,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 18.0,
+    "attention": 95.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.06807258900276225,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5313327504205672,
+      "novelty_seeking": 0.5201685258553316,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:30.152887",
+    "utilities": {
+      "rest": 0.42
+    },
+    "regret": 0.0,
+    "noise_effect": -0.17672025848461417,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 159,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 93.0,
+    "fatigue": 1.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.06807258900276225,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5315998824224006,
+      "novelty_seeking": 0.5203556941907052,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:30.588934",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.08179635088829326,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 160,
+    "action": "explore",
+    "score": 0.5316593837244927,
+    "novelty": 0.0003898739814758301,
+    "energy": 1.0,
+    "attention": 74.0,
+    "fatigue": 8.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.04222400898770684,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5318692239734866,
+      "novelty_seeking": 0.5205450209401059,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:31.051265",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.21766495099332267,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": -13,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 161,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 83.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.04222400898770684,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5321380268414704,
+      "novelty_seeking": 0.5207339690360079,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:31.551004",
+    "utilities": {
+      "rest": 0.44333333333333336
+    },
+    "regret": 0.0,
+    "noise_effect": -0.1857967676028245,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 162,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 21.0,
+    "attention": 100.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.04222400898770684,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5324062921037181,
+      "novelty_seeking": 0.5209225392357181,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:31.966931",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.36333333333333334,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": -0.10343128637904614,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": 13,
+      "attention": 17,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 163,
+    "action": "refine",
+    "score": 0.5037057049575255,
+    "novelty": 0.0016573071479797363,
+    "energy": 14.0,
+    "attention": 89.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.02393248155740957,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5326727841730582,
+      "novelty_seeking": 0.5211095907605212,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:32.401146",
+    "utilities": {
+      "generate": 0.30600000000000005,
+      "explore": 0.0,
+      "refine": 0.312,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.01247729460476471,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 164,
+    "action": "explore",
+    "score": 0.5367062815176413,
+    "novelty": 1.233816146850586e-05,
+    "energy": 1.0,
+    "attention": 70.0,
+    "fatigue": 11.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05413438162674167,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5329419244693244,
+      "novelty_seeking": 0.5212992046847962,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:32.878536",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.022929192554294018,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -13,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 165,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 79.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05413438162674167,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5332057862535041,
+      "novelty_seeking": 0.5214840637829204,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:33.343139",
+    "utilities": {
+      "rest": 0.46666666666666673
+    },
+    "regret": 0.0,
+    "noise_effect": -0.09784568969565904,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 166,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 21.0,
+    "attention": 97.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05413438162674167,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5334691203141155,
+      "novelty_seeking": 0.5216685531628484,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:33.755760",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.3866666666666667,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": -0.12562555052643565,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 167,
+    "action": "refine",
+    "score": 0.5533333993855651,
+    "novelty": 0.00011032819747924805,
+    "energy": 14.0,
+    "attention": 86.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.08025413522159419,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5337301890978755,
+      "novelty_seeking": 0.5218510686944196,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:34.212781",
+    "utilities": {
+      "generate": 0.31500000000000006,
+      "explore": 0.0,
+      "refine": 0.321,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.0060023893568634246,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 168,
+    "action": "refine",
+    "score": 0.5567892087062007,
+    "novelty": 2.1159648895263672e-05,
+    "energy": 7.0,
+    "attention": 75.0,
+    "fatigue": 8.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.07693763500052753,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5339956574754892,
+      "novelty_seeking": 0.522037762331624,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:34.692775",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.0601257480697121,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 169,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 3.0,
+    "attention": 73.0,
+    "fatigue": 9.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.07693763500052753,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5342572375682715,
+      "novelty_seeking": 0.5222209834910223,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:35.164370",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.029174273090153042,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 170,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 16.0,
+    "attention": 91.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.07693763500052753,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5345182945008682,
+      "novelty_seeking": 0.5224038382081018,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:35.596619",
+    "utilities": {
+      "rest": 0.44333333333333336
+    },
+    "regret": 0.0,
+    "noise_effect": 0.09147628068015823,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -9,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 171,
+    "action": "explore",
+    "score": 0.4538850958859277,
+    "novelty": 0.003159642219543457,
+    "energy": 1.0,
+    "attention": 72.0,
+    "fatigue": 7.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.027894151636426445,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5347787036267322,
+      "novelty_seeking": 0.5225862111915617,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:36.018689",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.12095917645448728,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -15,
+      "attention": -19,
+      "fatigue": 7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 172,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 81.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.027894151636426445,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5350385919343446,
+      "novelty_seeking": 0.5227682194290546,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:36.486237",
+    "utilities": {
+      "rest": 0.4466666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": 0.03708539158928842,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -7,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 173,
+    "action": "refine",
+    "score": 0.4474481977791558,
+    "novelty": 7.444620132446289e-05,
+    "energy": 1.0,
+    "attention": 70.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.041232999387287084,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5352938908734081,
+      "novelty_seeking": 0.5229461071036724,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:36.909126",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.18459863124309095,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 174,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 88.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.041232999387287084,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5355486792145935,
+      "novelty_seeking": 0.523123639002941,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:37.374208",
+    "utilities": {
+      "rest": 0.44333333333333336
+    },
+    "regret": 0.0,
+    "noise_effect": -0.1396812589279519,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 175,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 12.0,
+    "attention": 87.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.041232999387287084,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5358029579790965,
+      "novelty_seeking": 0.523300815838411,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:37.790176",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1651912987121872,
+    "runner_up": "combine",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 176,
+    "action": "generate",
+    "score": 0.48167290839046606,
+    "novelty": 0.0004202723503112793,
+    "energy": 3.0,
+    "attention": 80.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0005651667961514839,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.536055139838131,
+      "novelty_seeking": 0.5234761721528813,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:38.154169",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1351347857077449,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 177,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 10.0,
+    "attention": 89.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0005651667961514839,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5363068173334475,
+      "novelty_seeking": 0.5236511777547227,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:38.587405",
+    "utilities": {
+      "rest": 0.39999999999999997
+    },
+    "regret": 0.0,
+    "noise_effect": 0.002991068848654188,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 178,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 23.0,
+    "attention": 100.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.0005651667961514839,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5365579914737734,
+      "novelty_seeking": 0.5238258333453604,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:39.002054",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.33666666666666667,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.03516464461727237,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": 13,
+      "attention": 11,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 179,
+    "action": "refine",
+    "score": 0.5176981230095299,
+    "novelty": 0.00013619661331176758,
+    "energy": 16.0,
+    "attention": 89.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.036790921242562113,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.536808786940267,
+      "novelty_seeking": 0.5240002537858461,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:39.459020",
+    "utilities": {
+      "generate": 0.3,
+      "explore": 0.0,
+      "refine": 0.30600000000000005,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.1522350003733806,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 180,
+    "action": "refine",
+    "score": 0.5268793953563479,
+    "novelty": 2.9802322387695312e-06,
+    "energy": 9.0,
+    "attention": 78.0,
+    "fatigue": 8.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.04960298072355063,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5370614103634253,
+      "novelty_seeking": 0.5241764757370795,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:39.939260",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.23731907094138396,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 181,
+    "action": "combine",
+    "score": 0.5021988647837856,
+    "novelty": 0.0001913309097290039,
+    "energy": 1.0,
+    "attention": 64.0,
+    "fatigue": 13.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.02345453676178244,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5373089821805177,
+      "novelty_seeking": 0.5243481486051308,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:40.420187",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.19503990803695206,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -8,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 182,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 82.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.02345453676178244,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5375542058211362,
+      "novelty_seeking": 0.524517767635594,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:40.886943",
+    "utilities": {
+      "rest": 0.49333333333333335
+    },
+    "regret": 0.0,
+    "noise_effect": -0.011593663129032372,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -13,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 183,
+    "action": "recall",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 12.0,
+    "attention": 81.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.02345453676178244,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5377989390144735,
+      "novelty_seeking": 0.5246870474279962,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:41.302154",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.0718920860944291,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -2,
+      "attention": -1,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 184,
+    "action": "combine",
+    "score": 0.5345046630569074,
+    "novelty": 0.0001296401023864746,
+    "energy": 1.0,
+    "attention": 67.0,
+    "fatigue": 5.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05182687551456422,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5380461731455557,
+      "novelty_seeking": 0.5248587490338582,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:41.684253",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.05753626383318645,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -11,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 185,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 76.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05182687551456422,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5382872583262924,
+      "novelty_seeking": 0.5250248877145854,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:42.147347",
+    "utilities": {
+      "rest": 0.4566666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": 0.10407696259851812,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 186,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 21.0,
+    "attention": 94.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05182687551456422,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5385278613366676,
+      "novelty_seeking": 0.5251906941179512,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:42.560593",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.3866666666666667,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.030649364414405356,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 187,
+    "action": "generate",
+    "score": 0.5569833122463422,
+    "novelty": 4.26173210144043e-05,
+    "energy": 12.0,
+    "attention": 87.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.06590439903451972,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.538768439207357,
+      "novelty_seeking": 0.5253565898928193,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:43.017562",
+    "utilities": {
+      "generate": 0.32400000000000007,
+      "explore": 0.0,
+      "refine": 0.33,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": -0.13584001061426149,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -9,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 188,
+    "action": "combine",
+    "score": 0.5388515824002149,
+    "novelty": 5.6684017181396484e-05,
+    "energy": 1.0,
+    "attention": 73.0,
+    "fatigue": 8.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05524223386467719,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5390119030594462,
+      "novelty_seeking": 0.5255252620027296,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:43.497070",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.2688356130944999,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -11,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 189,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 82.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05524223386467719,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5392548799838314,
+      "novelty_seeking": 0.5256935967684202,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:43.964783",
+    "utilities": {
+      "rest": 0.4466666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": -0.12322220898122077,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 190,
+    "action": "generate",
+    "score": 0.49205460626522773,
+    "novelty": 4.553794860839844e-05,
+    "energy": 1.0,
+    "attention": 75.0,
+    "fatigue": 3.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.005533928460280835,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5394939385403212,
+      "novelty_seeking": 0.5258584264823827,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:44.377061",
+    "state_delta": {
+      "energy": -7,
+      "attention": -7,
+      "fatigue": 3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 191,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 14.0,
+    "attention": 93.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.005533928460280835,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5397325189796981,
+      "novelty_seeking": 0.5260229265369172,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:44.796986",
+    "utilities": {
+      "rest": 0.42333333333333334
+    },
+    "regret": 0.0,
+    "noise_effect": 0.13370978446529536,
+    "state_delta": {
+      "energy": 13,
+      "attention": 18,
+      "fatigue": -3,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 192,
+    "action": "forget",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 10.0,
+    "attention": 91.0,
+    "fatigue": 1.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.005533928460280835,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5399706222581963,
+      "novelty_seeking": 0.5261870975913426,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:45.166679",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.19841073188633937,
+    "runner_up": "refine",
+    "state_delta": {
+      "energy": -4,
+      "attention": -2,
+      "fatigue": 1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 193,
+    "action": "refine",
+    "score": 0.5320293029273112,
+    "novelty": 2.9802322387695312e-05,
+    "energy": 3.0,
+    "attention": 80.0,
+    "fatigue": 5.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05253333053236797,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5402107040419615,
+      "novelty_seeking": 0.5263532061914968,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:45.613240",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.2177203387029538,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 194,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 10.0,
+    "attention": 89.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05253333053236797,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5404471244510943,
+      "novelty_seeking": 0.5265160460719293,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:46.111424",
+    "utilities": {
+      "rest": 0.4066666666666667
+    },
+    "regret": 0.0,
+    "noise_effect": 0.12338110881240522,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 195,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 23.0,
+    "attention": 100.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.05253333053236797,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5406830720194089,
+      "novelty_seeking": 0.5266785602726008,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:46.513678",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.33666666666666667,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.013989979732364322,
+    "runner_up": "forget",
+    "state_delta": {
+      "energy": 13,
+      "attention": 11,
+      "fatigue": 0,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 196,
+    "action": "refine",
+    "score": 0.5276394378458793,
+    "novelty": 2.9802322387695312e-06,
+    "energy": 16.0,
+    "attention": 89.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.040173966816597684,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5409209431105334,
+      "novelty_seeking": 0.5268429605998988,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:46.951069",
+    "utilities": {
+      "generate": 0.3,
+      "explore": 0.0,
+      "refine": 0.30600000000000005,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": -0.023135811585789645,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 197,
+    "action": "combine",
+    "score": 0.5278087935147449,
+    "novelty": 9.208917617797852e-05,
+    "energy": 1.0,
+    "attention": 75.0,
+    "fatigue": 9.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.04704959008075438,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5411561263269669,
+      "novelty_seeking": 0.5270049901580725,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:47.430485",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.19018621452955575,
+    "runner_up": "explore",
+    "state_delta": {
+      "energy": -15,
+      "attention": -14,
+      "fatigue": 5,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 198,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 8.0,
+    "attention": 84.0,
+    "fatigue": 1.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.04704959008075438,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5413859174455463,
+      "novelty_seeking": 0.5271621525204333,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:47.898130",
+    "utilities": {
+      "rest": 0.44333333333333336
+    },
+    "regret": 0.0,
+    "noise_effect": -0.13294668946613059,
+    "state_delta": {
+      "energy": 7,
+      "attention": 9,
+      "fatigue": -8,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 199,
+    "action": "rest",
+    "score": 0.5,
+    "novelty": 0.5,
+    "energy": 21.0,
+    "attention": 100.0,
+    "fatigue": 0.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.04704959008075438,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5416152489818886,
+      "novelty_seeking": 0.5273190005580694,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:48.312192",
+    "utilities": {
+      "generate": 0.0,
+      "explore": 0.0,
+      "refine": 0.0,
+      "recall": 0.0,
+      "combine": 0.0,
+      "rest": 0.36333333333333334,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": -0.15532366084470262,
+    "runner_up": "recall",
+    "state_delta": {
+      "energy": 13,
+      "attention": 16,
+      "fatigue": -1,
+      "failure_burden": 0
+    }
+  },
+  {
+    "cycle": 200,
+    "action": "refine",
+    "score": 0.5445133740389003,
+    "novelty": 5.692243576049805e-05,
+    "energy": 14.0,
+    "attention": 89.0,
+    "fatigue": 4.0,
+    "failure_burden": 0.0,
+    "world_model_confidence": 0.9,
+    "prediction_error": 0.060944467254842705,
+    "trauma_blocked": [],
+    "identity": {
+      "risk_tolerance": 0.5418479796809083,
+      "novelty_seeking": 0.5274790959695532,
+      "symmetry_preference": 0.5
+    },
+    "timestamp": "2026-05-04T00:39:48.771346",
+    "utilities": {
+      "generate": 0.30600000000000005,
+      "explore": 0.0,
+      "refine": 0.312,
+      "recall": 0.0,
+      "combine": 0.0,
+      "forget": 0.0
+    },
+    "regret": 0.0,
+    "noise_effect": 0.07495828773318397,
+    "runner_up": "generate",
+    "state_delta": {
+      "energy": -7,
+      "attention": -11,
+      "fatigue": 4,
+      "failure_burden": 0
+    }
+  }
+]

@@ -1,0 +1,30 @@
+{
+    "reward": {
+        "avg_reward": 0.0,
+        "entropy": -0.3,
+        "autocorrelation": 0.4,
+        "reversal_rate": -0.2,
+        "persistence_duration": 0.3
+    },
+    "curiosity": {
+        "avg_reward": 0.0,
+        "entropy": 0.2,
+        "autocorrelation": 0.1,
+        "reversal_rate": 0.1,
+        "persistence_duration": -0.1
+    },
+    "persistence": {
+        "avg_reward": -0.1,
+        "entropy": -0.2,
+        "autocorrelation": 0.5,
+        "reversal_rate": -0.4,
+        "persistence_duration": 0.6
+    },
+    "noise": {
+        "avg_reward": -0.2,
+        "entropy": 0.4,
+        "autocorrelation": -0.3,
+        "reversal_rate": 0.3,
+        "persistence_duration": -0.3
+    }
+}

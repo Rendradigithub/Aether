@@ -1,0 +1,24 @@
+╔══════════════════════════════════════════════════════════╗
+║  AETHER ART ENGINE — karya #2                ║
+║  tema    : palindrome_mirror                             ║
+║  trigger : routine      state : momentum                ║
+║  skill   : -            cycle : 15                      ║
+║  mastered: 16           waktu : 20260503_103856         ║
+╚══════════════════════════════════════════════════════════╝
+
+  PALINDROME MIRROR
+
+  AETHER      ↔  REHTEA       
+  LEVEL       ↔  LEVEL       ✓
+  RADAR       ↔  RADAR       ✓
+  CIVIC       ↔  CIVIC       ✓
+  NOON        ↔  NOON        ✓
+
+  ╔═══════════════════╗
+  ║  A E T H E R      ║
+  ║    R E H T E A    ║
+  ║      terbalik      ║
+  ║    tetap dicoba    ║
+  ╚═══════════════════╝
+
+  Beberapa hal indah saat dibaca dua arah.

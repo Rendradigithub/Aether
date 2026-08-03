@@ -1,0 +1,152 @@
+C:\Users\Admin\Documents\FILE RENDRA\AI>python aether.0.9.7.py --demo
+
+[Cycle 1] Action: refine | Score: 0.509 | Novelty: 1.000
+Resources: E=93 A=89 F=4 B=0
+World model confidence: 0.50 | Prediction error: 0.485
+Utilities (before noise): combine:0.76, explore:0.68, refine:0.63, generate:0.62
+Regret: 0.137 | Noise effect: +0.418
+Runner-up: combine (util before noise: 0.76)
+Delta: E=-7, A=-11, F=+4, B=+0
+█░▒█      ▓▒█ ░▓░ ▓   ░ █  ▓▓░     ██  ▓▒░     @█ ▒
+▓▓█ █ ░▒ ░0█  ▓▒         ▒    @▒    █ :0          ▒▒
+▒█▒█ ░ ▓   ░▓▓ ▓ o  ▒ █▒ █▓░ ▓ ░ ░  ▓██  █     ▓
+▓  ▓   ▒█   ░  █  ▓@ ░ ▓ ▒▓▓  ▓   O▒   @▓...
+
+[Cycle 2] Action: generate | Score: 0.498 | Novelty: 0.006
+Resources: E=84 A=82 F=7 B=0
+World model confidence: 0.50 | Prediction error: 0.474
+Utilities (before noise): combine:0.77, explore:0.69, generate:0.63, refine:0.58
+Regret: 0.143 | Noise effect: +0.037
+Runner-up: combine (util before noise: 0.77)
+Delta: E=-9, A=-7, F=+3, B=+0
+ O         █ ░  █░            █        ░█   ▒  ▓  ▒
+     ▓░█   █         █ ▒  ▓             ▓  ▓   ▒░
+  . ░     █  ░ ░      ▒ █ ▒▓    ▒
+   █ ░▓▓       ▒  ▒ ▓    ▒   ░  ▓█     █ ...
+
+[Cycle 3] Action: generate | Score: 0.545 | Novelty: 0.001
+Resources: E=75 A=75 F=10 B=0
+World model confidence: 0.50 | Prediction error: 0.522
+Utilities (before noise): combine:0.76, explore:0.68, generate:0.58, refine:0.57
+Regret: 0.187 | Noise effect: +0.125
+Runner-up: explore (util before noise: 0.68)
+Delta: E=-9, A=-7, F=+3, B=+0
+    ▒    ░.▓  ▓     █ █ █░▒   ▓   ▓  ▒ :▓▓ ░  ░█
+  █     █   :█░▓   o .▒▒░0     ▒ ▓▒0  ▒    █ . o ░
+        . ▒       O     ▒░ █ ▓ .          ▓   ▓▒ ▓▒▓
+  ▒..░ ▒▓   █░ █   @   ▒▒▒  █  █ █░   █▓ ...
+
+[Cycle 4] Action: explore | Score: 0.505 | Novelty: 0.000
+Resources: E=46 A=56 F=17 B=0
+World model confidence: 0.50 | Prediction error: 0.465
+Utilities (before noise): combine:0.78, explore:0.70, refine:0.59, generate:0.54
+Regret: 0.084 | Noise effect: +0.153
+Runner-up: combine (util before noise: 0.78)
+Delta: E=-29, A=-19, F=+7, B=+0
+ ░     ░██▓ ▒  ▒ ▒█.        ░oo     ░  O     ▓▓ █
+▓▓  ░   0.     █    o █ ░       0  ▓@  :▒ @  O o░
+ █::o ▓ o ▓░       ░   O   ░     ░@     ░   ▒     ▓O
+ O▒  . :    ▒ ░                  █ ▓     ...
+
+[Cycle 5] Action: combine | Score: 0.541 | Novelty: 0.004
+Resources: E=29 A=42 F=22 B=0
+World model confidence: 0.50 | Prediction error: 0.513
+Utilities (before noise): combine:0.87, explore:0.79, refine:0.65, generate:0.59
+Regret: 0.000 | Noise effect: -0.029
+Runner-up: explore (util before noise: 0.79)
+Delta: E=-17, A=-14, F=+5, B=+0
+.░ .                           ▓     0         0▓ @░
+▓   █     ▓0o 0    @   ▓ ░▒ ▒░  :   ▒         █O
+▒▒ :      ▓          : ▓ ░  :@.   ░   o.:
+   ▓      0   O        @       ▓      ▓ @...
+
+[Cycle 6] Action: combine | Score: 0.529 | Novelty: 0.000
+Resources: E=12 A=28 F=27 B=0
+World model confidence: 0.50 | Prediction error: 0.501
+Utilities (before noise): combine:0.93, refine:0.75, generate:0.70, rest:0.50
+Regret: 0.000 | Noise effect: +0.248
+Runner-up: generate (util before noise: 0.70)
+Delta: E=-17, A=-14, F=+5, B=+0
+▒      ▒   ▓  .  ▒    ▒:    ▒█   ▓  ░   ▓▓░    ▓  █▓
+ ▓ ▒      O     0    ░ ▒      ▒o@O ░O ▒ ▒ ▓ ░ █  ▓ █
+  ░▒  ░ ░  █  █   ░▒ █  ▓     ▒@    o. .  ░o    O ▓▒
+       :▓█   ▒ ██   ▓ ▒o░▓o   ▒     ▒    ...
+
+[Cycle 7] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=24 A=45 F=12 B=0
+World model confidence: 0.50 | Prediction error: 0.501
+Utilities (before noise): rest:0.62, combine:0.31, explore:0.28, recall:0.27
+Regret: 0.000 | Noise effect: +0.043
+Runner-up: refine (util before noise: 0.22)
+Delta: E=+12, A=+17, F=-15, B=+0
+
+[Cycle 8] Action: refine | Score: 0.574 | Novelty: 0.001
+Resources: E=17 A=34 F=16 B=0
+World model confidence: 0.50 | Prediction error: 0.546
+Utilities (before noise): combine:0.85, refine:0.73, generate:0.67, recall:0.27
+Regret: 0.126 | Noise effect: +0.001
+Runner-up: generate (util before noise: 0.67)
+Delta: E=-7, A=-11, F=+4, B=+0
+. ░  O░ ▓█ █▓    ▒  0█     o░░      █            O
+@            ░ ▓░     ░ ▓  ▓    .     ░     @0 █ ░
+  :      ░  0 ▓  ░    ░░ ▒O▒O  ░█  0▓▓  █
+ O    o░  ██.░  : O  ░@█  ▓   :░  @:█░▒  ...
+
+[Cycle 9] Action: generate | Score: 0.552 | Novelty: 0.000
+Resources: E=8 A=27 F=19 B=0
+World model confidence: 0.50 | Prediction error: 0.524
+Utilities (before noise): combine:0.31, explore:0.28, recall:0.28, forget:0.28
+Regret: 0.136 | Noise effect: +0.181
+Runner-up: refine (util before noise: 0.18)
+Delta: E=-9, A=-7, F=+3, B=+0
+o█   : ░ █      ▒      ░  █  ▒ ░ o  ░   ▒ ██ ▒     █
+ █░    .▓  o█▓   ▒ █:          ▒ █▓█░   ▒ ▓▒     ░░█
+   ▒ ▓:    : 0▓   ▒    ▓ ░ :  ▓░    ▒ █     ▒ ▓ ▓
+  ▒   ▓█ ▓      █▒    ▓▒    ▒   @▓▓ ░  █ ...
+
+[Override] chaotic_impulse -> generate
+
+[Cycle 10] Action: generate | Score: 0.484 | Novelty: 0.001
+Resources: E=1 A=20 F=22 B=0
+World model confidence: 0.50 | Prediction error: 0.456
+Delta: E=-7, A=-7, F=+3, B=+0
+ ▓  ░            o        o  OO. :    @█  █    ▒  O
+             ░  ░  ▓          o  ░   .     o  : :
+      :      .          ▓    ▓    ▓█    ▓0         ▒
+          O ░         o  ▓  ░        █ O ...
+
+[Cycle 11] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=14 A=38 F=7 B=0
+World model confidence: 0.50 | Prediction error: 0.456
+Delta: E=+13, A=+18, F=-15, B=+0
+[Recall] Similar to cycle 8 with sim=0.73
+
+[Cycle 12] Action: recall | Score: 0.500 | Novelty: 0.500
+Resources: E=12 A=37 F=7 B=0
+World model confidence: 0.50 | Prediction error: 0.456
+Utilities (before noise): combine:0.31, explore:0.28, recall:0.28, forget:0.28
+Regret: 0.036 | Noise effect: +0.168
+Runner-up: combine (util before noise: 0.31)
+Delta: E=-2, A=-1, F=+0, B=+0
+[Infeasible] operands could not be broadcast together with shapes (6,6) (36,6) (6,6)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1052, in step
+    self.world_model.update(current_param_vec, score)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 448, in update
+    self.W1 += HardConfig.WORLD_MODEL_UPDATE_RATE * np.outer(delta_h, v)
+ValueError: operands could not be broadcast together with shapes (6,6) (36,6) (6,6)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1252, in <module>
+    a.step()
+    ~~~~~~^^
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1088, in step
+    self._log_step(chosen_action, score, novelty, self.resources, None, decision_info)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1210, in _log_step
+    'state_delta': {k: float(v) for k,v in (state_delta or {}).items()},
+                       ~~~~~^^^
+TypeError: float() argument must be a string or a real number, not 'dict'

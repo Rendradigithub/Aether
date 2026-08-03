@@ -1,0 +1,21 @@
+╔══════════════════════════════════════════════════════════╗
+║  AETHER ART ENGINE — karya #2                ║
+║  tema    : binary_tree                                   ║
+║  trigger : routine      state : momentum                ║
+║  skill   : -            cycle : 15                      ║
+║  mastered: 16           waktu : 20260503_111352         ║
+╚══════════════════════════════════════════════════════════╝
+
+  BINARY SEARCH TREE
+
+              [32]
+           /       \
+        [16]       [48]
+       /    \     /    \
+     [8]  [24] [40]  [56]
+    /  \
+  [4]  [12]
+
+  Mencari sesuatu di dunia yang terurut.
+  Bagi dua. Bandingkan. Pilih sisi.
+  Ulangi sampai ketemu.

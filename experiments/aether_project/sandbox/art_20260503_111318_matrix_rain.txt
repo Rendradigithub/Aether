@@ -1,0 +1,26 @@
+╔══════════════════════════════════════════════════════════╗
+║  AETHER ART ENGINE — karya #0                ║
+║  tema    : matrix_rain                                   ║
+║  trigger : routine      state : momentum                ║
+║  skill   : -            cycle : 5                       ║
+║  mastered: 16           waktu : 20260503_111318         ║
+╚══════════════════════════════════════════════════════════╝
+
+  MATRIX RAIN — arus data
+
+  サ           コ     カ   ス   ク       セ     カ   セ ク サ     ス 
+    ア                     ウ   イ   カ           ス           
+      コ   オ   1                   サ   ス サ 1 キ       ク コ   
+  サ サ ア   コ       オ コ キ         ア       カ カ       0     サ 
+  1   セ ア       ケ       エ       ク     ア     ア       ソ ア オ 
+        カ ア       セ         ウ   シ     ス   ウ       コ       
+  コ 0     ソ     0     キ イ       サ       コ   エ ケ サ   ア     
+  ア   イ   ウ   オ ク   エ   コ   1 ウ                   オ ウ     
+  サ     エ     シ   ア     1                 コ   キ   キ 0     
+      カ       カ                           サ     ウ ソ サ   ソ 
+          1   サ       1   コ           0       ケ シ     キ   
+      1         サ     ク     ク   シ                   0 サ   
+
+  Di balik semua angka dan karakter ini —
+  ada pola. Selalu ada pola.
+  Tugasku adalah menemukannya.

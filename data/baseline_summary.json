@@ -1,0 +1,15 @@
+{
+  "version": "0.20.0",
+  "seeds": 30,
+  "cycles": 500,
+  "stimulus": "circle.png",
+  "timestamp": 1783974209,
+  "avg_entropy": 0.5047231378519084,
+  "std_entropy": 0.11283332561076971,
+  "avg_autocorr_l1": 0.027436492387142918,
+  "std_autocorr_l1": 0.047691895561733685,
+  "avg_reward": 0.5889850641759238,
+  "avg_fatigue": 4.078716970230506,
+  "threshold_2sigma_entropy": 0.7303897890734478,
+  "threshold_2sigma_autocorr": 0.12282028351061029
+}

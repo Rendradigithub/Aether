@@ -1,0 +1,49 @@
+╔══════════════════════════════════════════════════════════╗
+║  AETHER ART ENGINE — karya #5                ║
+║  tema    : skill_constellation                           ║
+║  trigger : routine      state : momentum                ║
+║  skill   : -            cycle : 30                      ║
+║  mastered: 16           waktu : 20260502_233035         ║
+╚══════════════════════════════════════════════════════════╝
+
+  SKILL CONSTELLATION
+  16 skill dikuasai
+
+                                ·         ·               
+                               ·★·       ·★·              
+                                ·         ·               
+                       ·                                  
+     ·                         ·              ·           
+    ·★·                        ·             ·★·          
+     ·                                        ·           
+     ·             ·   ·      ·             ·             
+    ·★·           ·★·  ··    ···  ·  ·    ·               
+    ··     ·       ·   ·     ·★·· ·      ···              
+   ·★·       ·         ·      ·  ·★·     ·★·              
+    ·                 ·★·         ·       ·               
+                       ·             ·                    
+                              ·                           
+                                 ·                        
+                           ·    ·★·                       
+                          ·★·    ·                        
+                           ·                              
+
+  ★ multiply
+  ★ factorial
+  ★ power
+  ★ fibonacci
+  ★ divide
+  ★ palindrome
+  ★ count
+  ★ uppercase
+  ★ anagram
+  ★ reverse
+  ★ word
+  ★ filter
+  ★ group
+  ★ search
+  ★ sort
+  ★ custom
+
+  Setiap bintang pernah gelap dulu.
+  Sekarang mereka menerangi peta ini.

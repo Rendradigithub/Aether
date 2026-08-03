@@ -1,0 +1,23 @@
+{
+  "seeds": [
+    10000,
+    10001,
+    10002,
+    10003,
+    10004,
+    10005,
+    10006,
+    10007,
+    10008,
+    10009
+  ],
+  "cycles": 500,
+  "var_error_mean_avg": 0.04235128701331941,
+  "var_error_mean_std": 0.01594476229147297,
+  "corr_error_utility_avg": 0.15009906044610316,
+  "corr_error_utility_std": 0.035244618569283986,
+  "separability_index_avg": 0.006148999950856994,
+  "separability_index_std": 0.009154706864549455,
+  "verdict": "INVESTIGASI",
+  "per_seed": []
+}

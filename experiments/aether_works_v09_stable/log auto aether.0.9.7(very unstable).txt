@@ -1,0 +1,710 @@
+C:\Users\Admin\Documents\FILE RENDRA\AI>python aether.0.9.7.py --auto
+
+[Cycle 1] Action: combine | Score: 0.454 | Novelty: 1.000
+Resources: E=83 A=86 F=5 B=0
+World model confidence: 0.50 | Prediction error: 0.433
+Utilities (before noise): combine:0.76, explore:0.68, generate:0.62, refine:0.62
+Regret: 0.000 | Noise effect: +0.027
+Runner-up: refine (util before noise: 0.62)
+Delta: E=-17, A=-14, F=+5, B=+0
+ ▒@@       ▒█@█ █ O  ▒ █                  O: ▒  ▓  ▓
+▓     ▓     : ▒ .0              o   █ ▓█  █   O  ▓ ▒
+O        0  ░    ▒ o .  @ █ ▓      █  ░       ░░   :
+     █▒  ░        ▓      ▒         ▓     ...
+
+[Cycle 2] Action: combine | Score: 0.417 | Novelty: 0.001
+Resources: E=66 A=72 F=10 B=0
+World model confidence: 0.50 | Prediction error: 0.397
+Utilities (before noise): combine:0.63, explore:0.61, generate:0.54, refine:0.53
+Regret: 0.000 | Noise effect: +0.060
+Runner-up: refine (util before noise: 0.53)
+Delta: E=-17, A=-14, F=+5, B=+0
+  ░   ░        ▒     ▒       █    █▒  ▒     ░    █
+  ▓ █     OO :   ▒       .           ▓       ▓o
+█  ░    ░ ▒   o     █ ▓░  :     ░ ▒ @0   .      █
+ █  ░      ▒ . ▒▓█          █      ░     ...
+
+[Cycle 3] Action: combine | Score: 0.457 | Novelty: 0.000
+Resources: E=49 A=58 F=15 B=0
+World model confidence: 0.50 | Prediction error: 0.437
+Utilities (before noise): explore:0.69, combine:0.61, refine:0.52, generate:0.51
+Regret: 0.082 | Noise effect: +0.144
+Runner-up: explore (util before noise: 0.69)
+Delta: E=-17, A=-14, F=+5, B=+0
+    ▒      █    ▓o        ▒     @ ▒ ▓  ▒  @▒   0.▒
+   .  ▒        . ▒                  ░O    OO    █@ ▓
+  @ .   ▓     :▓ █ ░ ▓ ▓o   ▓  : ▓        ░█ █ :o  ░
+               @▓ ▒     █░ .▓▒░ █▒  ▒  ░O...
+
+[Cycle 4] Action: explore | Score: 0.535 | Novelty: 0.004
+Resources: E=20 A=39 F=22 B=0
+World model confidence: 0.50 | Prediction error: 0.515
+Utilities (before noise): explore:0.80, combine:0.67, refine:0.63, generate:0.62
+Regret: 0.000 | Noise effect: -0.031
+Runner-up: generate (util before noise: 0.62)
+Delta: E=-29, A=-19, F=+7, B=+0
+:     █░  @O  █  ▒ ▒O0   ▓  ▒             ░ o     ░█
+  ░      @▒   @        ██   ▓ o  ▓ O ░ O    .@
+ ▒O█@  0 ░0 █  █     ░      ░     ░  ▓ ░ ██ ▓░0:O▒█
+  o █0 o 0 ░        ▒  ▓  ▒   ▓  ▓░▓ :   ...
+
+[Cycle 5] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=33 A=57 F=7 B=0
+World model confidence: 0.50 | Prediction error: 0.515
+Utilities (before noise): rest:0.54, explore:0.26, generate:0.24, refine:0.24
+Regret: 0.000 | Noise effect: -0.068
+Runner-up: recall (util before noise: 0.24)
+Delta: E=+13, A=+18, F=-15, B=+0
+
+[Override] chaotic_impulse -> combine
+
+[Cycle 6] Action: combine | Score: 0.409 | Novelty: 0.001
+Resources: E=16 A=43 F=12 B=0
+World model confidence: 0.50 | Prediction error: 0.388
+Delta: E=-17, A=-14, F=+5, B=+0
+▓    :        ░  ░ ▓    O    .            ▒0       ▓
+                       ▒  0 O ░   █ ▓        ░  O
+       █  ▒  ░  ▒       ▓▓       ▒              0
+             █ @▒            ▒  ▓        ...
+
+[Override] chaotic_impulse -> refine
+
+[Cycle 7] Action: refine | Score: 0.461 | Novelty: 0.002
+Resources: E=9 A=32 F=16 B=0
+World model confidence: 0.50 | Prediction error: 0.440
+Delta: E=-7, A=-11, F=+4, B=+0
+      ░           ▒      █          ▓
+                  ░                         ▒
+                █     █   ▓       █     ▓    ▒ ▓   ▓
+         ░      O ░▒            ▓   ▒    ...
+
+[Cycle 8] Action: explore | Score: 0.320 | Novelty: 0.068
+Resources: E=1 A=13 F=23 B=12
+World model confidence: 0.50 | Prediction error: 0.292
+Utilities (before noise): explore:0.26, generate:0.24, refine:0.24, recall:0.24
+Regret: 0.000 | Noise effect: +0.209
+Runner-up: combine (util before noise: 0.23)
+Delta: E=-8, A=-19, F=+7, B=+12
+           .                             O    0
+
+                                          :
+                                         ...
+
+[Cycle 9] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=14 A=31 F=8 B=0
+World model confidence: 0.50 | Prediction error: 0.292
+Utilities (before noise): rest:0.70
+Regret: 0.000 | Noise effect: -0.057
+Delta: E=+13, A=+18, F=-15, B=-12
+
+[Cycle 10] Action: combine | Score: 0.443 | Novelty: 0.000
+Resources: E=1 A=17 F=13 B=0
+World model confidence: 0.50 | Prediction error: 0.421
+Utilities (before noise): generate:0.23, refine:0.23, recall:0.23, forget:0.23
+Regret: 0.003 | Noise effect: +0.095
+Runner-up: refine (util before noise: 0.23)
+Delta: E=-13, A=-14, F=+5, B=+0
+    @  ░ ▒ .   .   ░          ▒     █  ▒ ▓▓   ▓   █
+     :  .    ░      O  █.   █  ▒ :█ ░            ▒
+█                 ▓  ▓ @  .  ▓            ▓    0░  ▒
+  █    oO      █     ▓   . ░ ▒ ▓ █  █    ...
+
+[Cycle 11] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=8 A=26 F=5 B=0
+World model confidence: 0.50 | Prediction error: 0.421
+Utilities (before noise): rest:0.65
+Regret: 0.000 | Noise effect: +0.049
+Delta: E=+7, A=+9, F=-8, B=+0
+
+[Cycle 12] Action: explore | Score: 0.503 | Novelty: 0.001
+Resources: E=1 A=7 F=12 B=0
+World model confidence: 0.50 | Prediction error: 0.479
+Utilities (before noise): generate:0.23, refine:0.23, recall:0.23, forget:0.23
+Regret: 0.022 | Noise effect: +0.190
+Runner-up: combine (util before noise: 0.18)
+Delta: E=-7, A=-19, F=+7, B=+0
+ ▒   █░   .   █@   █      .   ░░  : ▓ 0  ▓ ▒ o     o
+    ▓    ░▓   ▓ ░   █               @  ▒ █░  ▓@
+ :0   ▒▒ █    █░░ ▓░░     .     0░  █    @ ▓      @
+ ▓          ▓       ▒░   o▓       ▒ █ 00▓...
+
+[Cycle 13] Action: rest | Score: 0.500 | Novelty: 0.500
+Resources: E=14 A=25 F=0 B=0
+World model confidence: 0.50 | Prediction error: 0.479
+Utilities (before noise): rest:0.68
+Regret: 0.000 | Noise effect: +0.013
+Delta: E=+13, A=+18, F=-12, B=+0
+[Infeasible] operands could not be broadcast together with shapes (6,6) (36,6) (6,6)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1052, in step
+    self.world_model.update(current_param_vec, score)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 448, in update
+    self.W1 += HardConfig.WORLD_MODEL_UPDATE_RATE * np.outer(delta_h, v)
+ValueError: operands could not be broadcast together with shapes (6,6) (36,6) (6,6)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1248, in <module>
+    a.run_autonomous(cycles)
+    ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1228, in run_autonomous
+    self.step()
+    ~~~~~~~~~^^
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1088, in step
+    self._log_step(chosen_action, score, novelty, self.resources, None, decision_info)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1210, in _log_step
+    'state_delta': {k: float(v) for k,v in (state_delta or {}).items()},
+                       ~~~~~^^^
+TypeError: float() argument must be a string or a real number, not 'dict'
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>C:\Users\Admin\Documents\FILE RENDRA\AI>python aether.0.9.7.py --demo
+'C:\Users\Admin\Documents\FILE' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Cycle 1] Action: refine | Score: 0.509 | Novelty: 1.000
+'[Cycle' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Resources: E=93 A=89 F=4 B=0
+'Resources:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>World model confidence: 0.50 | Prediction error: 0.485
+'World' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Utilities (before noise): combine:0.76, explore:0.68, refine:0.63, generate:0.62
+'Utilities' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Regret: 0.137 | Noise effect: +0.418
+'Regret:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Runner-up: combine (util before noise: 0.76)
+'Runner-up:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Delta: E=-7, A=-11, F=+4, B=+0
+'Delta:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>█░▒█      ▓▒█ ░▓░ ▓   ░ █  ▓▓░     ██  ▓▒░     @█ ▒
+'█░▒█' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>▓▓█ █ ░▒ ░0█  ▓▒         ▒    @▒    █ :0          ▒▒
+'▓▓█' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>▒█▒█ ░ ▓   ░▓▓ ▓ o  ▒ █▒ █▓░ ▓ ░ ░  ▓██  █     ▓
+'▒█▒█' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>▓  ▓   ▒█   ░  █  ▓@ ░ ▓ ▒▓▓  ▓   O▒   @▓...
+'▓' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Cycle 2] Action: generate | Score: 0.498 | Novelty: 0.006
+'[Cycle' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Resources: E=84 A=82 F=7 B=0
+'Resources:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>World model confidence: 0.50 | Prediction error: 0.474
+'World' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Utilities (before noise): combine:0.77, explore:0.69, generate:0.63, refine:0.58
+'Utilities' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Regret: 0.143 | Noise effect: +0.037
+'Regret:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Runner-up: combine (util before noise: 0.77)
+'Runner-up:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Delta: E=-9, A=-7, F=+3, B=+0
+'Delta:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI> O         █ ░  █░            █        ░█   ▒  ▓  ▒
+'O' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>     ▓░█   █         █ ▒  ▓             ▓  ▓   ▒░
+'▓░█' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>  . ░     █  ░ ░      ▒ █ ▒▓    ▒
+'.' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>   █ ░▓▓       ▒  ▒ ▓    ▒   ░  ▓█     █ ...
+'█' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Cycle 3] Action: generate | Score: 0.545 | Novelty: 0.001
+'[Cycle' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Resources: E=75 A=75 F=10 B=0
+'Resources:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>World model confidence: 0.50 | Prediction error: 0.522
+'World' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Utilities (before noise): combine:0.76, explore:0.68, generate:0.58, refine:0.57
+'Utilities' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Regret: 0.187 | Noise effect: +0.125
+'Regret:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Runner-up: explore (util before noise: 0.68)
+'Runner-up:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Delta: E=-9, A=-7, F=+3, B=+0
+'Delta:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>    ▒    ░.▓  ▓     █ █ █░▒   ▓   ▓  ▒ :▓▓ ░  ░█
+'▒' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>  █     █   :█░▓   o .▒▒░0     ▒ ▓▒0  ▒    █ . o ░
+'█' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>        . ▒       O     ▒░ █ ▓ .          ▓   ▓▒ ▓▒▓
+'.' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>  ▒..░ ▒▓   █░ █   @   ▒▒▒  █  █ █░   █▓ ...
+'▒..░' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Cycle 4] Action: explore | Score: 0.505 | Novelty: 0.000
+'[Cycle' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Resources: E=46 A=56 F=17 B=0
+'Resources:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>World model confidence: 0.50 | Prediction error: 0.465
+'World' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Utilities (before noise): combine:0.78, explore:0.70, refine:0.59, generate:0.54
+'Utilities' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Regret: 0.084 | Noise effect: +0.153
+'Regret:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Runner-up: combine (util before noise: 0.78)
+'Runner-up:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Delta: E=-29, A=-19, F=+7, B=+0
+'Delta:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI> ░     ░██▓ ▒  ▒ ▒█.        ░oo     ░  O     ▓▓ █
+'░' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>▓▓  ░   0.     █    o █ ░       0  ▓@  :▒ @  O o░
+'▓▓' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI> █::o ▓ o ▓░       ░   O   ░     ░@     ░   ▒     ▓O
+The system cannot find the drive specified.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI> O▒  . :    ▒ ░                  █ ▓     ...
+'O▒' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Cycle 5] Action: combine | Score: 0.541 | Novelty: 0.004
+'[Cycle' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Resources: E=29 A=42 F=22 B=0
+'Resources:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>World model confidence: 0.50 | Prediction error: 0.513
+'World' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Utilities (before noise): combine:0.87, explore:0.79, refine:0.65, generate:0.59
+'Utilities' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Regret: 0.000 | Noise effect: -0.029
+'Regret:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Runner-up: explore (util before noise: 0.79)
+'Runner-up:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Delta: E=-17, A=-14, F=+5, B=+0
+'Delta:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>.░ .                           ▓     0         0▓ @░
+'.░' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>▓   █     ▓0o 0    @   ▓ ░▒ ▒░  :   ▒         █O
+'▓' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>▒▒ :      ▓          : ▓ ░  :@.   ░   o.:
+'▒▒' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>   ▓      0   O        @       ▓      ▓ @...
+'▓' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Cycle 6] Action: combine | Score: 0.529 | Novelty: 0.000
+'[Cycle' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Resources: E=12 A=28 F=27 B=0
+'Resources:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>World model confidence: 0.50 | Prediction error: 0.501
+'World' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Utilities (before noise): combine:0.93, refine:0.75, generate:0.70, rest:0.50
+'Utilities' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Regret: 0.000 | Noise effect: +0.248
+'Regret:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Runner-up: generate (util before noise: 0.70)
+'Runner-up:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Delta: E=-17, A=-14, F=+5, B=+0
+'Delta:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>▒      ▒   ▓  .  ▒    ▒:    ▒█   ▓  ░   ▓▓░    ▓  █▓
+'▒' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI> ▓ ▒      O     0    ░ ▒      ▒o@O ░O ▒ ▒ ▓ ░ █  ▓ █
+'▓' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>  ░▒  ░ ░  █  █   ░▒ █  ▓     ▒@    o. .  ░o    O ▓▒
+'░▒' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>       :▓█   ▒ ██   ▓ ▒o░▓o   ▒     ▒    ...
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Cycle 7] Action: rest | Score: 0.500 | Novelty: 0.500
+'[Cycle' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Resources: E=24 A=45 F=12 B=0
+'Resources:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>World model confidence: 0.50 | Prediction error: 0.501
+'World' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Utilities (before noise): rest:0.62, combine:0.31, explore:0.28, recall:0.27
+'Utilities' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Regret: 0.000 | Noise effect: +0.043
+'Regret:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Runner-up: refine (util before noise: 0.22)
+'Runner-up:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Delta: E=+12, A=+17, F=-15, B=+0
+'Delta:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Cycle 8] Action: refine | Score: 0.574 | Novelty: 0.001
+'[Cycle' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Resources: E=17 A=34 F=16 B=0
+'Resources:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>World model confidence: 0.50 | Prediction error: 0.546
+'World' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Utilities (before noise): combine:0.85, refine:0.73, generate:0.67, recall:0.27
+'Utilities' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Regret: 0.126 | Noise effect: +0.001
+'Regret:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Runner-up: generate (util before noise: 0.67)
+'Runner-up:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Delta: E=-7, A=-11, F=+4, B=+0
+'Delta:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>. ░  O░ ▓█ █▓    ▒  0█     o░░      █            O
+'.' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>@            ░ ▓░     ░ ▓  ▓    .     ░     @0 █ ░
+'░' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>  :      ░  0 ▓  ░    ░░ ▒O▒O  ░█  0▓▓  █
+C:\Users\Admin\Documents\FILE RENDRA\AI> O    o░  ██.░  : O  ░@█  ▓   :░  @:█░▒  ...
+'O' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Cycle 9] Action: generate | Score: 0.552 | Novelty: 0.000
+'[Cycle' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Resources: E=8 A=27 F=19 B=0
+'Resources:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>World model confidence: 0.50 | Prediction error: 0.524
+'World' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Utilities (before noise): combine:0.31, explore:0.28, recall:0.28, forget:0.28
+'Utilities' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Regret: 0.136 | Noise effect: +0.181
+'Regret:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Runner-up: refine (util before noise: 0.18)
+'Runner-up:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Delta: E=-9, A=-7, F=+3, B=+0
+'Delta:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>o█   : ░ █      ▒      ░  █  ▒ ░ o  ░   ▒ ██ ▒     █
+'o█' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI> █░    .▓  o█▓   ▒ █:          ▒ █▓█░   ▒ ▓▒     ░░█
+'█░' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>   ▒ ▓:    : 0▓   ▒    ▓ ░ :  ▓░    ▒ █     ▒ ▓ ▓
+'▒' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>  ▒   ▓█ ▓      █▒    ▓▒    ▒   @▓▓ ░  █ ...
+'▒' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Override] chaotic_impulse -> generate
+'[Override]' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Cycle 10] Action: generate | Score: 0.484 | Novelty: 0.001
+'[Cycle' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Resources: E=1 A=20 F=22 B=0
+'Resources:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>World model confidence: 0.50 | Prediction error: 0.456
+'World' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Delta: E=-7, A=-7, F=+3, B=+0
+'Delta:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI> ▓  ░            o        o  OO. :    @█  █    ▒  O
+'▓' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>             ░  ░  ▓          o  ░   .     o  : :
+'░' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>      :      .          ▓    ▓    ▓█    ▓0         ▒
+C:\Users\Admin\Documents\FILE RENDRA\AI>          O ░         o  ▓  ░        █ O ...
+'O' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Cycle 11] Action: rest | Score: 0.500 | Novelty: 0.500
+'[Cycle' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Resources: E=14 A=38 F=7 B=0
+'Resources:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>World model confidence: 0.50 | Prediction error: 0.456
+'World' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Delta: E=+13, A=+18, F=-15, B=+0
+'Delta:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Recall] Similar to cycle 8 with sim=0.73
+'[Recall]' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Cycle 12] Action: recall | Score: 0.500 | Novelty: 0.500
+'[Cycle' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Resources: E=12 A=37 F=7 B=0
+'Resources:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>World model confidence: 0.50 | Prediction error: 0.456
+'World' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Utilities (before noise): combine:0.31, explore:0.28, recall:0.28, forget:0.28
+'Utilities' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Regret: 0.036 | Noise effect: +0.168
+'Regret:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Runner-up: combine (util before noise: 0.31)
+'Runner-up:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Delta: E=-2, A=-1, F=+0, B=+0
+'Delta:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>[Infeasible] operands could not be broadcast together with shapes (6,6) (36,6) (6,6)
+'[Infeasible]' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>Traceback (most recent call last):
+'Traceback' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1052, in step
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>    self.world_model.update(current_param_vec, score)
+'self.world_model.update' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+'~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 448, in update
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>    self.W1 += HardConfig.WORLD_MODEL_UPDATE_RATE * np.outer(delta_h, v)
+'self.W1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>ValueError: operands could not be broadcast together with shapes (6,6) (36,6) (6,6)
+'ValueError:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>During handling of the above exception, another exception occurred:
+'During' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>
+C:\Users\Admin\Documents\FILE RENDRA\AI>Traceback (most recent call last):
+'Traceback' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1252, in <module>
+The syntax of the command is incorrect.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>    a.step()
+'a.step' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>    ~~~~~~^^
+'~~~~~~^' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1088, in step
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>    self._log_step(chosen_action, score, novelty, self.resources, None, decision_info)
+'self._log_step' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>  File "C:\Users\Admin\Documents\FILE RENDRA\AI\aether.0.9.7.py", line 1210, in _log_step
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>    'state_delta': {k: float(v) for k,v in (state_delta or {}).items()},
+''state_delta':' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Documents\FILE RENDRA\AI>                       ~~~~~^^^
+More? TypeError: float() argument must be a string or a real number, not 'dict'
+'~~~~~^TypeError:' is not recognized as an internal or external command,
+operable program or batch file.

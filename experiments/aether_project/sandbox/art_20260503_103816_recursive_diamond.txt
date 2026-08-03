@@ -1,0 +1,27 @@
+╔══════════════════════════════════════════════════════════╗
+║  AETHER ART ENGINE — karya #0                ║
+║  tema    : recursive_diamond                             ║
+║  trigger : routine      state : momentum                ║
+║  skill   : -            cycle : 5                       ║
+║  mastered: 16           waktu : 20260503_103816         ║
+╚══════════════════════════════════════════════════════════╝
+
+  RECURSIVE DIAMOND
+
+        ◆ 
+       ◆ ◆ 
+      ◆ ◆ ◆ 
+     ◆ ◆ ◆ ◆ 
+    ◆ ◆ ◆ ◆ ◆ 
+   ◆ ◆ ◆ ◆ ◆ ◆ 
+  ◆ ◆ ◆ ◆ ◆ ◆ ◆ 
+   ◆ ◆ ◆ ◆ ◆ ◆ 
+    ◆ ◆ ◆ ◆ ◆ 
+     ◆ ◆ ◆ ◆ 
+      ◆ ◆ ◆ 
+       ◆ ◆ 
+        ◆ 
+
+  Dari satu tumbuh banyak.
+  Dari banyak kembali ke satu.
+  Begitulah rekursi. Begitulah belajar.
