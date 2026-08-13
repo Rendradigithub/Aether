@@ -62,6 +62,16 @@ Never migrate based solely on intuition.
 
 ---
 
+## Migration Target
+
+The migration protocol intentionally does not define migration order.
+
+The current migration target is assigned externally by the reviewer or implementation prompt.
+
+Do not infer migration order from archive structure.
+Do not infer migration order from class ordering.
+Only migrate the component explicitly assigned for the current task.
+
 # Migration Workflow
 
 Every migration follows the same process.
