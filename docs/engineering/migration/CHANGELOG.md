@@ -127,6 +127,25 @@ Examples:
 
 # Entries
 
+## 2026-08-16
+
+Category:
+Migration
+
+Summary:
+Completed experiment cleanup: migrated experiment_trace.py to modular orchestrator API and removed obsolete experiment_two_cycles.py.
+
+Motivation:
+Legacy experiments were using runpy to load archive/versions/aether.0.20.0.py instead of the active modular runtime. This created a disconnect between the research code and the actual production implementation, making experiments unreliable and difficult to maintain.
+
+Impact:
+- `experiment_trace.py` now imports and uses AetherCognitiveCore directly from src.aether.orchestrator.
+- Removed `experiment_two_cycles.py` as redundant (functionality covered by existing test suite).
+- Eliminated runpy-based archive execution from experiment scripts.
+- Experiments now run against the actual modular implementation, ensuring consistency between research and production code.
+
+---
+
 ## 2026-08-06
 
 Category:
