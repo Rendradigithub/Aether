@@ -1,35 +1,34 @@
 #!/usr/bin/env python3
 """
 Minimal Aether experiment to trace state flow through one cognitive cycle.
-This experiment instruments v0.20.0 to observe:
+Uses the modular AetherCognitiveCore from src.aether.orchestrator.
+
+Instruments the active runtime to observe:
 1. stimulus_radial (fixed)
 2. current_state before generation
-3. generated_sig extraction
-4. world_model.update call
-5. current_state after cycle
-6. reward calculation
+3. current_state after cycle
+4. reward calculation
+5. radial similarity
+6. world model prediction error and buffer state
 """
 
 import sys
-import runpy
 import numpy as np
 from pathlib import Path
+
+# Import from the modular orchestrator
+from src.aether.orchestrator import AetherCognitiveCore
+
 
 def run_single_cycle_experiment(stimulus_path):
     """Run exactly one cognitive cycle with instrumentation."""
 
     print("="*60)
     print("AETHER v0.20.0 SINGLE-CYCLE EXPERIMENT")
+    print("(Using modular orchestrator)")
     print("="*60)
 
-    # Load the module using runpy like core.py does
-    archive_path = Path(__file__).parent / "archive" / "versions" / "aether.0.20.0.py"
-    aether_module = runpy.run_path(str(archive_path))
-
-    # Extract the class from the loaded module
-    AetherCognitiveCore = aether_module['AetherCognitiveCore']
-
-    # Initialize core
+    # Initialize core with modular orchestrator
     print("\n[PHASE: Initialization]")
     core = AetherCognitiveCore(stimulus_source=stimulus_path, quiet=True)
 
@@ -70,7 +69,7 @@ def run_single_cycle_experiment(stimulus_path):
         # Verify stimulus_radial unchanged
         print(f"\nstimulus_radial unchanged? {np.array_equal(core.stimulus_radial, state_before)}")
 
-    # Check world model was updated
+    # Check world model state
     print(f"\nWorld model prediction error: {core.world_model.prediction_error:.4f}")
     print(f"World model buffer size: {len(core.world_model.buffer)}")
 
@@ -87,6 +86,7 @@ def run_single_cycle_experiment(stimulus_path):
         'art': art,
         'world_model_error': core.world_model.prediction_error
     }
+
 
 if __name__ == "__main__":
     stimulus_file = Path(__file__).parent / "test_stimulus.txt"
