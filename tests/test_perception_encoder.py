@@ -41,10 +41,12 @@ class RadialEncoderTest(unittest.TestCase):
         """RadialEncoder correctly loads 36-value text stimulus."""
         encoder = RadialEncoder()
         
-        # Create temp file with 36 values
+        # Create temp file with 36 values, rounded to 6 decimal places
+        values = np.linspace(0, 1, 36)
+        rounded_strings = [f"{v:.6f}" for v in values]
+        
         with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as f:
-            values = np.linspace(0, 1, 36)
-            f.write(' '.join(f"{v:.6f}" for v in values))
+            f.write(' '.join(rounded_strings))
             temp_path = f.name
 
         try:
@@ -53,9 +55,12 @@ class RadialEncoderTest(unittest.TestCase):
             self.assertEqual(len(result), 36)
             self.assertEqual(result.dtype, np.float64)  # Preserve original dtype
             
-            # Verify normalization
-            expected = values / (np.linalg.norm(values) + 1e-8)
-            np.testing.assert_allclose(result, expected, rtol=1e-6)
+            # Calculate expected from the same rounded values written to disk
+            rounded_values = np.array([float(s) for s in rounded_strings])
+            expected = rounded_values / (np.linalg.norm(rounded_values) + 1e-8)
+            
+            # Verify normalization matches exactly
+            np.testing.assert_array_equal(result, expected)
         finally:
             Path(temp_path).unlink()
 
