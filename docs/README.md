@@ -16,6 +16,35 @@ Every component, from hardware to software, exists to support that objective.
 
 ---
 
+# Purpose
+
+Aether exists to explore whether an artificial intelligence can be deliberately designed and developed as an autonomous intelligent system, rather than merely as a tool that waits for human instructions.
+
+The long-term objective is to build and understand an artificial intelligence whose capabilities are independently engineered and evaluated through experimentation.
+
+The research focuses on fundamental capabilities required for increasingly autonomous intelligent systems:
+
+- Perception of its environment.
+- Internal representation and world models.
+- Memory and retention of experience.
+- Reasoning and interpretation.
+- Goal-directed decision making.
+- Learning and adaptation.
+- Agency and increasing autonomy.
+- Interaction with physical environments.
+
+Aether does not assume that any particular model, algorithm, implementation, or architecture is the final answer.
+
+External models, machine-learning components, software libraries, cloud inference, and hardware may be used whenever they provide useful capabilities for the research.
+
+Using external technology is not the same as outsourcing the design of Aether's intelligence.
+
+The architecture, experiments, evaluation criteria, engineering decisions, and conclusions remain part of the project itself.
+
+Aether also does not assume that it already possesses intelligence, agency, consciousness, free will, or human-like autonomy. These are questions to be investigated rather than capabilities to be declared.
+
+---
+
 # Vision
 
 Create an autonomous intelligence that can:
