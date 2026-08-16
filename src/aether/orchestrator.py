@@ -14,6 +14,7 @@ import sys
 import time
 from collections import Counter
 from pathlib import Path
+from typing import Optional
 
 import numpy as np
 
@@ -23,6 +24,7 @@ from .decoder import NeuralDecoder
 from .generator import Generator
 from .memory import MenteMemory
 from .mente import MenteBudget, MenteCuriosity, MenteEventBus
+from .perception import PerceptionEncoder, RadialEncoder
 from .radial import RadialSignature, AreaCoherence, PIL_AVAILABLE
 from .world_model import PredictiveWorldModel
 
@@ -31,9 +33,13 @@ class AetherCognitiveCore:
     """
     Orchestration layer for Aether's cognitive loop.
     Preserves the historical behavior exactly as in aether.0.20.0.py.
+    
+    Accepts optional perception encoder via dependency injection.
+    Default: RadialEncoder (36-D radial signatures).
     """
 
-    def __init__(self, stimulus_source=None, workspace="aether_works_v020", quiet=False):
+    def __init__(self, stimulus_source=None, workspace="aether_works_v020", quiet=False,
+                 perception_encoder: Optional[PerceptionEncoder] = None):
         self.workspace = Path(workspace)
         self.workspace.mkdir(exist_ok=True)
         self.bus = MenteEventBus()
@@ -50,33 +56,16 @@ class AetherCognitiveCore:
         self.quiet = quiet
         self.bootstrapping_phase = True
         self.bootstrapping_end_cycle = HardConfig.BOOTSTRAPPING_CYCLES
+        
+        # Perception encoder: default to RadialEncoder if not supplied
+        self.perception_encoder = perception_encoder or RadialEncoder()
 
         if stimulus_source:
-            self._load_stimulus(stimulus_source)
+            self.stimulus_radial = self.perception_encoder.encode(stimulus_source)
         self._init_decoder()
 
         # v0.20: current_state is used for world model and curiosity
         self.current_state = self.stimulus_radial.copy() if self.stimulus_radial is not None else None
-
-    def _load_stimulus(self, source):
-        if source.lower().endswith(('.png','.jpg','.jpeg','.bmp')):
-            if not PIL_AVAILABLE:
-                print("[Error] Pillow needed")
-                return
-            self.stimulus_radial = RadialSignature.from_image(source, size=64, num_rays=36)
-            print("[Stimulus] Loaded radial signature (36 rays)")
-        else:
-            try:
-                with open(source) as f:
-                    vec = np.array([float(x) for x in f.read().split()])
-                if len(vec) == 36:
-                    self.stimulus_radial = vec / (np.linalg.norm(vec)+1e-8)
-                else:
-                    raise ValueError
-                print("[Stimulus] Loaded radial signature from file")
-            except:
-                print("[Error] Unsupported stimulus")
-                self.stimulus_radial = None
 
     def _init_decoder(self):
         weights_path = self.workspace / "decoder_weights.npz"
