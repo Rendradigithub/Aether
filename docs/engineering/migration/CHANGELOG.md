@@ -127,6 +127,23 @@ Examples:
 
 # Entries
 
+
+## 2026-08-14
+
+Category:
+Migration
+
+Summary:
+Migrated the active Aether runtime from the historical archive implementation to the modular orchestrator.
+
+Motivation:
+Complete the transition from archive-based execution to the modular architecture while preserving the established runtime behavior.
+
+Impact:
+`src/aether/core.py` now delegates directly to the modular orchestrator instead of executing the historical archive. Behavioral equivalence was verified through component tests, 3-cycle parity, 60-cycle extended parity, `run()` parity, decoder weight persistence checks, and a CLI smoke test. The full test suite passed with 56 tests.
+
+The historical archive remains available as a reference and regression baseline rather than as part of the active runtime path.
+
 ## 2026-08-06
 
 Category:
