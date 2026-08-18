@@ -47,10 +47,7 @@ class AetherCognitiveCore:
         self.memory = MenteMemory()
         self.budget = MenteBudget(max_energy=HardConfig.MAX_ENERGY,
                                   max_attention=HardConfig.MAX_ATTENTION)
-        self.world_model = PredictiveWorldModel()
-        self.curiosity = MenteCuriosity(self.world_model)
-        self.generator = Generator()
-        self.decoder = None
+
         self.stimulus_radial = None
         self.cycle = 0
         self.pattern_counts = Counter()
@@ -79,7 +76,13 @@ class AetherCognitiveCore:
         self._init_decoder()
 
         self.current_state = (
-            self._representation_vector(self.stimulus_representation).copy()
+            self._representation_vector(self.stimulus_representation).astype(np.float64)
+            if self.stimulus_representation is not None
+            else None
+        )
+        
+        self.stimulus_radial = (
+            self._representation_vector(self.stimulus_representation).astype(np.float64)
             if self.stimulus_representation is not None
             else None
         )
@@ -109,12 +112,12 @@ class AetherCognitiveCore:
     def _representation_vector(representation):
         """Return a NumPy vector for components that still consume arrays."""
         if isinstance(representation, Representation):
-            return np.asarray(representation.vector, dtype=np.float32)
+            return np.asarray(representation.vector, dtype=np.float64)
 
         if hasattr(representation, "vector"):
-            return np.asarray(representation.vector, dtype=np.float32)
+            return np.asarray(representation.vector, dtype=np.float64)
 
-        return np.asarray(representation, dtype=np.float32)
+        return np.asarray(representation, dtype=np.float64)
 
     def _init_decoder(self):
         weights_path = self.workspace / "decoder_weights.npz"
@@ -181,7 +184,7 @@ class AetherCognitiveCore:
         self.cycle += 1
         self.budget.cycle = self.cycle
 
-        if self.stimulus_radial is None or self.decoder is None:
+        if self.stimulus_representation is None or self.decoder is None:
             print("[Error] No stimulus or decoder.")
             return None, None, None, None
 
