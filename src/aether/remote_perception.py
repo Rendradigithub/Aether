@@ -28,6 +28,7 @@ from urllib.request import Request, urlopen
 import numpy as np
 
 from .perception import PerceptionEncoder
+from .representation import Representation
 
 
 class RemotePerceptionError(Exception):
@@ -103,7 +104,7 @@ class RemotePerceptionEncoder(PerceptionEncoder):
         self.timeout = timeout
         self.api_key = api_key
 
-    def encode(self, source: str) -> Optional[np.ndarray]:
+    def encode(self, source: str) -> Optional[Representation]:
         """
         Send an image stimulus to the remote service and return the embedding.
         
@@ -111,7 +112,7 @@ class RemotePerceptionEncoder(PerceptionEncoder):
             source: Local file path to the image stimulus.
             
         Returns:
-            numpy array (dtype float32, shape (N,)) containing the embedding,
+            Representation containing the embedding,
             or None if the source is unsupported (not an image file).
             
         Raises:
@@ -227,4 +228,8 @@ class RemotePerceptionEncoder(PerceptionEncoder):
                 f"Embedding must be 1-D, got shape {embedding_array.shape}"
             )
 
-        return embedding_array
+        # Validate finite numbers
+        if not np.isfinite(embedding_array).all():
+            raise RemotePerceptionError("Embedding contains NaN or Inf values")
+
+        return Representation(vector=embedding_array, encoder_id="remote_perception")

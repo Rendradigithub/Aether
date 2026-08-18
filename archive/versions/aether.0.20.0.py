@@ -231,20 +231,20 @@ class NeuralDecoder:
                 num_batches += 1
                 dout = 2 * (out - Y) / batch_size
                 x, z1, a1, z2, a2, z3, a3 = cache
-                dW4 = dout.T @ a3 / batch_size
-                db4 = np.sum(dout, axis=0) / batch_size
+                dW4 = dout.T @ a3
+                db4 = np.sum(dout, axis=0)
                 da3 = dout @ self.W4
                 dz3 = da3 * (1 - np.tanh(z3)**2)
-                dW3 = dz3.T @ a2 / batch_size
-                db3 = np.sum(dz3, axis=0) / batch_size
+                dW3 = dz3.T @ a2
+                db3 = np.sum(dz3, axis=0)
                 da2 = dz3 @ self.W3
                 dz2 = da2 * (1 - np.tanh(z2)**2)
-                dW2 = dz2.T @ a1 / batch_size
-                db2 = np.sum(dz2, axis=0) / batch_size
+                dW2 = dz2.T @ a1
+                db2 = np.sum(dz2, axis=0)
                 da1 = dz2 @ self.W2
                 dz1 = da1 * (1 - np.tanh(z1)**2)
-                dW1 = dz1.T @ x / batch_size
-                db1 = np.sum(dz1, axis=0) / batch_size
+                dW1 = dz1.T @ x
+                db1 = np.sum(dz1, axis=0)
                 self.W1 -= lr * dW1; self.b1 -= lr * db1
                 self.W2 -= lr * dW2; self.b2 -= lr * db2
                 self.W3 -= lr * dW3; self.b3 -= lr * db3

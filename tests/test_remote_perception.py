@@ -22,6 +22,7 @@ from src.aether.remote_perception import (
     RemotePerceptionEncoder,
     RemotePerceptionError,
 )
+from src.aether.representation import Representation
 
 
 def make_handler(status_code=200, response_body='{"embedding": [0.1, 0.2, 0.3, 0.4, 0.5]}', delay=0.0):
@@ -121,13 +122,14 @@ class TestRemotePerceptionEncoder(unittest.TestCase):
         return path
 
     def _assert_embedding_ok(self, embedding, expected_values=None):
-        """Assert embedding is a float32 1‑D array with expected values."""
-        self.assertIsInstance(embedding, np.ndarray)
-        self.assertEqual(embedding.dtype, np.float32)
-        self.assertEqual(embedding.ndim, 1)
+        """Assert embedding is a Representation with expected values."""
+        self.assertIsInstance(embedding, Representation)
+        self.assertEqual(embedding.vector.dtype, np.float64)
+        self.assertEqual(embedding.vector.ndim, 1)
+        self.assertEqual(embedding.encoder_id, 'remote_perception')
         if expected_values is not None:
             np.testing.assert_array_almost_equal(
-                embedding, np.array(expected_values, dtype=np.float32)
+                embedding.vector, np.array(expected_values, dtype=np.float64)
             )
 
     def test_successful_encoding(self):
