@@ -135,6 +135,27 @@ class PerceptionInjectionTest(unittest.TestCase):
             self.assertIsNotNone(core.stimulus_radial)
             np.testing.assert_array_equal(core.stimulus_radial, fake_representation)
 
+    def test_custom_encoder_non_36_dimension(self):
+        """Cognitive components follow the injected representation dimension."""
+        fake_representation = np.linspace(
+            0.1, 0.9, 64, dtype=np.float32
+        )
+        fake_encoder = FakeEncoder(representation=fake_representation)
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            core = AetherCognitiveCore(
+                stimulus_source="dummy_path.txt",
+                workspace=str(Path(tmpdir) / "workspace"),
+                quiet=True,
+                perception_encoder=fake_encoder,
+            )
+
+            self.assertEqual(core.representation_dim, 64)
+            self.assertEqual(core.world_model.W1.shape[1], 65)
+            self.assertEqual(core.world_model.W2.shape[0], 64)
+            self.assertEqual(core.decoder.input_dim, 64)
+            self.assertEqual(core.current_state.shape, (64,))
+
     def test_encoder_injection_proves_usage(self):
         """
         Prove AetherCognitiveCore uses the injected encoder.

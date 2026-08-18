@@ -57,23 +57,46 @@ class AetherCognitiveCore:
         self.bootstrapping_phase = True
         self.bootstrapping_end_cycle = HardConfig.BOOTSTRAPPING_CYCLES
         
-        # Perception encoder: default to RadialEncoder if not supplied
         self.perception_encoder = perception_encoder or RadialEncoder()
 
+        self.stimulus_representation = None
         if stimulus_source:
-            self.stimulus_radial = self.perception_encoder.encode(stimulus_source)
+            self.stimulus_representation = self.perception_encoder.encode(stimulus_source)
+
+        self.representation_dim = (
+            len(self.stimulus_representation)
+            if self.stimulus_representation is not None
+            else None
+        )
+
+        self.world_model = PredictiveWorldModel(
+            state_dim=self.representation_dim or HardConfig.VECTOR_DIM
+        )
+
+        self.curiosity = MenteCuriosity(self.world_model)
+        self.generator = Generator()
+        self.decoder = None
+
         self._init_decoder()
 
-        # v0.20: current_state is used for world model and curiosity
-        self.current_state = self.stimulus_radial.copy() if self.stimulus_radial is not None else None
-
+        self.current_state = (
+            self.stimulus_representation.copy()
+            if self.stimulus_representation is not None
+            else None
+        )
+        
     def _init_decoder(self):
         weights_path = self.workspace / "decoder_weights.npz"
-        self.decoder = NeuralDecoder(input_dim=HardConfig.NN_INPUT_DIM,
-                                     hidden1=HardConfig.NN_HIDDEN_1,
-                                     hidden2=HardConfig.NN_HIDDEN_2,
-                                     hidden3=HardConfig.NN_HIDDEN_3,
-                                     output_dim=HardConfig.NN_OUTPUT_DIM)
+
+        input_dim = self.representation_dim or HardConfig.NN_INPUT_DIM
+
+        self.decoder = NeuralDecoder(
+            input_dim=input_dim,
+            hidden1=HardConfig.NN_HIDDEN_1,
+            hidden2=HardConfig.NN_HIDDEN_2,
+            hidden3=HardConfig.NN_HIDDEN_3,
+            output_dim=HardConfig.NN_OUTPUT_DIM,
+        )
         if weights_path.exists():
             self.decoder.load_weights(weights_path)
             self.bootstrapping_phase = False
