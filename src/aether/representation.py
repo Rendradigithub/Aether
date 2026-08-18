@@ -29,7 +29,8 @@ class Representation:
     encoder_id: str
 
     def __post_init__(self) -> None:
-        vector = np.asarray(self.vector, dtype=np.float64)
+        vector = np.asarray(self.vector, dtype=np.float64).copy()
+        vector.flags.writeable = False
 
         if vector.ndim != 1:
             raise ValueError("Representation vector must be 1-D")

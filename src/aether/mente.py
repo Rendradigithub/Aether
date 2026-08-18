@@ -98,7 +98,8 @@ class MenteCuriosity:
 
     def get_bonus(self, state_vec, action):
         pred_error = self.world_model.prediction_error
-        h = tuple(np.round(state_vec, 2).tolist())
+        quantized_state = tuple(np.floor(np.asarray(state_vec) * 10).astype(int).tolist())
+        h = (quantized_state, action)
         if not hasattr(self, 'visited_states'):
             self.visited_states = {}
         self.visited_states[h] = self.visited_states.get(h, 0) + 1

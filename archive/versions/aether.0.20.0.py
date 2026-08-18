@@ -280,6 +280,10 @@ class NeuralDecoder:
         self.W2 = data['W2']; self.b2 = data['b2']
         self.W3 = data['W3']; self.b3 = data['b3']
         self.W4 = data['W4']; self.b4 = data['b4']
+        self.best_weights = [self.W1.copy(), self.b1.copy(),
+                             self.W2.copy(), self.b2.copy(),
+                             self.W3.copy(), self.b3.copy(),
+                             self.W4.copy(), self.b4.copy()]
         self.is_trained = True
         self.current_threshold = 0.15
         print(f"[Decoder] Weights loaded from {path}")
@@ -743,7 +747,8 @@ class MenteCuriosity:
 
     def get_bonus(self, state_vec, action):
         pred_error = self.world_model.prediction_error
-        h = tuple(np.round(state_vec, 2).tolist())
+        quantized_state = tuple(np.floor(np.asarray(state_vec) * 10).astype(int).tolist())
+        h = (quantized_state, action)
         if not hasattr(self, 'visited_states'):
             self.visited_states = {}
         self.visited_states[h] = self.visited_states.get(h, 0) + 1

@@ -152,6 +152,10 @@ class NeuralDecoder:
         self.W2 = data['W2']; self.b2 = data['b2']
         self.W3 = data['W3']; self.b3 = data['b3']
         self.W4 = data['W4']; self.b4 = data['b4']
+        self.best_weights = [self.W1.copy(), self.b1.copy(),
+                             self.W2.copy(), self.b2.copy(),
+                             self.W3.copy(), self.b3.copy(),
+                             self.W4.copy(), self.b4.copy()]
         self.is_trained = True
         self.current_threshold = 0.15
         print(f"[Decoder] Weights loaded from {path}")

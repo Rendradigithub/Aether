@@ -415,3 +415,24 @@ class TestRemotePerceptionEncoder(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+    def test_integration_with_core(self):
+        """End-to-end integration: RemotePerceptionEncoder + AetherCognitiveCore."""
+        handler_cls = make_handler(
+            response_body=json.dumps({"embedding": [0.1] * 36})
+        )
+        self._start_server(handler_cls)
+        test_file = self._create_image_file(ext=".png", content=b"test image")
+        try:
+            encoder = RemotePerceptionEncoder(endpoint=self.url, timeout=5.0)
+            from src.aether.orchestrator import AetherCognitiveCore
+            core = AetherCognitiveCore(
+                stimulus_source=str(test_file),
+                quiet=True,
+                perception_encoder=encoder
+            )
+            # Run 5 steps to verify loop operates cleanly with remote embeddings
+            for _ in range(5):
+                core.step()
+            self.assertEqual(core.cycle, 5)
+        finally:
+            test_file.unlink()
