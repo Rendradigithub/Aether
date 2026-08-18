@@ -70,8 +70,8 @@ class MenteMemoryRegressionTest(unittest.TestCase):
             {"pattern": "fractal", "reward": 0.5, "state": [6.0, 7.0, 8.0]},
         ]
         for experience in experiences:
-            old.add_experience(experience)
-            new.add_experience(experience)
+            old.add_experience(experience.get('state', None), 'generate', experience.get('reward', 0.5), experience.get('state', None), experience)
+            new.add_experience(experience.get('state', None), 'generate', experience.get('reward', 0.5), experience.get('state', None), experience)
             self.assert_memory_equal(old, new)
 
     def test_recall_similar_matches_archive(self):
@@ -84,8 +84,8 @@ class MenteMemoryRegressionTest(unittest.TestCase):
             {"id": "d", "pattern": "cellular", "contour_reward": 0.75},
         ]
         for experience in experiences:
-            old.add_experience(experience)
-            new.add_experience(experience)
+            old.add_experience(experience.get('state', None), 'generate', experience.get('reward', 0.5), experience.get('state', None), experience)
+            new.add_experience(experience.get('state', None), 'generate', experience.get('reward', 0.5), experience.get('state', None), experience)
         query = {"pattern": "shape", "contour_reward": 0.7}
         self.assertEqual(old.recall_similar(query, k=3), new.recall_similar(query, k=3))
         self.assertEqual(old.recall_similar({}, k=10), new.recall_similar({}, k=10))
@@ -106,8 +106,8 @@ class MenteMemoryRegressionTest(unittest.TestCase):
                 "contour_reward": 0.9 if i % 3 == 0 else 0.1,
                 "state": np.linspace(i, i + 1, 36),
             }
-            old.add_experience(experience)
-            new.add_experience(experience)
+            old.add_experience(experience.get('state', None), 'generate', experience.get('reward', 0.5), experience.get('state', None), experience)
+            new.add_experience(experience.get('state', None), 'generate', experience.get('reward', 0.5), experience.get('state', None), experience)
         self.assert_memory_equal(old, new)
         self.assertEqual(len(old.vectors), 200)
         self.assertEqual(len(new.vectors), 200)
@@ -125,8 +125,8 @@ class MenteMemoryRegressionTest(unittest.TestCase):
         old = self.archive.MenteMemory()
         new = NewMenteMemory()
         experience = {"pattern": "shape", "contour_reward": 0.95, "state": [1, 2, 3]}
-        old.add_experience(experience)
-        new.add_experience(experience)
+        old.add_experience(experience.get('state', None), 'generate', experience.get('reward', 0.5), experience.get('state', None), experience)
+        new.add_experience(experience.get('state', None), 'generate', experience.get('reward', 0.5), experience.get('state', None), experience)
         old.update_semantic("x", 1)
         new.update_semantic("x", 1)
 

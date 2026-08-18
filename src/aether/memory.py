@@ -10,12 +10,19 @@ class MenteMemory:
         self.semantic = {}
         self.vectors = []
 
-    def add_experience(self, experience):
+    def add_experience(self, state_t, action_t, reward_t, state_t_plus_1, metadata):
+        experience = {
+            'state_t': state_t,
+            'action_t': action_t,
+            'reward_t': reward_t,
+            'state_t_plus_1': state_t_plus_1,
+            'metadata': metadata
+        }
         self.working.append(experience)
-        if experience.get('contour_reward', 0) > 0.7:
+        if metadata.get('contour_reward', 0) > 0.7:
             self.episodic.append(experience)
-        if 'state' in experience:
-            self.vectors.append(np.array(experience['state']))
+        if state_t is not None:
+            self.vectors.append(np.array(state_t))
             if len(self.vectors) > 200:
                 self.vectors.pop(0)
 
@@ -26,8 +33,8 @@ class MenteMemory:
         query_contour = query.get('contour_reward', 0.5)
         scored = []
         for exp in candidates:
-            score = 0.5 if exp.get('pattern') == query_pat else 0
-            score += 1.0 - abs(exp.get('contour_reward', 0.5) - query_contour)
+            score = 0.5 if exp['metadata'].get('pattern') == query_pat else 0
+            score += 1.0 - abs(exp['metadata'].get('contour_reward', 0.5) - query_contour)
             scored.append((score, exp))
         scored.sort(reverse=True)
         return [exp for _, exp in scored[:k]]

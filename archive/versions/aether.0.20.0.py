@@ -606,12 +606,19 @@ class MenteMemory:
         self.episodic = deque(maxlen=episodic_capacity)
         self.semantic = {}
         self.vectors = []
-    def add_experience(self, experience):
+    def add_experience(self, state_t, action_t, reward_t, state_t_plus_1, metadata):
+        experience = {
+            'state_t': state_t,
+            'action_t': action_t,
+            'reward_t': reward_t,
+            'state_t_plus_1': state_t_plus_1,
+            'metadata': metadata
+        }
         self.working.append(experience)
-        if experience.get('contour_reward', 0) > 0.7:
+        if metadata.get('contour_reward', 0) > 0.7:
             self.episodic.append(experience)
-        if 'state' in experience:
-            self.vectors.append(np.array(experience['state']))
+        if state_t is not None:
+            self.vectors.append(np.array(state_t))
             if len(self.vectors) > 200:
                 self.vectors.pop(0)
     def recall_similar(self, query, k=3):
@@ -621,8 +628,8 @@ class MenteMemory:
         query_contour = query.get('contour_reward', 0.5)
         scored = []
         for exp in candidates:
-            score = 0.5 if exp.get('pattern') == query_pat else 0
-            score += 1.0 - abs(exp.get('contour_reward', 0.5) - query_contour)
+            score = 0.5 if exp['metadata'].get('pattern') == query_pat else 0
+            score += 1.0 - abs(exp['metadata'].get('contour_reward', 0.5) - query_contour)
             scored.append((score, exp))
         scored.sort(reverse=True)
         return [exp for _, exp in scored[:k]]
@@ -1061,7 +1068,7 @@ class AetherCognitiveCore:
         self._detect_stagnation(self.generator.params['pattern'], last_reward)
 
         feasible = list(HardConfig.ACTION_COSTS.keys())
-        if self.budget.energy <= 10 or self.budget.attention <= 10:
+        if self.budget.is_emergency() or self.budget.energy <= 10 or self.budget.attention <= 10:
             feasible = ['rest']
         else:
             if not self.budget.can_rest():
@@ -1102,7 +1109,9 @@ class AetherCognitiveCore:
             utils[a] = max(0, base + random.gauss(0, HardConfig.EXPLORATION_NOISE_STD))
         chosen = max(utils, key=utils.get)
 
+        state_t = self.current_state.tolist() if hasattr(self.current_state, 'tolist') else self.current_state
         art, pat = None, None
+
         if chosen == 'generate':
             if shape_bonus:
                 self.generator.params['pattern'] = 'shape'
@@ -1123,20 +1132,8 @@ class AetherCognitiveCore:
                 self.budget.recover(3, 2, 3)
                 self.budget.give_persistence_bonus(total_reward)
             next_sig = RadialSignature.from_ascii_art(art, num_rays=36, contour_only=True)
-            # v0.20: update world model dengan current_state, bukan stimulus_radial
             self.world_model.update(self.current_state, chosen, next_sig)
-            # Update current_state
             self.current_state = next_sig
-            # v0.20: memory menyimpan current_state (sebelum diupdate) sebagai state
-            self.memory.add_experience({
-                'state': self.current_state.tolist(),  # state setelah aksi, atau kita mau sebelum? Lebih baik state sebelum aksi untuk prediksi. Simpan state sebelum aksi.
-                'action': chosen,
-                'reward': total_reward,
-                'pattern': pat,
-                'contour_reward': contour_reward,
-                'coherence': coherence,
-                'params': self.generator.params.copy()
-            })
             if pat == 'shape':
                 self.decoder.collect_sample(self.stimulus_radial, self.generator.params)
             if self.cycle % HardConfig.NN_TRAIN_INTERVAL == 0 and len(self.decoder.training_buffer) >= HardConfig.NN_BATCH_SIZE:
@@ -1150,7 +1147,6 @@ class AetherCognitiveCore:
             self.pattern_counts[pat] += 1
             total_reward, radial_sim, contour_reward, coherence = self._compute_reward(art, pat)
             next_sig = RadialSignature.from_ascii_art(art, num_rays=36, contour_only=True)
-            # v0.20: update world model dengan current_state
             self.world_model.update(self.current_state, chosen, next_sig)
             self.current_state = next_sig
             cost = HardConfig.ACTION_COSTS['explore']
@@ -1169,8 +1165,9 @@ class AetherCognitiveCore:
 
         elif chosen == 'combine':
             if self.memory.working:
-                exp = random.choice(list(self.memory.working))
-                other_params = exp.get('params', self.generator.params)
+                import random as rnd
+                exp = rnd.choice(list(self.memory.working))
+                other_params = exp.get('metadata', {}).get('params', self.generator.params)
                 self.generator.crossover_with_memory(other_params)
             art, pat = self.generator.generate(set())
             self.pattern_counts[pat] += 1
@@ -1182,14 +1179,37 @@ class AetherCognitiveCore:
             self.budget.spend(cost[0], cost[1], cost[3])
 
         elif chosen == 'rest':
+            old_energy = self.budget.energy
+            old_attention = self.budget.attention
+            old_burden = self.budget.failure_burden
             self.budget.recover(12, 15, 12)
-            total_reward = 0.5
+            energy_gain = min(12, self.budget.max_energy - old_energy)
+            attention_gain = min(15, self.budget.max_attention - old_attention)
+            burden_reduced = old_burden - self.budget.failure_burden
+            total_reward = min(1.0, 0.2 + 0.4*(energy_gain/12.0) + 0.4*(attention_gain/15.0))
             radial_sim = 0.5
             contour_reward = 0.5
             coherence = 0.5
-            # current_state tidak berubah saat rest
-        else:  # recall, forget
-            self.budget.spend(2,2,1)
+            # current_state unchanged
+
+        elif chosen == 'recall':
+            self.budget.spend(2, 2, 1)
+            query = {'pattern': self.generator.params.get('pattern'), 'contour_reward': 0.8}
+            recalled = self.memory.recall_similar(query, k=1)
+            if recalled:
+                exp = recalled[0]
+                if 'metadata' in exp and 'params' in exp['metadata']:
+                    self.generator.params.update(exp['metadata']['params'])
+            total_reward = 0.6 if recalled else 0.5
+            radial_sim = 0.5
+            contour_reward = 0.5
+            coherence = 0.5
+
+        elif chosen == 'forget':
+            self.budget.spend(2, 2, 1)
+            if len(self.memory.working) > 0:
+                import collections
+                self.memory.working = collections.deque([exp for exp in self.memory.working if exp['metadata'].get('contour_reward', 0) >= 0.4], maxlen=self.memory.working.maxlen)
             total_reward = 0.5
             radial_sim = 0.5
             contour_reward = 0.5
@@ -1198,7 +1218,25 @@ class AetherCognitiveCore:
         self.budget.update_failure_burden(total_reward)
         self.budget.regen(chosen == 'rest')
         self.budget.reward_history.append(total_reward)
-        self._log_step(art, total_reward, radial_sim, contour_reward, coherence, pat if art else 'rest')
+        
+        if pat:
+            self.budget.track_pattern_repetition(pat)
+            
+        state_t_plus_1 = self.current_state.tolist() if hasattr(self.current_state, 'tolist') else self.current_state
+        self.memory.add_experience(
+            state_t,
+            chosen,
+            total_reward,
+            state_t_plus_1,
+            {
+                'pattern': pat,
+                'contour_reward': contour_reward,
+                'coherence': coherence,
+                'params': self.generator.params.copy()
+            }
+        )
+
+        self._log_step(art, total_reward, radial_sim, contour_reward, coherence, pat if art else chosen)
         return art, total_reward, radial_sim, pat
 
     def _log_step(self, art, reward, radial_sim, contour_reward, coherence, pat):
