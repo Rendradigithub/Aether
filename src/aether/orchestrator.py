@@ -25,6 +25,7 @@ from .generator import Generator
 from .memory import MenteMemory
 from .mente import MenteBudget, MenteCuriosity, MenteEventBus
 from .perception import PerceptionEncoder, RadialEncoder
+from .representation import Representation
 from .radial import RadialSignature, AreaCoherence, PIL_AVAILABLE
 from .world_model import PredictiveWorldModel
 
@@ -63,10 +64,8 @@ class AetherCognitiveCore:
         if stimulus_source:
             self.stimulus_representation = self.perception_encoder.encode(stimulus_source)
 
-        self.representation_dim = (
-            len(self.stimulus_representation)
-            if self.stimulus_representation is not None
-            else None
+        self.representation_dim = self._get_representation_dim(
+            self.stimulus_representation
         )
 
         self.world_model = PredictiveWorldModel(
@@ -80,11 +79,43 @@ class AetherCognitiveCore:
         self._init_decoder()
 
         self.current_state = (
-            self.stimulus_representation.copy()
+            self._representation_vector(self.stimulus_representation).copy()
             if self.stimulus_representation is not None
             else None
         )
         
+    @staticmethod
+    def _get_representation_dim(representation):
+        """Return the feature dimension of an Aether representation.
+
+        Supports the Representation abstraction while retaining compatibility
+        with the legacy ndarray/list representations used by older encoders.
+        """
+        if representation is None:
+            return None
+
+        if isinstance(representation, Representation):
+            return representation.dimension
+
+        if hasattr(representation, "dimension"):
+            return int(representation.dimension)
+
+        if hasattr(representation, "vector"):
+            return len(representation.vector)
+
+        return len(representation)
+
+    @staticmethod
+    def _representation_vector(representation):
+        """Return a NumPy vector for components that still consume arrays."""
+        if isinstance(representation, Representation):
+            return np.asarray(representation.vector, dtype=np.float32)
+
+        if hasattr(representation, "vector"):
+            return np.asarray(representation.vector, dtype=np.float32)
+
+        return np.asarray(representation, dtype=np.float32)
+
     def _init_decoder(self):
         weights_path = self.workspace / "decoder_weights.npz"
 
@@ -169,12 +200,12 @@ class AetherCognitiveCore:
                 if not self.quiet:
                     print(f"[Bootstrap] Contour reward {contour_reward:.2f} +{HardConfig.BOOTSTRAP_ENERGY_REWARD} energy")
             if pat == 'shape':
-                self.decoder.collect_sample(self.stimulus_radial, self.generator.params)
+                self.decoder.collect_sample(self._representation_vector(self.stimulus_representation), self.generator.params)
                 if not self.quiet:
                     print(f"[Bootstrap] Sample {len(self.decoder.training_buffer)} rad={radial_sim:.2f} contour={contour_reward:.2f}")
             next_sig = RadialSignature.from_ascii_art(art, num_rays=36, contour_only=True)
             # Bootstrap: update world model with stimulus_radial as initial state
-            self.world_model.update(self.stimulus_radial, 'generate', next_sig)
+            self.world_model.update(self.current_state, 'generate', next_sig)
             self.budget.spend(*HardConfig.BOOTSTRAP_COST)
             self.budget.regen(False)
             self._log_step(art, total_reward, radial_sim, contour_reward, coherence, pat)
@@ -240,7 +271,7 @@ class AetherCognitiveCore:
                 if not self.quiet:
                     print("[Forced Shape] (post-bootstrap)")
             elif self.decoder.is_trained:
-                pred = self.decoder.predict_params(self.stimulus_radial)
+                pred = self.decoder.predict_params(self._representation_vector(self.stimulus_representation))
                 self.generator.set_params(pred)
             art, pat = self.generator.generate(set())
             self.pattern_counts[pat] += 1
@@ -267,7 +298,7 @@ class AetherCognitiveCore:
                 'params': self.generator.params.copy()
             })
             if pat == 'shape':
-                self.decoder.collect_sample(self.stimulus_radial, self.generator.params)
+                self.decoder.collect_sample(self._representation_vector(self.stimulus_representation), self.generator.params)
             if self.cycle % HardConfig.NN_TRAIN_INTERVAL == 0 and len(self.decoder.training_buffer) >= HardConfig.NN_BATCH_SIZE:
                 self.decoder.train()
             cost = HardConfig.ACTION_COSTS['generate']

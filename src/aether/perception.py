@@ -7,30 +7,34 @@ without coupling the cognitive loop to any specific perception mechanism.
 """
 
 from typing import Optional
+
 import numpy as np
 
 try:
     from .radial import RadialSignature, PIL_AVAILABLE
+    from .representation import Representation
 except ImportError:
     from radial import RadialSignature, PIL_AVAILABLE
+    from representation import Representation
 
 
 class PerceptionEncoder:
     """
     Minimal contract for stimulus encoding.
-    
-    A perception encoder converts an observation source into a numpy array representation.
+
+    A perception encoder converts an observation source into a
+    provider-independent Representation.
     """
 
-    def encode(self, source: str) -> Optional[np.ndarray]:
+    def encode(self, source: str) -> Optional[Representation]:
         """
         Encode a stimulus source into a representation.
-        
+
         Args:
             source: File path or observation identifier
-            
+
         Returns:
-            numpy array representation, or None if unsupported/failed
+            Representation, or None if unsupported/failed.
         """
         raise NotImplementedError
 
@@ -38,37 +42,47 @@ class PerceptionEncoder:
 class RadialEncoder(PerceptionEncoder):
     """
     Radial contour-based perception encoder.
-    
+
     Encodes image and text stimuli into 36-dimensional radial signatures.
-    Preserves the exact behavior of AetherCognitiveCore._load_stimulus().
-    
+    Preserves the exact behavior of AetherCognitiveCore._load_stimulus()
+    while exposing the result through the Representation boundary.
+
     Stateless: encode() has no side effects.
     """
 
-    def encode(self, source: str) -> Optional[np.ndarray]:
+    def encode(self, source: str) -> Optional[Representation]:
         """
-        Encode stimulus into 36-D radial signature.
-        
-        Preserves exact behavior of the historical _load_stimulus() method:
-        - Image files (.png, .jpg, .jpeg, .bmp) loaded via RadialSignature.from_image()
-        - Text files parsed as 36 floats and normalized
+        Encode stimulus into a 36-D radial representation.
+
+        Preserves the existing behavior:
+        - Image files (.png, .jpg, .jpeg, .bmp) are loaded via
+          RadialSignature.from_image()
+        - Text files are parsed as 36 floats and normalized
         - Unsupported inputs return None
-        - Print messages and exception handling match original behavior
-        
+        - Existing print messages and exception handling are preserved
+
         Args:
             source: File path (image or text vector)
-            
+
         Returns:
-            36-D numpy array, or None if unsupported/failed
+            Representation containing the radial vector, or None if
+            unsupported/failed.
         """
-        if source.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp')):
+        if source.lower().endswith((".png", ".jpg", ".jpeg", ".bmp")):
             if not PIL_AVAILABLE:
                 print("[Error] Pillow needed")
                 return None
             try:
-                sig = RadialSignature.from_image(source, size=64, num_rays=36)
+                sig = RadialSignature.from_image(
+                    source,
+                    size=64,
+                    num_rays=36,
+                )
                 print("[Stimulus] Loaded radial signature (36 rays)")
-                return sig
+                return Representation(
+                    vector=np.asarray(sig, dtype=np.float32),
+                    encoder_id="radial",
+                )
             except Exception:
                 print("[Error] Unsupported stimulus")
                 return None
@@ -79,9 +93,12 @@ class RadialEncoder(PerceptionEncoder):
                 if len(vec) == 36:
                     normalized = vec / (np.linalg.norm(vec) + 1e-8)
                     print("[Stimulus] Loaded radial signature from file")
-                    return normalized
+                    return Representation(
+                        vector=normalized,
+                        encoder_id="radial",
+                    )
                 else:
                     raise ValueError
-            except:
+            except Exception:
                 print("[Error] Unsupported stimulus")
                 return None
