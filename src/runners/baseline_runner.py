@@ -18,11 +18,13 @@ from pathlib import Path
 import importlib.util
 
 def load_aether(version="0.19.1"):
-    filename = f"aether.{version}.py"
-    if not Path(filename).exists():
-        print(f"[ERROR] File {filename} tidak ditemukan.")
+    project_root = Path(__file__).resolve().parent.parent.parent
+    archive_dir = project_root / "archive" / "versions"
+    filepath = archive_dir / f"aether.{version}.py"
+    if not filepath.exists():
+        print(f"[ERROR] File {filepath} tidak ditemukan.")
         sys.exit(1)
-    spec = importlib.util.spec_from_file_location("aether", filename)
+    spec = importlib.util.spec_from_file_location("aether", str(filepath))
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
@@ -48,14 +50,21 @@ class BaselineRunner:
 
             def step(self):
                 result = super().step()
-                if result[0] is None:
-                    return result
                 art, reward, radial, pat = result
+                action = "unknown"
+                if self.memory.working:
+                    try:
+                        action = self.memory.working[-1].get("action_t", "unknown")
+                    except AttributeError:
+                        action = self.memory.working[-1].get("action", "unknown")
+                if action == "unknown" and art is None and reward is None:
+                    return result
                 self.history.append({
                     "cycle": self.cycle,
                     "reward": float(reward) if reward is not None else 0.0,
                     "radial": float(radial) if radial is not None else 0.0,
                     "pattern": pat if pat else "unknown",
+                    "action": action,
                     "energy": int(self.budget.energy),
                     "attention": int(self.budget.attention),
                     "fatigue": int(self.budget.fatigue),
@@ -72,10 +81,14 @@ class BaselineRunner:
         if len(rewards) == 0:
             return None
 
-        # Autokorelasi
+        # Autokorelasi on Actions
+        actions = [h.get("action", "unknown") for h in history]
+        action_map = {"generate": 0, "explore": 1, "refine": 2, "combine": 3, "rest": 4, "recall": 5, "forget": 6, "unknown": 7}
+        encoded_actions = [action_map.get(a, 7) for a in actions]
+        
         autocorr = {}
-        if len(rewards) > 5:
-            r_np = np.array(rewards)
+        if len(encoded_actions) > 5:
+            r_np = np.array(encoded_actions)
             for lag in range(1, 6):
                 if len(r_np) > lag:
                     corr = np.corrcoef(r_np[:-lag], r_np[lag:])[0, 1]
@@ -83,13 +96,21 @@ class BaselineRunner:
                 else:
                     autocorr[lag] = 0.0
 
-        # Entropi
+        # Entropi (Pattern & Behavioral)
         total = sum(pattern_counts.values())
         if total > 0:
             probs = [count/total for count in pattern_counts.values()]
             entropy = -sum(p * np.log(p + 1e-8) for p in probs)
         else:
             entropy = 0.0
+            
+        action_counts = Counter(actions)
+        total_actions = sum(action_counts.values())
+        if total_actions > 0:
+            act_probs = [c/total_actions for c in action_counts.values()]
+            behavioral_entropy = -sum(p * np.log(p + 1e-8) for p in act_probs)
+        else:
+            behavioral_entropy = 0.0
 
         return {
             "seed": seed,
@@ -100,6 +121,7 @@ class BaselineRunner:
             "avg_fatigue": float(np.mean([h["fatigue"] for h in history])),
             "pattern_counts": dict(pattern_counts),
             "entropy": float(entropy),
+            "behavioral_entropy": float(behavioral_entropy),
             "autocorrelation": autocorr,
             "history": history,
         }
@@ -122,7 +144,10 @@ class BaselineRunner:
                 print("failed")
                 continue
             all_data.append(result)
-            print(f"done ({elapsed:.1f}s)  entropy={result['entropy']:.3f} avg_reward={result['avg_reward']:.3f}")
+            print(f"done ({elapsed:.1f}s)  entropy={result['entropy']:.3f} b_entropy={result.get('behavioral_entropy',0):.3f} avg_reward={result['avg_reward']:.3f}")
+
+        if not all_data:
+            raise ValueError("[ERROR] all_data is empty. No valid seeds successfully ran.")
 
         timestamp = int(time.time())
         raw_file = f"baseline_raw_{timestamp}.json"
@@ -132,11 +157,17 @@ class BaselineRunner:
 
         # Statistik agregat
         avg_entropy = np.mean([d["entropy"] for d in all_data])
+        avg_b_entropy = np.mean([d.get("behavioral_entropy", 0) for d in all_data])
         avg_autocorr = np.mean([d["autocorrelation"].get(1, 0) for d in all_data])
         avg_reward = np.mean([d["avg_reward"] for d in all_data])
         avg_fatigue = np.mean([d["avg_fatigue"] for d in all_data])
         std_entropy = np.std([d["entropy"] for d in all_data])
+        std_b_entropy = np.std([d.get("behavioral_entropy", 0) for d in all_data])
         std_autocorr = np.std([d["autocorrelation"].get(1, 0) for d in all_data])
+
+        # Standard Error
+        se_entropy = std_entropy / np.sqrt(len(all_data))
+        se_autocorr = std_autocorr / np.sqrt(len(all_data))
 
         summary = {
             "version": self.version,
@@ -146,22 +177,23 @@ class BaselineRunner:
             "timestamp": timestamp,
             "avg_entropy": float(avg_entropy),
             "std_entropy": float(std_entropy),
+            "avg_b_entropy": float(avg_b_entropy),
+            "std_b_entropy": float(std_b_entropy),
             "avg_autocorr_l1": float(avg_autocorr),
             "std_autocorr_l1": float(std_autocorr),
             "avg_reward": float(avg_reward),
             "avg_fatigue": float(avg_fatigue),
-            "threshold_2sigma_entropy": float(avg_entropy + 2*std_entropy),
-            "threshold_2sigma_autocorr": float(avg_autocorr + 2*std_autocorr),
         }
         with open("baseline_summary.json", "w") as f:
             json.dump(summary, f, indent=2)
         print(f"[OK] Ringkasan disimpan ke baseline_summary.json")
 
         print("\n=== BASELINE STATISTICS (untuk BASELINE.md) ===")
-        print(f"| Metric | Mean | Std Dev | 95% CI (2σ) |")
-        print(f"|--------|------|---------|-------------|")
-        print(f"| Entropy | {avg_entropy:.4f} | {std_entropy:.4f} | {avg_entropy + 2*std_entropy:.4f} |")
-        print(f"| Autocorr L1 | {avg_autocorr:.4f} | {std_autocorr:.4f} | {avg_autocorr + 2*std_autocorr:.4f} |")
+        print(f"| Metric | Mean | Std Error | Mean ± 2σ (Spread) |")
+        print(f"|--------|------|-----------|--------------------|")
+        print(f"| Pattern Entropy | {avg_entropy:.4f} | {se_entropy:.4f} | {avg_entropy:.4f} ± {2*std_entropy:.4f} |")
+        print(f"| Behavioral Entropy | {avg_b_entropy:.4f} | {std_b_entropy/np.sqrt(len(all_data)):.4f} | {avg_b_entropy:.4f} ± {2*std_b_entropy:.4f} |")
+        print(f"| Action Autocorr L1 | {avg_autocorr:.4f} | {se_autocorr:.4f} | {avg_autocorr:.4f} ± {2*std_autocorr:.4f} |")
         print(f"| Reward | {avg_reward:.4f} | - | - |")
         print(f"| Fatigue | {avg_fatigue:.2f} | - | - |")
         print("\n[OK] Selesai.")
@@ -172,7 +204,9 @@ if __name__ == "__main__":
     parser.add_argument("--seeds", type=int, default=30)
     parser.add_argument("--cycles", type=int, default=500)
     parser.add_argument("--version", type=str, default="0.19.1")
-    parser.add_argument("--stimulus", type=str, default="circle.png")
+    project_root = Path(__file__).resolve().parent.parent.parent
+    default_stimulus = str(project_root / "assets" / "images" / "circle.png")
+    parser.add_argument("--stimulus", type=str, default=default_stimulus)
     args = parser.parse_args()
     runner = BaselineRunner(
         seeds=args.seeds,

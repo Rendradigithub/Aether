@@ -45,5 +45,8 @@ class MenteMemory:
     def novelty(self, vec):
         if not self.vectors:
             return 1.0
-        sims = [np.dot(vec, v) / (np.linalg.norm(vec)*np.linalg.norm(v)+1e-8) for v in self.vectors[-10:]]
+        norm_vec = np.linalg.norm(vec)
+        if norm_vec < 1e-8:
+            return 0.0
+        sims = [np.dot(vec, v) / (norm_vec * np.linalg.norm(v) + 1e-8) for v in self.vectors[-10:]]
         return 1.0 - max(sims) if sims else 1.0

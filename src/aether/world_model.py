@@ -34,7 +34,15 @@ class PredictiveWorldModel:
     def update(self, state_vec, action, next_state_vec):
         pred = self.predict(state_vec, action)
         error = next_state_vec - pred
-        self.prediction_error = np.linalg.norm(error) / np.sqrt(len(state_vec))
+        rmse = np.sqrt(np.mean(error**2))
+        norm_pred = np.linalg.norm(pred)
+        norm_next = np.linalg.norm(next_state_vec)
+        if norm_pred > 1e-8 and norm_next > 1e-8:
+            cos_sim = np.dot(pred, next_state_vec) / (norm_pred * norm_next)
+        else:
+            cos_sim = 0.0
+        cos_dist = 1.0 - cos_sim
+        self.prediction_error = float(np.clip(0.5 * rmse + 0.5 * cos_dist, 0.0, 1.0))
         x = np.append(state_vec, self.encode_action(action))
         h = np.tanh(self.W1 @ x + self.b1)
         dW2 = np.outer(error, h)

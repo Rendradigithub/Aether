@@ -83,8 +83,14 @@ class RadialEncoder(PerceptionEncoder):
                     vector=np.asarray(sig, dtype=np.float32),
                     encoder_id="radial",
                 )
-            except Exception:
-                print("[Error] Unsupported stimulus")
+            except (FileNotFoundError, ValueError) as e:
+                print(f"[Error] Failed to load image stimulus {source}: {e}")
+                return None
+            except Exception as e:
+                if type(e).__name__ == "UnidentifiedImageError":
+                    print(f"[Error] Unidentified image format for {source}: {e}")
+                    return None
+                print(f"[Error] Unexpected error loading image stimulus {source}: {e}")
                 return None
         else:
             try:
