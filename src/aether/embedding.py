@@ -1,7 +1,5 @@
 import math
-
 import numpy as np
-
 
 class ArtEmbedder:
     @staticmethod
@@ -38,3 +36,24 @@ class ArtEmbedder:
         vec = np.array([den, sym, var, circ], dtype=np.float32)
         vec = np.pad(vec, (0, 8-len(vec)))
         return vec/(np.linalg.norm(vec)+1e-8)
+
+class DimensionalityProjector:
+    """Provides semantic-preserving or deterministic dimension adapters for Aether representations."""
+    @staticmethod
+    def project(vector, target_dim):
+        """Projects a 1D vector to the target dimension using linear interpolation."""
+        vector = np.asarray(vector, dtype=np.float64)
+        if len(vector) == target_dim:
+            return vector
+        
+        # Simple interpolation preserves spatial/sequence structure (like radial bins)
+        x = np.linspace(0, 1, len(vector))
+        x_new = np.linspace(0, 1, target_dim)
+        projected = np.interp(x_new, x, vector)
+        
+        # Normalize to prevent unbounded magnitude growth during continuous loops
+        norm = np.linalg.norm(projected)
+        if norm > 1e-8:
+            projected = projected / norm
+            
+        return projected

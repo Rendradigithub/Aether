@@ -1,3 +1,19 @@
+
+class DimensionalityProjector:
+    @staticmethod
+    def project(vector, target_dim):
+        import numpy as np
+        vector = np.asarray(vector, dtype=np.float64)
+        if len(vector) == target_dim:
+            return vector
+        x = np.linspace(0, 1, len(vector))
+        x_new = np.linspace(0, 1, target_dim)
+        projected = np.interp(x_new, x, vector)
+        norm = np.linalg.norm(projected)
+        if norm > 1e-8:
+            projected = projected / norm
+        return projected
+
 #!/usr/bin/env python3
 """
 AETHER v0.20.0 — TEMPORAL CONTINUITY
@@ -276,7 +292,12 @@ class NeuralDecoder:
 
     def load_weights(self, path):
         data = np.load(path)
-        self.W1 = data['W1']; self.b1 = data['b1']
+        w1_loaded = data['W1']
+        if w1_loaded.shape[1] != self.input_dim:
+            print(f"[Decoder] Incompatible weights dimension (found {w1_loaded.shape[1]}, expected {self.input_dim}). Ignoring saved weights.")
+            return False
+
+        self.W1 = w1_loaded; self.b1 = data['b1']
         self.W2 = data['W2']; self.b2 = data['b2']
         self.W3 = data['W3']; self.b3 = data['b3']
         self.W4 = data['W4']; self.b4 = data['b4']
@@ -287,6 +308,7 @@ class NeuralDecoder:
         self.is_trained = True
         self.current_threshold = 0.15
         print(f"[Decoder] Weights loaded from {path}")
+        return True
 
 
 # ============================================================================
@@ -653,7 +675,24 @@ class MenteMemory:
         norm_vec = np.linalg.norm(vec)
         if norm_vec < 1e-8:
             return 0.0
-        sims = [np.dot(vec, v) / (norm_vec * np.linalg.norm(v) + 1e-8) for v in self.vectors[-10:]]
+        
+        sims = []
+        for v in self.vectors[-10:]:
+            norm_v = np.linalg.norm(v)
+            if norm_v < 1e-8:
+                continue
+            if len(vec) != len(v):
+                x_vec = np.linspace(0, 1, len(vec))
+                x_v = np.linspace(0, 1, len(v))
+                safe_vec = np.interp(x_v, x_vec, vec)
+                norm_safe_vec = np.linalg.norm(safe_vec)
+                if norm_safe_vec < 1e-8:
+                    continue
+                sim = np.dot(safe_vec, v) / (norm_safe_vec * norm_v + 1e-8)
+            else:
+                sim = np.dot(vec, v) / (norm_vec * norm_v + 1e-8)
+            sims.append(sim)
+            
         return 1.0 - max(sims) if sims else 1.0
 
 class MenteBudget:
@@ -994,10 +1033,14 @@ class AetherCognitiveCore:
                                      hidden3=HardConfig.NN_HIDDEN_3,
                                      output_dim=HardConfig.NN_OUTPUT_DIM)
         if weights_path.exists():
-            self.decoder.load_weights(weights_path)
-            self.bootstrapping_phase = False
-            if not self.quiet:
-                print("[Bootstrapping] Skipped (weights found)")
+            success = self.decoder.load_weights(weights_path)
+            if success:
+                self.bootstrapping_phase = False
+                if not self.quiet:
+                    print("[Bootstrapping] Skipped (weights found)")
+            else:
+                if not self.quiet:
+                    print(f"[Bootstrapping] Phase active for {self.bootstrapping_end_cycle} cycles")
         else:
             if not self.quiet:
                 print(f"[Bootstrapping] Phase active for {self.bootstrapping_end_cycle} cycles")
@@ -1021,7 +1064,8 @@ class AetherCognitiveCore:
             contour_reward = 0.5
 
         coherence = AreaCoherence.largest_connected_component_ratio(art)
-        novelty = self.memory.novelty(sig_art) if hasattr(self.memory, 'novelty') else 0.5
+        proj_sig_art = DimensionalityProjector.project(sig_art, getattr(self, 'representation_dim', None) or HardConfig.VECTOR_DIM)
+        novelty = self.memory.novelty(proj_sig_art) if hasattr(self.memory, 'novelty') else 0.5
 
         total = (HardConfig.REWARD_CONTOUR_SIM_WEIGHT * contour_reward +
                  HardConfig.REWARD_RADIAL_SIM_WEIGHT * radial_sim +

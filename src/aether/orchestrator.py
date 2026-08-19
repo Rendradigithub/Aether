@@ -28,6 +28,7 @@ from .perception import PerceptionEncoder, RadialEncoder
 from .representation import Representation
 from .radial import RadialSignature, AreaCoherence, PIL_AVAILABLE
 from .world_model import PredictiveWorldModel
+from .embedding import DimensionalityProjector
 
 
 class AetherCognitiveCore:
@@ -132,10 +133,14 @@ class AetherCognitiveCore:
             output_dim=HardConfig.NN_OUTPUT_DIM,
         )
         if weights_path.exists():
-            self.decoder.load_weights(weights_path)
-            self.bootstrapping_phase = False
-            if not self.quiet:
-                print("[Bootstrapping] Skipped (weights found)")
+            success = self.decoder.load_weights(weights_path)
+            if success:
+                self.bootstrapping_phase = False
+                if not self.quiet:
+                    print("[Bootstrapping] Skipped (weights found)")
+            else:
+                if not self.quiet:
+                    print(f"[Bootstrapping] Phase active for {self.bootstrapping_end_cycle} cycles")
         else:
             if not self.quiet:
                 print(f"[Bootstrapping] Phase active for {self.bootstrapping_end_cycle} cycles")
@@ -143,7 +148,12 @@ class AetherCognitiveCore:
     def _compute_reward(self, art, pattern):
         sig_art = RadialSignature.from_ascii_art(art, num_rays=36, contour_only=True)
         if self.stimulus_radial is not None:
-            radial_sim = RadialSignature.cross_correlation(self.stimulus_radial, sig_art)
+            if len(self.stimulus_radial) == len(sig_art):
+                radial_sim = RadialSignature.cross_correlation(self.stimulus_radial, sig_art)
+            else:
+                proj_sig = DimensionalityProjector.project(sig_art, len(self.stimulus_radial))
+                cos_sim = np.dot(self.stimulus_radial, proj_sig) / (np.linalg.norm(self.stimulus_radial) * np.linalg.norm(proj_sig) + 1e-8)
+                radial_sim = max(0.0, float(cos_sim + 1.0) / 2.0)
         else:
             radial_sim = 0.5
 
@@ -159,7 +169,8 @@ class AetherCognitiveCore:
             contour_reward = 0.5
 
         coherence = AreaCoherence.largest_connected_component_ratio(art)
-        novelty = self.memory.novelty(sig_art) if hasattr(self.memory, 'novelty') else 0.5
+        proj_sig_art = DimensionalityProjector.project(sig_art, self.representation_dim or HardConfig.VECTOR_DIM)
+        novelty = self.memory.novelty(proj_sig_art) if hasattr(self.memory, 'novelty') else 0.5
 
         total = (HardConfig.REWARD_CONTOUR_SIM_WEIGHT * contour_reward +
                  HardConfig.REWARD_RADIAL_SIM_WEIGHT * radial_sim +
@@ -207,6 +218,7 @@ class AetherCognitiveCore:
                 if not self.quiet:
                     print(f"[Bootstrap] Sample {len(self.decoder.training_buffer)} rad={radial_sim:.2f} contour={contour_reward:.2f}")
             next_sig = RadialSignature.from_ascii_art(art, num_rays=36, contour_only=True)
+            next_sig = DimensionalityProjector.project(next_sig, self.representation_dim or HardConfig.VECTOR_DIM)
             # Bootstrap: update world model with stimulus_radial as initial state
             self.world_model.update(self.current_state, 'generate', next_sig)
             self.budget.spend(*HardConfig.BOOTSTRAP_COST)
@@ -286,6 +298,7 @@ class AetherCognitiveCore:
                 self.budget.recover(3, 2, 3)
                 self.budget.give_persistence_bonus(total_reward)
             next_sig = RadialSignature.from_ascii_art(art, num_rays=36, contour_only=True)
+            next_sig = DimensionalityProjector.project(next_sig, self.representation_dim or HardConfig.VECTOR_DIM)
             self.world_model.update(self.current_state, chosen, next_sig)
             self.current_state = next_sig
             if pat == 'shape':
@@ -301,6 +314,7 @@ class AetherCognitiveCore:
             self.pattern_counts[pat] += 1
             total_reward, radial_sim, contour_reward, coherence = self._compute_reward(art, pat)
             next_sig = RadialSignature.from_ascii_art(art, num_rays=36, contour_only=True)
+            next_sig = DimensionalityProjector.project(next_sig, self.representation_dim or HardConfig.VECTOR_DIM)
             self.world_model.update(self.current_state, chosen, next_sig)
             self.current_state = next_sig
             cost = HardConfig.ACTION_COSTS['explore']
@@ -312,6 +326,7 @@ class AetherCognitiveCore:
             self.pattern_counts[pat] += 1
             total_reward, radial_sim, contour_reward, coherence = self._compute_reward(art, pat)
             next_sig = RadialSignature.from_ascii_art(art, num_rays=36, contour_only=True)
+            next_sig = DimensionalityProjector.project(next_sig, self.representation_dim or HardConfig.VECTOR_DIM)
             self.world_model.update(self.current_state, chosen, next_sig)
             self.current_state = next_sig
             cost = HardConfig.ACTION_COSTS['refine']
@@ -327,6 +342,7 @@ class AetherCognitiveCore:
             self.pattern_counts[pat] += 1
             total_reward, radial_sim, contour_reward, coherence = self._compute_reward(art, pat)
             next_sig = RadialSignature.from_ascii_art(art, num_rays=36, contour_only=True)
+            next_sig = DimensionalityProjector.project(next_sig, self.representation_dim or HardConfig.VECTOR_DIM)
             self.world_model.update(self.current_state, chosen, next_sig)
             self.current_state = next_sig
             cost = HardConfig.ACTION_COSTS['combine']

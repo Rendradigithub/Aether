@@ -148,7 +148,12 @@ class NeuralDecoder:
 
     def load_weights(self, path):
         data = np.load(path)
-        self.W1 = data['W1']; self.b1 = data['b1']
+        w1_loaded = data['W1']
+        if w1_loaded.shape[1] != self.input_dim:
+            print(f"[Decoder] Incompatible weights dimension (found {w1_loaded.shape[1]}, expected {self.input_dim}). Ignoring saved weights.")
+            return False
+
+        self.W1 = w1_loaded; self.b1 = data['b1']
         self.W2 = data['W2']; self.b2 = data['b2']
         self.W3 = data['W3']; self.b3 = data['b3']
         self.W4 = data['W4']; self.b4 = data['b4']
@@ -159,3 +164,4 @@ class NeuralDecoder:
         self.is_trained = True
         self.current_threshold = 0.15
         print(f"[Decoder] Weights loaded from {path}")
+        return True
